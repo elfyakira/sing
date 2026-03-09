@@ -1,12 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Anton&family=Dela+Gothic+One&display=swap');
 @import "tailwindcss";
 
 @theme {
   /* Brand Colors */
-  --color-navy: #1a3a5c;
-  --color-navy-dark: #152e4a;
-  --color-accent: #e67635;
-  --color-accent-dark: #d56025;
+  --color-navy: #1A2E44;
+  --color-navy-dark: #0F1D2E;
+  --color-accent: #C84B2F;
+  --color-accent-dark: #A63D26;
 
   /* Text Colors */
   --color-text-primary: #333333;
