@@ -10,40 +10,43 @@ const services = [
   {
     num: "01",
     title: "ツナゲル",
+    video: "/videos/service-01.mp4",
+    teaser: "採るだけでは、終わらせない。企業と人財の「本当の出会い」をつくる採用支援。",
   },
   {
     num: "02",
     title: "カツヤク",
+    video: "/videos/service-02.mp4",
+    teaser: "入社がゴールではない。人が定着し、成長し続ける組織づくりの伴走支援。",
   },
   {
     num: "03",
-    title: "月刊Sing",
-  },
-  {
-    num: "04",
-    title: "バツグン",
-  },
-  {
-    num: "05",
-    title: "各種制作",
+    title: "Singメディア",
+    video: "/videos/service-03.mp4",
+    teaser: "届けたい想いを、届くカタチに。企業の魅力を最大化する情報発信支援。",
   },
 ];
 
 const initiatives = [
   {
+    id: "initiative-01",
+    category: "SDGs",
     title: "地域店舗・SDGs・地方創生への取り組み",
+    description: "地域の持続可能な発展を目指し、企業と地域をつなぐ活動を推進しています。",
     image: "/images/initiative-01.jpg",
   },
   {
-    title: "若者のキャリア教育支援（大学での特別セミナー登壇など）",
+    id: "initiative-02",
+    category: "Education",
+    title: "若者のキャリア教育支援",
+    description: "大学での特別セミナー登壇など、次世代の人財育成に取り組んでいます。",
     image: "/images/initiative-02.jpg",
   },
   {
-    title: "障がい者就労支援施設（NPO法人）への業務マッチング支援",
-    image: "/images/initiative-03.jpg",
-  },
-  {
-    title: "地域店舗・団体との連携、商工会議所を通じた情報発信",
+    id: "initiative-03",
+    category: "Community",
+    title: "地域店舗・団体との連携",
+    description: "商工会議所を通じた情報発信など、地域企業のネットワークを強化しています。",
     image: "/images/initiative-04.jpg",
   },
 ];
@@ -51,31 +54,31 @@ const initiatives = [
 const blogPosts = [
   {
     date: "2026.03.01",
-    category: "お知らせ",
+    category: "ブログ",
     title: "ホームページをリニューアルしました",
     image: "/images/blog-01.jpg",
   },
   {
     date: "2026.02.23",
-    category: "社内イベント",
+    category: "ブログ",
     title: "代表の清水が親孝行休暇を取得しました",
     image: "/images/blog-02.jpg",
   },
   {
     date: "2026.02.15",
-    category: "セミナー",
-    title: "中小企業向け採用力強化セミナーを開催します",
+    category: "取り組み",
+    title: "大学キャリア教育セミナーに登壇しました",
     image: "/images/blog-03.jpg",
   },
   {
     date: "2026.02.01",
-    category: "実績紹介",
+    category: "ブログ",
     title: "製造業A社様の採用ブランディング事例を公開しました",
     image: "/images/blog-04.jpg",
   },
   {
     date: "2026.01.20",
-    category: "地域活動",
+    category: "取り組み",
     title: "地域を代表する企業100選に選出されました",
     image: "/images/blog-05.jpg",
   },
@@ -84,24 +87,19 @@ const blogPosts = [
 export default function Home() {
   return (
     <main>
-      {/* Section 1: Hero */}
-      <HeroBackground className="relative h-screen flex items-end bg-navy">
-        {/* Background Image */}
+      {/* Section 1: Hero - fixed so next section scrolls over it */}
+      <HeroBackground className="fixed inset-0 h-screen flex items-end bg-navy overflow-hidden z-0">
+        {/* Background Video */}
         <div className="absolute inset-0">
-          <Image
-            src="/images/hero-top.jpg"
-            alt="コンサルティング風景"
-            fill
-            className="object-cover"
-            priority
-          />
-          <div
-            className="absolute inset-0"
-            style={{
-              background:
-                "linear-gradient(to top, rgba(26,46,68,0.6) 0%, rgba(26,46,68,0.15) 50%, transparent 100%)",
-            }}
-          />
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/videos/hero-top.mp4" type="video/mp4" />
+          </video>
         </div>
 
         {/* Sing text - bottom center */}
@@ -112,9 +110,9 @@ export default function Home() {
               fontFamily: "'Dela Gothic One', sans-serif",
               fontSize: "clamp(100px, 20vw, 270px)",
               letterSpacing: "0.02em",
-              textTransform: "uppercase",
+              textTransform: "none",
               lineHeight: 0.8,
-              marginBottom: "clamp(20px, 3vw, 40px)",
+              marginBottom: "clamp(40px, 6vw, 80px)",
               transform: "scaleY(0.82)",
               transformOrigin: "bottom center",
             }}
@@ -124,23 +122,30 @@ export default function Home() {
         </div>
       </HeroBackground>
 
+      {/* Spacer for fixed hero */}
+      <div style={{ height: "100vh" }} />
+
       {/* Section 2: Mission */}
-      <section className="bg-white" style={{ padding: "120px 0 100px" }}>
+      <section className="relative z-10 bg-accent" style={{ padding: "120px 0 100px" }}>
         <div className="mx-auto px-5" style={{ maxWidth: "780px" }}>
           <h2
-            className="text-center font-bold text-[#222222] mb-9"
+            className="text-center font-bold text-white mb-9"
             style={{
-              fontSize: "clamp(26px, 4.5vw, 40px)",
+              fontSize: "clamp(28px, 5vw, 80px)",
+              whiteSpace: "nowrap",
               lineHeight: 1.4,
               fontStyle: "italic",
+              maxWidth: "none",
+              marginLeft: "calc(-50vw + 50%)",
+              marginRight: "calc(-50vw + 50%)",
             }}
           >
             人が輝けば、企業は続く。
           </h2>
           <p
-            className="text-center text-[#222222]"
+            className="text-center text-white/90 font-bold"
             style={{
-              fontSize: "clamp(15px, 2vw, 16px)",
+              fontSize: "clamp(18px, 2.5vw, 22px)",
               lineHeight: 2.0,
               marginBottom: "40px",
             }}
@@ -150,44 +155,38 @@ export default function Home() {
             働く人たちの想いによって次の世代へと続いていきます。
             <br />
             <br />
-            しかし今、日本では深刻な人手不足が続き、
+            しかし今、深刻な人手不足が続き、
             <br />
-            採用サービスは乱立する一方で、
-            <br className="hidden lg:inline" />
-            多くの企業が本当に必要な解決策を見出せずにいます。
+            採用しても、人が定着しない。育てても、活躍の場がない。
             <br />
-            <br />
-            私たちは多くの企業と向き合う中で、
-            <br className="hidden lg:inline" />
-            人が持つ個性や可能性は、環境によって必ず輝くということを実感してきました。
+            その課題の本質は、採用の「その先」にあると私たちは考えます。
             <br />
             <br />
-            その可能性が活かされる環境があれば、
+            だから私たちは、
             <br />
-            人は活躍し、組織は成長し、企業は未来へと続いていく。
-            <br />
-            <br />
-            だからこそ私たちは、
-            <br />
-            「採用」だけでなく「定着」と「活躍」まで。
-            <br />
-            <br />
-            企業の人づくりを、一気通貫で支援します。
+            採用・定着・活躍を、一気通貫で。
           </p>
-          <p className="text-center">
+          <div className="flex items-center justify-center gap-6">
             <Link
               href="/message"
-              className="inline-flex items-center gap-1 text-accent text-[15px] transition-all hover:underline"
+              className="inline-flex items-center gap-6 text-white group"
             >
-              代表メッセージを読む
-              <span>→</span>
+              <span className="text-[18px] font-bold tracking-wide">MESSAGE</span>
+              <span
+                className="flex items-center justify-center rounded-full bg-white group-hover:scale-105 transition-transform"
+                style={{ width: "80px", height: "80px" }}
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C41E2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
             </Link>
-          </p>
+          </div>
         </div>
       </section>
 
       {/* Section 3: Services */}
-      <section style={{ backgroundColor: "#F5F1EB", padding: "120px 0" }}>
+      <section className="relative z-10" style={{ backgroundColor: "#F5F5F5", padding: "120px 0" }}>
         <div className="mx-auto px-5" style={{ maxWidth: "1000px" }}>
           <p
             className="text-accent mb-4"
@@ -207,65 +206,94 @@ export default function Home() {
             人が輝く企業をつくるために。
           </p>
 
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-6">
+          <div className="grid grid-cols-3 gap-6">
             {services.map((svc) => (
               <Link
                 key={svc.num}
                 href="/service"
-                className="group bg-white rounded-lg flex flex-col items-center justify-center text-center transition-shadow hover:shadow-lg"
-                style={{ padding: "40px 16px", aspectRatio: "1/1" }}
+                className="group"
               >
-                <span
-                  className="text-accent/20 font-bold block mb-3"
-                  style={{
-                    fontSize: "32px",
-                    fontFamily: "Inter, sans-serif",
-                    lineHeight: 1,
-                  }}
+                <div
+                  className="relative rounded-lg overflow-hidden transition-shadow hover:shadow-lg"
+                  style={{ aspectRatio: "1/1" }}
                 >
-                  {svc.num}
-                </span>
-                <h3
-                  className="font-bold text-[#222222] group-hover:text-accent transition-colors"
-                  style={{ fontSize: "clamp(15px, 2vw, 18px)" }}
-                >
-                  {svc.title}
-                </h3>
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
+                  >
+                    <source src={svc.video} type="video/mp4" />
+                  </video>
+                </div>
+                <div className="flex items-start gap-3 mt-4">
+                  <span className="block bg-accent shrink-0" style={{ width: "3px", height: "24px", marginTop: "4px" }} />
+                  <div>
+                    <h3
+                      className="font-bold text-[#222222] group-hover:text-accent transition-colors"
+                      style={{ fontSize: "24px" }}
+                    >
+                      {svc.title}
+                    </h3>
+                    <p className="text-[#666] mt-2" style={{ fontSize: "13px", lineHeight: 1.7 }}>
+                      {svc.teaser}
+                    </p>
+                  </div>
+                </div>
               </Link>
             ))}
           </div>
 
-          <p className="mt-14">
+          <div className="flex items-center mt-14">
             <Link
               href="/service"
-              className="inline-flex items-center gap-1 text-accent text-[15px] transition-all hover:underline"
+              className="inline-flex items-center gap-6 text-[#222222] group"
             >
-              サービスの詳細を見る
-              <span>→</span>
+              <span className="text-[18px] font-bold tracking-wide">SERVICE</span>
+              <span
+                className="flex items-center justify-center rounded-full bg-accent group-hover:scale-105 transition-transform"
+                style={{ width: "80px", height: "80px" }}
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
             </Link>
-          </p>
+          </div>
         </div>
       </section>
 
       {/* Section 4: Initiatives */}
-      <section className="relative" style={{ padding: "120px 0" }}>
-        {/* Background image + overlay */}
+      <section className="relative z-10 overflow-hidden" style={{ padding: "120px 0" }}>
+        {/* Background video + dark overlay + grid */}
         <div className="absolute inset-0">
-          <Image
-            src="/images/initiative-bg.jpg"
-            alt=""
-            fill
-            className="object-cover"
+          <video
+            autoPlay
+            muted
+            loop
+            playsInline
+            className="absolute inset-0 w-full h-full object-cover"
+          >
+            <source src="/videos/initiative-bg.mp4" type="video/mp4" />
+          </video>
+          <div className="absolute inset-0 bg-black/80" />
+          <div
+            className="absolute inset-0"
+            style={{
+              backgroundImage:
+                "linear-gradient(to right, rgba(255,255,255,0.06) 1px, transparent 1px), linear-gradient(to bottom, rgba(255,255,255,0.06) 1px, transparent 1px)",
+              backgroundSize: "80px 80px",
+            }}
           />
-          <div className="absolute inset-0 bg-[#1A2E44]/85" />
         </div>
 
-        <div className="relative z-10 mx-auto px-5 lg:px-10 text-center" style={{ maxWidth: "1000px" }}>
+        <div className="relative z-10 mx-auto px-5 lg:px-10 text-left" style={{ maxWidth: "1000px" }}>
           {/* Title + Description */}
           <h2
             className="font-bold text-white mb-8"
             style={{
-              fontSize: "clamp(26px, 4vw, 36px)",
+              fontSize: "clamp(32px, 6vw, 72px)",
               lineHeight: 1.4,
             }}
           >
@@ -275,32 +303,25 @@ export default function Home() {
             className="text-white/75 mb-14"
             style={{ fontSize: "15px", lineHeight: 2.0 }}
           >
-            Singは、企業の成長支援だけでなく、
-            <br className="hidden lg:inline" />
-            地域社会や次世代の人材育成にも積極的に取り組んでいます。
-            <br className="hidden lg:inline" />
-            若者へのキャリア教育、障がい者就労支援、地域企業との連携など、
-            <br className="hidden lg:inline" />
-            人と企業、そして地域がつながる活動を通して、
-            <br className="hidden lg:inline" />
-            人が長く活躍できる社会づくりに貢献しています。
+            Singは、企業の成長支援だけでなく、地域社会や次世代の人財育成にも積極的に取り組んでいます。若者へのキャリア教育、障がい者就労支援、地域企業との連携など、人と企業、そして地域がつながる活動を通して、人が長く活躍できる社会づくりに貢献しています。
           </p>
 
           {/* List items */}
-          <div className="text-left mx-auto" style={{ maxWidth: "700px" }}>
+          <div className="text-left">
             {initiatives.map((item, i) => (
-              <div
+              <Link
                 key={i}
-                className="flex items-center gap-4 group"
+                href={`/initiatives#${item.id}`}
+                className="flex items-center gap-6 group"
                 style={{
-                  padding: "16px 0",
-                  borderBottom: i < initiatives.length - 1 ? "1px solid rgba(255,255,255,0.12)" : "none",
+                  padding: "20px 0",
+                  borderBottom: "1px solid rgba(255,255,255,0.12)",
                 }}
               >
-                {/* Thumbnail */}
+                {/* Thumbnail - square */}
                 <div
                   className="relative shrink-0 rounded overflow-hidden bg-white/10"
-                  style={{ width: "72px", height: "48px" }}
+                  style={{ width: "72px", height: "72px" }}
                 >
                   <Image
                     src={item.image}
@@ -310,40 +331,40 @@ export default function Home() {
                   />
                 </div>
 
-                {/* Title */}
-                <p
-                  className="flex-1 text-white/90 group-hover:text-white transition-colors"
-                  style={{ fontSize: "14px", lineHeight: 1.6 }}
-                >
-                  {item.title}
-                </p>
+                {/* Text content */}
+                <div className="flex-1">
+                  <span className="text-white/50" style={{ fontSize: "11px", letterSpacing: "0.05em" }}>
+                    {item.category}
+                  </span>
+                  <p
+                    className="text-white font-bold group-hover:text-white/80 transition-colors"
+                    style={{ fontSize: "18px", lineHeight: 1.6, borderBottom: "1px solid rgba(255,255,255,0.2)", paddingBottom: "8px", marginTop: "2px" }}
+                  >
+                    {item.title}
+                  </p>
+                  <p className="text-white/50" style={{ fontSize: "12px", lineHeight: 1.6, marginTop: "6px" }}>
+                    {item.description}
+                  </p>
+                </div>
 
-                {/* Arrow */}
+                {/* Arrow - matching button design */}
                 <span
-                  className="shrink-0 flex items-center justify-center rounded-full border border-white/30 group-hover:border-white/60 transition-colors"
-                  style={{ width: "36px", height: "36px" }}
+                  className="shrink-0 flex items-center justify-center rounded-full bg-white group-hover:scale-105 transition-transform"
+                  style={{ width: "56px", height: "56px" }}
                 >
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="rgba(255,255,255,0.7)" strokeWidth="1.5">
-                    <path d="M5 2L10 7L5 12" />
+                  <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#C41E2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
                   </svg>
                 </span>
-              </div>
+              </Link>
             ))}
           </div>
 
-          <div className="mt-12">
-            <Link
-              href="/service"
-              className="inline-block text-white border border-white/40 rounded-btn px-8 py-3 text-[15px] font-medium transition-all hover:bg-white/10 hover:border-white/70"
-            >
-              詳しく見る
-            </Link>
-          </div>
         </div>
       </section>
 
       {/* Section 5: Why Sing */}
-      <section className="bg-white" style={{ padding: "120px 0" }}>
+      <section className="relative z-10" style={{ backgroundColor: "#F5F5F5", padding: "120px 0" }}>
         <div className="mx-auto px-5 lg:px-10" style={{ maxWidth: "1200px" }}>
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             {/* Left: Text */}
@@ -389,12 +410,20 @@ export default function Home() {
                 <br />
                 企業が人とともに成長し続ける仕組みづくりを支援しています。
               </p>
-              <div className="mt-10">
+              <div className="flex items-center mt-10">
                 <Link
-                  href="/service"
-                  className="inline-block bg-accent text-white font-semibold rounded-btn px-8 py-3.5 text-[15px] transition-colors hover:bg-accent-dark"
+                  href="/service#why-sing"
+                  className="inline-flex items-center gap-6 text-[#222222] group"
                 >
-                  詳しく見る
+                  <span className="text-[18px] font-bold tracking-wide">MORE</span>
+                  <span
+                    className="flex items-center justify-center rounded-full bg-accent group-hover:scale-105 transition-transform"
+                    style={{ width: "80px", height: "80px" }}
+                  >
+                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M5 12h14M13 6l6 6-6 6" />
+                    </svg>
+                  </span>
                 </Link>
               </div>
             </div>
@@ -415,7 +444,7 @@ export default function Home() {
       </section>
 
       {/* Section 6: Blog */}
-      <section style={{ backgroundColor: "#F5F1EB", padding: "120px 0" }}>
+      <section className="relative z-10" style={{ backgroundColor: "#F5F1EB", padding: "120px 0" }}>
         <div className="mx-auto px-5 lg:px-10" style={{ maxWidth: "1200px" }}>
           <p
             className="text-accent mb-3"
@@ -437,10 +466,17 @@ export default function Home() {
             </h2>
             <Link
               href="/news"
-              className="hidden lg:inline-flex items-center gap-1 text-accent text-[15px] transition-all hover:underline"
+              className="hidden lg:inline-flex items-center gap-6 text-[#222222] group"
             >
-              一覧を見る
-              <span>→</span>
+              <span className="text-[18px] font-bold tracking-wide">BLOG</span>
+              <span
+                className="flex items-center justify-center rounded-full bg-accent group-hover:scale-105 transition-transform"
+                style={{ width: "80px", height: "80px" }}
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
             </Link>
           </div>
 
@@ -491,35 +527,38 @@ export default function Home() {
           </div>
 
           {/* SP: show link below */}
-          <p className="lg:hidden mt-8 text-center">
+          <div className="lg:hidden mt-8 flex justify-center">
             <Link
               href="/news"
-              className="inline-flex items-center gap-1 text-accent text-[15px] transition-all hover:underline"
+              className="inline-flex items-center gap-6 text-[#222222] group"
             >
-              一覧を見る
-              <span>→</span>
+              <span className="text-[18px] font-bold tracking-wide">BLOG</span>
+              <span
+                className="flex items-center justify-center rounded-full bg-accent group-hover:scale-105 transition-transform"
+                style={{ width: "80px", height: "80px" }}
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
             </Link>
-          </p>
+          </div>
         </div>
       </section>
 
       {/* Section 7: Join Us */}
-      <section className="bg-[#1A2E44]" style={{ padding: "100px 0" }}>
+      <section className="relative z-10" style={{ backgroundColor: "#F5F1EB", padding: "120px 0" }}>
         <div className="mx-auto px-5 lg:px-10" style={{ maxWidth: "1200px" }}>
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            {/* Left: Photo grid */}
-            <div className="lg:w-[45%] w-full">
-              <div className="grid grid-cols-3 gap-3">
-                {[1, 2, 3, 4, 5, 6].map((n) => (
-                  <div key={n} className="relative rounded-lg overflow-hidden bg-white/10" style={{ aspectRatio: "1/1" }}>
-                    <Image
-                      src={`/images/member-0${n}.jpg`}
-                      alt={`メンバー${n}`}
-                      fill
-                      className="object-cover"
-                    />
-                  </div>
-                ))}
+          <div className="bg-[#1A2E44] rounded-2xl flex flex-col lg:flex-row items-center gap-12 lg:gap-16" style={{ padding: "clamp(24px, 3vw, 40px) clamp(32px, 5vw, 64px)" }}>
+            {/* Left: Photo */}
+            <div className="lg:w-[45%] w-full self-stretch">
+              <div className="relative rounded-lg overflow-hidden bg-white/10 h-full">
+                <Image
+                  src="/images/join-us.jpg"
+                  alt="ミーティング風景"
+                  fill
+                  className="object-cover object-left"
+                />
               </div>
             </div>
 
@@ -562,58 +601,23 @@ export default function Home() {
               </p>
               <Link
                 href="/recruit"
-                className="inline-flex items-center gap-2 text-white border border-white/40 rounded-btn px-8 py-3.5 text-[15px] font-medium transition-all hover:bg-white/10 hover:border-white/70"
+                className="inline-flex items-center gap-6 text-white group"
               >
-                採用情報を見る
-                <span>→</span>
+                <span className="text-[18px] font-bold tracking-wide">RECRUIT</span>
+                <span
+                  className="flex items-center justify-center rounded-full bg-white group-hover:scale-105 transition-transform"
+                  style={{ width: "80px", height: "80px" }}
+                >
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C41E2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </span>
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 8: CTA */}
-      <section className="bg-navy" style={{ padding: "100px 20px" }}>
-        <div className="mx-auto text-center" style={{ maxWidth: "700px" }}>
-          <h2
-            className="font-bold text-white mb-5"
-            style={{
-              fontSize: "clamp(22px, 3.5vw, 30px)",
-              lineHeight: 1.5,
-            }}
-          >
-            まずは、御社の課題を聞かせてください。
-          </h2>
-          <p
-            className="text-white/80 mb-9 whitespace-pre-line"
-            style={{ fontSize: "15px", lineHeight: 1.9 }}
-          >
-            {`採用のこと、組織のこと、ブランディングのこと。\n何から手をつければいいか分からなくても大丈夫です。\n一緒に課題を整理するところから始めましょう。`}
-          </p>
-          <Link
-            href="/contact"
-            className="inline-block bg-accent text-white font-semibold rounded-btn transition-colors hover:bg-accent-dark mb-4"
-            style={{ padding: "18px 48px", fontSize: "16px" }}
-          >
-            無料で相談してみる
-          </Link>
-          <p className="text-white/50 text-[13px] mb-3">
-            営業電話はいたしません。お気軽にご相談ください。
-          </p>
-          {contact.phone && (
-            <p className="text-white/60 text-sm">
-              お電話でのご相談:{" "}
-              <a
-                href={`tel:${contact.phone.replace(/-/g, "")}`}
-                className="hover:text-white transition-colors lg:pointer-events-none"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
-                {contact.phoneFormatted || contact.phone}
-              </a>
-            </p>
-          )}
-        </div>
-      </section>
 
       {/* Fixed CTA (SP only) */}
       <FixedCTA />

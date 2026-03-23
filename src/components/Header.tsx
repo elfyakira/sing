@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { usePathname } from "next/navigation";
 import { contact, navigation } from "@/lib/site";
@@ -46,14 +47,15 @@ export default function Header() {
       >
         <div className="flex items-center justify-between h-full px-10">
           {/* Logo */}
-          <Link
-            href="/"
-            className={`font-bold text-2xl transition-colors duration-300 ${
-              isScrolled ? "text-navy" : "text-white"
-            }`}
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
-            Sing
+          <Link href="/" className="block">
+            <Image
+              src="/images/logo.jpg"
+              alt="株式会社Sing"
+              width={120}
+              height={48}
+              className="h-12 w-auto object-contain"
+              priority
+            />
           </Link>
 
           {/* PC Navigation */}
@@ -62,9 +64,9 @@ export default function Header() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`text-sm font-medium transition-colors duration-300 hover:text-accent ${
+                className={`text-sm font-medium transition-colors duration-300 hover:text-navy ${
                   pathname === item.href
-                    ? "text-accent"
+                    ? "text-navy"
                     : isScrolled
                     ? "text-[#222222]"
                     : "text-white"
@@ -91,12 +93,15 @@ export default function Header() {
         style={{ boxShadow: "0 1px 0 rgba(0,0,0,0.06)" }}
       >
         <div className="flex items-center justify-between h-full px-5">
-          <Link
-            href="/"
-            className="font-bold text-xl text-navy"
-            style={{ fontFamily: "Inter, sans-serif" }}
-          >
-            Sing
+          <Link href="/" className="block">
+            <Image
+              src="/images/logo.jpg"
+              alt="株式会社Sing"
+              width={100}
+              height={40}
+              className="h-10 w-auto object-contain"
+              priority
+            />
           </Link>
 
           <button
@@ -147,7 +152,7 @@ export default function Header() {
               key={item.href}
               href={item.href}
               className={`block py-5 text-base font-medium border-b border-[#E8E4DE] transition-colors ${
-                pathname === item.href ? "text-accent" : "text-[#222222] hover:text-accent"
+                pathname === item.href ? "text-navy" : "text-[#222222] hover:text-navy"
               }`}
               onClick={() => setIsMenuOpen(false)}
             >

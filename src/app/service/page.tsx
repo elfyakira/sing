@@ -1,105 +1,57 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import CTASection from "@/components/CTASection";
 import { FadeInUp, StaggerContainer } from "@/components/animations";
 
 export const metadata: Metadata = {
   title: "事業内容",
   description:
-    "株式会社Singの5つのサービス。採用支援・人事組織コンサルティング・営業企業ブランディング・SNSデジタルブランディング・クリエイティブ制作をワンストップで支援します。",
+    "株式会社Singの3つのサービス。採用支援（ツナゲル）・組織づくり支援（カツヤク）・情報発信支援（Singメディア）をワンストップで支援します。",
 };
 
 const services = [
   {
     num: "01",
+    nameEn: "Connect",
     name: "ツナゲル",
-    subtitle: "「採れる採用」から「活躍する人材を採る採用」へ",
-    body: "求人を出しても応募が来ない。採用しても定着しない。その原因の多くは、「誰に届けたいか」「自社の魅力は何か」が明確になっていないことにあります。Singの採用支援は、企業の内側に眠る魅力を掘り起こし、本当に必要な人材に届く採用設計を行います。",
-    items: [
-      "求める人物像の設計",
-      "社内の魅力整理・言語化",
-      "現場社員の声のヒアリング",
-      "採用コンセプト設計",
-      "採用ブランディング構築",
+    subtitle: "「採れる採用」から「活躍する人財を採る採用」へ",
+    body: "求人を出しても応募が来ない。採用しても定着しない。その原因の多くは、「誰に届けたいか」「自社の魅力は何か」が明確になっていないことにあります。Singの採用支援は、企業の内側に眠る魅力を掘り起こし、本当に必要な人財に届く採用設計を行います。",
+    video: "/videos/service-01.mp4",
+    problems: [
+      { title: "応募が集まらない", desc: "求人を出しても反応がなく、母集団形成に苦戦している。" },
+      { title: "求める人財と出会えない", desc: "応募はあるが、自社に合う人財からの応募が少ない。" },
+      { title: "採用コストが膨らむ", desc: "媒体費ばかりかかり、費用対効果が見えない。" },
+      { title: "自社の魅力が伝わらない", desc: "何をアピールすべきか分からず、他社との差別化ができない。" },
     ],
-    voice:
-      "「企業の想いを言葉にしてくれる。自社の魅力を客観的に知ることができました。」",
-    image: "/images/service-detail-01.jpg",
-    bg: "#F5F1EB",
-    reverse: false,
   },
   {
     num: "02",
+    nameEn: "Activate",
     name: "カツヤク",
-    subtitle: `人が辞めない組織は、"仕組み"でつくれる`,
-    body: "採用した人材が活躍し続けるためには、組織の土壌が整っている必要があります。評価制度、育成環境、マネジメント体制。Singは「人が辞めない組織づくり」を仕組みから支援します。",
-    items: [
-      "管理職・リーダー育成",
-      "人事評価制度の設計",
-      "社員定着の仕組みづくり",
-      "社内研修プログラム構築",
-      "人事担当者の育成支援",
+    subtitle: "人が辞めない組織は、\"仕組み\"でつくれる",
+    body: "採用した人財が活躍し続けるためには、組織の土壌が整っている必要があります。評価制度、育成環境、マネジメント体制。Singは「人が辞めない組織づくり」を仕組みから支援します。",
+    video: "/videos/service-02.mp4",
+    problems: [
+      { title: "早期離職が止まらない", desc: "せっかく採用しても、数ヶ月で辞めてしまう。" },
+      { title: "管理職が育たない", desc: "現場のリーダーが育たず、組織が回らない。" },
+      { title: "評価制度が曖昧", desc: "評価基準が不透明で、社員のモチベーションが低下している。" },
+      { title: "社内の雰囲気が悪い", desc: "コミュニケーション不足で、チームの一体感がない。" },
     ],
-    voice:
-      "「採用だけでなく組織まで見てくれる。うちの会社を自分の会社のように考えてくれる姿勢が嬉しい。」",
-    image: "/images/service-detail-02.jpg",
-    bg: "#FFFFFF",
-    reverse: true,
   },
   {
     num: "03",
-    name: "月刊Sing",
-    subtitle: `御社の本当の魅力を、"選ばれる力"に変える`,
-    body: "良い商品やサービスを持っていても、それが正しく伝わらなければ選ばれません。Singは企業の本質的な強みを整理・言語化し、営業力とブランド力を高める支援を行います。",
-    items: [
-      "企業理念・強みの整理と言語化",
-      "パンフレット・営業資料の制作",
-      "企業ロゴ・VIの刷新支援",
-      "ホームページ制作・改善",
-      "ブランドコンセプトの策定",
+    nameEn: "Media",
+    name: "Singメディア",
+    subtitle: "届けたい想いを、届くカタチに",
+    body: "企業の魅力を正しく届けるには、ブランディング・SNS・クリエイティブの力が欠かせません。Singメディアでは、月刊Singをはじめとした情報発信、SNS戦略、採用サイト・動画・パンフレット制作までをワンストップで支援します。",
+    video: "/videos/service-03.mp4",
+    problems: [
+      { title: "発信の仕方がわからない", desc: "SNSやWebを活用したいが、何から始めればいいか分からない。" },
+      { title: "採用ブランディングが弱い", desc: "企業の魅力が求職者に伝わっておらず、選ばれない。" },
+      { title: "制作物がバラバラ", desc: "サイト・動画・パンフレットに統一感がなく、ブランドが伝わらない。" },
+      { title: "社内に制作リソースがない", desc: "デザインや動画を外注したいが、どこに頼めばいいか分からない。" },
     ],
-    voice:
-      "「初めて自社の強みを客観的に知ることができた。営業先での反応が明らかに変わりました。」",
-    image: "/images/service-detail-03.jpg",
-    bg: "#F5F1EB",
-    reverse: false,
-  },
-  {
-    num: "04",
-    name: "バツグン",
-    subtitle: `若い世代に届く"発信力"を、御社の中に育てる`,
-    body: "採用においても営業においても、SNSの活用はもはや不可欠です。しかし「何を発信すればいいかわからない」という企業が大半です。Singは、企業の魅力をSNSで届けるための戦略設計からコンテンツ制作、社内担当者の育成まで一貫して支援します。",
-    items: [
-      "SNS運用戦略の設計",
-      "YouTube企画・撮影・編集支援",
-      "Instagram/TikTokコンテンツ制作",
-      "社内SNS担当者の育成",
-      "採用広報としてのSNS活用",
-    ],
-    voice:
-      "「若者のリアルを知っている。だからこそ、若い子に届くコンテンツが作れるんだと実感しました。」",
-    image: "/images/service-detail-04.jpg",
-    bg: "#FFFFFF",
-    reverse: true,
-  },
-  {
-    num: "05",
-    name: "各種制作",
-    subtitle: "伝えたい想いを、届く形に",
-    body: "採用サイト、企業動画、パンフレット、SNSコンテンツ。Singは「伝わるクリエイティブ」を企画から制作までワンストップで提供します。見た目の美しさだけでなく、届けたいメッセージが届く設計を大切にしています。",
-    items: [
-      "採用サイトの企画・制作",
-      "採用動画の企画・撮影・編集",
-      "企業パンフレットのデザイン・制作",
-      "SNSコンテンツの制作",
-      "写真撮影（企業・社員・現場）",
-    ],
-    voice:
-      "「スピードが早い。相談した翌週にはもう動き出してくれていた。」",
-    image: "/images/service-detail-05.jpg",
-    bg: "#F5F1EB",
-    reverse: false,
   },
 ];
 
@@ -190,7 +142,7 @@ export default function ServicePage() {
             >
               人が輝く企業をつくるために。
               <br />
-              5つの支援領域で、採用から活躍までを一気通貫で支援します。
+              3つの支援領域で、採用から活躍までを一気通貫で支援します。
             </h2>
           </div>
 
@@ -203,7 +155,7 @@ export default function ServicePage() {
               src="/images/service-hero.jpg"
               alt="Singの事業内容"
               fill
-              className="object-cover"
+              className="object-cover object-bottom"
             />
           </div>
         </div>
@@ -212,7 +164,7 @@ export default function ServicePage() {
       {/* Anchor Links */}
       <section className="bg-white" style={{ padding: "48px 20px 80px" }}>
         <div className="mx-auto" style={{ maxWidth: "1100px" }}>
-          <div className="grid grid-cols-2 lg:grid-cols-5 gap-4">
+          <div className="grid grid-cols-3 gap-4">
             {services.map((service) => (
               <a
                 key={service.num}
@@ -249,255 +201,281 @@ export default function ServicePage() {
         </div>
       </section>
 
-      {/* Sections 3-7: Service Details */}
+      {/* Sections 3-5: Service Details */}
       {services.map((service) => (
         <section
           key={service.num}
           id={`service-${service.num}`}
+          className="bg-white"
           style={{
-            backgroundColor: service.bg,
             padding: "100px 20px",
             scrollMarginTop: "80px",
+            borderTop: "1px solid #e0e0e0",
           }}
         >
-          <div
-            className={`mx-auto flex flex-col ${
-              service.reverse
-                ? "lg:flex-row-reverse"
-                : "lg:flex-row"
-            } items-start`}
-            style={{ maxWidth: "1100px", gap: "60px" }}
-          >
-            {/* Image */}
-            <FadeInUp>
-              <div
-                className="w-full lg:w-auto"
-                style={{
-                  flex: "0 0 45%",
-                  position: "relative",
-                  aspectRatio: "4 / 5",
-                  minHeight: "400px",
-                }}
-              >
-                <Image
-                  src={service.image}
-                  alt={service.name}
-                  fill
-                  style={{ objectFit: "cover" }}
-                  className="rounded-lg"
-                />
-              </div>
-            </FadeInUp>
+          <div className="mx-auto" style={{ maxWidth: "1100px" }}>
+            {/* Top: Left text + Right image */}
+            <div className="flex flex-col lg:flex-row gap-12 lg:gap-16">
+              {/* Left: Text */}
+              <div className="lg:w-[45%]">
+                {/* Icon + English title */}
+                <div className="flex items-center gap-3 mb-4">
+                  <span
+                    className="flex items-center justify-center rounded bg-accent"
+                    style={{ width: "36px", height: "36px" }}
+                  >
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+                    </svg>
+                  </span>
+                  <span
+                    className="font-bold"
+                    style={{
+                      fontSize: "32px",
+                      fontFamily: "'Anton', sans-serif",
+                      letterSpacing: "0.03em",
+                      color: "#222",
+                    }}
+                  >
+                    {service.name}
+                  </span>
+                </div>
 
-            {/* Text */}
-            <div style={{ flex: "0 0 55%" }} className="w-full">
-              <FadeInUp>
-                {/* Number */}
-                <p
-                  style={{
-                    fontFamily: "Inter, sans-serif",
-                    fontWeight: 700,
-                    fontSize: "64px",
-                    color: "#C84B2F",
-                    opacity: 0.15,
-                    lineHeight: 1,
-                    marginBottom: "8px",
-                  }}
-                >
-                  {service.num}
-                </p>
-
-                {/* Service Name */}
+                {/* Japanese subtitle */}
                 <h2
                   className="font-bold"
                   style={{
-                    fontSize: "clamp(22px, 3vw, 28px)",
-                    color: "#222222",
-                    marginBottom: "12px",
-                  }}
-                >
-                  {service.name}
-                </h2>
-
-                {/* Subtitle */}
-                <p
-                  style={{
-                    fontSize: "15px",
-                    color: "#C84B2F",
-                    marginBottom: "24px",
+                    fontSize: "22px",
+                    color: "#222",
+                    lineHeight: 1.6,
+                    marginBottom: "20px",
                   }}
                 >
                   {service.subtitle}
-                </p>
+                </h2>
 
                 {/* Body */}
                 <p
                   style={{
                     fontSize: "15px",
-                    color: "#222222",
+                    color: "#555",
                     lineHeight: 1.9,
-                    marginBottom: "28px",
                   }}
                 >
                   {service.body}
                 </p>
+              </div>
 
-                {/* Support Items */}
-                <div style={{ marginBottom: "28px" }}>
-                  {service.items.map((item, i) => (
-                    <p
-                      key={i}
-                      style={{
-                        fontSize: "14px",
-                        color: "#5A5A5A",
-                        marginBottom: "8px",
-                        lineHeight: 1.6,
-                      }}
-                    >
-                      <span
-                        style={{
-                          color: "#C84B2F",
-                          marginRight: "8px",
-                        }}
-                      >
-                        —
-                      </span>
-                      {item}
-                    </p>
-                  ))}
+              {/* Right: Video */}
+              <div className="lg:w-[55%]">
+                <div className="relative rounded-lg overflow-hidden" style={{ aspectRatio: "16/9" }}>
+                  <video
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                    className="absolute inset-0 w-full h-full object-cover"
+                  >
+                    <source src={service.video} type="video/mp4" />
+                  </video>
                 </div>
+              </div>
+            </div>
 
-                {/* Customer Voice */}
-                <div
-                  style={{
-                    position: "relative",
-                    paddingLeft: "20px",
-                    borderLeft: "2px solid #D9D3CB",
-                  }}
-                >
-                  <p
-                    style={{
-                      fontSize: "14px",
-                      color: "#5A5A5A",
-                      lineHeight: 1.8,
-                      fontStyle: "italic",
-                    }}
+            {/* Bottom: Problem section */}
+            <div style={{ marginTop: "48px" }}>
+              <div className="flex items-center gap-2 mb-2">
+                <span
+                  className="inline-block rounded-full bg-accent"
+                  style={{ width: "12px", height: "12px" }}
+                />
+                <span className="font-bold" style={{ fontSize: "22px", fontFamily: "'Anton', sans-serif", color: "#222" }}>
+                  Problem
+                </span>
+                <span style={{ fontSize: "15px", color: "#888", marginLeft: "8px" }}>
+                  私たちが解決する課題
+                </span>
+              </div>
+
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 mt-6">
+                {service.problems.map((problem, i) => (
+                  <div
+                    key={i}
+                    className="flex items-start gap-4 rounded-lg"
+                    style={{ backgroundColor: "#F5F1EB", padding: "24px" }}
                   >
                     <span
-                      style={{
-                        fontFamily: "Inter, sans-serif",
-                        fontSize: "28px",
-                        color: "#C84B2F",
-                        opacity: 0.3,
-                        position: "absolute",
-                        top: "-8px",
-                        left: "20px",
-                        lineHeight: 1,
-                      }}
+                      className="shrink-0 block bg-accent"
+                      style={{ width: "3px", height: "100%", minHeight: "40px", marginTop: "2px" }}
+                    />
+                    <div>
+                      <p className="font-bold" style={{ fontSize: "15px", color: "#222", marginBottom: "6px" }}>
+                        {problem.title}
+                      </p>
+                      <p style={{ fontSize: "13px", color: "#666", lineHeight: 1.7 }}>
+                        {problem.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              {service.num === "03" && (
+                <div className="flex items-center mt-10">
+                  <Link
+                    href="/works"
+                    className="inline-flex items-center gap-6 text-[#222222] group"
+                  >
+                    <span className="text-[18px] font-bold tracking-wide">WORKS</span>
+                    <span
+                      className="flex items-center justify-center rounded-full bg-accent group-hover:scale-105 transition-transform"
+                      style={{ width: "80px", height: "80px" }}
                     >
-                      &ldquo;
+                      <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M5 12h14M13 6l6 6-6 6" />
+                      </svg>
                     </span>
-                    {service.voice}
-                  </p>
+                  </Link>
                 </div>
-              </FadeInUp>
+              )}
             </div>
           </div>
         </section>
       ))}
 
-      {/* Section 8: Flow */}
-      <section className="bg-white" style={{ padding: "120px 20px" }}>
-        <div className="mx-auto" style={{ maxWidth: "700px" }}>
-          <div className="text-center" style={{ marginBottom: "56px" }}>
+      {/* Section: Why Sing */}
+      <section id="why-sing" style={{ backgroundColor: "#F5F5F5", padding: "100px 20px", scrollMarginTop: "80px" }}>
+        <div className="mx-auto" style={{ maxWidth: "1100px" }}>
+          {/* Header */}
+          <div style={{ marginBottom: "56px" }}>
             <p
               style={{
-                fontFamily: "Inter, sans-serif",
-                fontSize: "13px",
+                fontSize: "clamp(48px, 8vw, 72px)",
+                fontFamily: "'Anton', sans-serif",
+                letterSpacing: "0.05em",
+                lineHeight: 1,
                 color: "#C84B2F",
-                letterSpacing: "0.15em",
-                fontWeight: 600,
-                marginBottom: "16px",
+                marginBottom: "12px",
               }}
             >
-              FLOW
+              Why Sing
             </p>
             <h2
               className="font-bold"
               style={{
-                fontSize: "clamp(22px, 3vw, 28px)",
-                color: "#222222",
+                fontSize: "clamp(22px, 3vw, 30px)",
+                lineHeight: 1.4,
+                color: "#222",
               }}
             >
-              ご相談から支援開始までの流れ
+              私たちが選ばれる理由
             </h2>
           </div>
 
-          <StaggerContainer staggerDelay={150}>
-            {steps.map((step, index) => (
-              <div key={step.num}>
-                {/* Connecting line */}
-                {index > 0 && (
-                  <div
-                    className="mx-auto"
-                    style={{
-                      width: "1px",
-                      height: "32px",
-                      backgroundColor: "#D9D3CB",
-                    }}
-                  />
-                )}
+          {/* Intro text */}
+          <p
+            style={{
+              fontSize: "15px",
+              lineHeight: 2.0,
+              color: "#333",
+              marginBottom: "56px",
+            }}
+          >
+            Singの支援は、単なる採用支援やコンサルティングではありません。
+            <br />
+            採用から定着、そして活躍までを見据え、企業の人づくりに深く入り込みながら伴走します。
+          </p>
 
-                <div
-                  className="text-center"
-                  style={{ padding: "16px 0" }}
-                >
-                  <p
-                    style={{
-                      fontFamily: "Inter, sans-serif",
-                      fontSize: "12px",
-                      color: "#5A5A5A",
-                      letterSpacing: "0.1em",
-                      marginBottom: "4px",
-                    }}
-                  >
-                    STEP
-                  </p>
-                  <p
-                    style={{
-                      fontFamily: "Inter, sans-serif",
-                      fontWeight: 700,
-                      fontSize: "28px",
-                      color: "#C84B2F",
-                      marginBottom: "12px",
-                      lineHeight: 1,
-                    }}
-                  >
-                    {step.num}
-                  </p>
-                  <p
-                    className="font-bold"
-                    style={{
-                      fontSize: "18px",
-                      color: "#222222",
-                      marginBottom: "8px",
-                    }}
-                  >
-                    {step.title}
-                  </p>
-                  <p
-                    style={{
-                      fontSize: "14px",
-                      color: "#5A5A5A",
-                      lineHeight: 1.8,
-                    }}
-                  >
-                    {step.desc}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </StaggerContainer>
+          {/* Reason cards */}
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            <div className="bg-white rounded-lg" style={{ padding: "36px 28px" }}>
+              <span
+                style={{
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: 700,
+                  fontSize: "48px",
+                  color: "#C84B2F",
+                  opacity: 0.15,
+                  lineHeight: 1,
+                }}
+              >
+                01
+              </span>
+              <h3
+                className="font-bold"
+                style={{ fontSize: "18px", color: "#222", marginTop: "12px", marginBottom: "16px" }}
+              >
+                現場に入り込む実行力
+              </h3>
+              <p style={{ fontSize: "14px", color: "#555", lineHeight: 1.8 }}>
+                現場のリアルな課題に向き合い、机上の空論ではなく、実際に手を動かしながら解決へと導きます。経営者としての実体験から生まれた実践的ノウハウで、企業の内側から変革を支援します。
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg" style={{ padding: "36px 28px" }}>
+              <span
+                style={{
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: 700,
+                  fontSize: "48px",
+                  color: "#C84B2F",
+                  opacity: 0.15,
+                  lineHeight: 1,
+                }}
+              >
+                02
+              </span>
+              <h3
+                className="font-bold"
+                style={{ fontSize: "18px", color: "#222", marginTop: "12px", marginBottom: "16px" }}
+              >
+                若者のリアルな価値観を知る
+              </h3>
+              <p style={{ fontSize: "14px", color: "#555", lineHeight: 1.8 }}>
+                高校連携や地域活動を通じて、次世代の若者が何を求め、どんな企業に魅力を感じるのかを肌で理解しています。その知見を採用設計に活かし、企業と若者の「本当の出会い」をつくります。
+              </p>
+            </div>
+
+            <div className="bg-white rounded-lg" style={{ padding: "36px 28px" }}>
+              <span
+                style={{
+                  fontFamily: "Inter, sans-serif",
+                  fontWeight: 700,
+                  fontSize: "48px",
+                  color: "#C84B2F",
+                  opacity: 0.15,
+                  lineHeight: 1,
+                }}
+              >
+                03
+              </span>
+              <h3
+                className="font-bold"
+                style={{ fontSize: "18px", color: "#222", marginTop: "12px", marginBottom: "16px" }}
+              >
+                オンライン×オフラインのブランディング
+              </h3>
+              <p style={{ fontSize: "14px", color: "#555", lineHeight: 1.8 }}>
+                SNS・Web・動画などのオンライン施策と、月刊Sing・地域イベントなどのオフライン施策を組み合わせ、企業の魅力を多角的に発信。採用ブランディングから組織づくりまでをワンストップで支援します。
+              </p>
+            </div>
+          </div>
+
+          {/* Bottom message */}
+          <p
+            className="font-bold"
+            style={{
+              fontSize: "clamp(16px, 2vw, 20px)",
+              lineHeight: 1.8,
+              color: "#222",
+              marginTop: "48px",
+              textAlign: "center",
+            }}
+          >
+            これらを掛け合わせることで、
+            <br />
+            企業が人とともに成長し続ける仕組みづくりを支援しています。
+          </p>
         </div>
       </section>
 
@@ -595,8 +573,6 @@ export default function ServicePage() {
         </div>
       </section>
 
-      {/* Section 10: CTA */}
-      <CTASection />
     </>
   );
 }

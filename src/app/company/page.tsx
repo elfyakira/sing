@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import PageHeader from "@/components/PageHeader";
-import CTASection from "@/components/CTASection";
 import { company, contact, locations } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -18,7 +17,6 @@ const companyInfo = [
   },
   { label: "代表取締役", value: "清水 駿之介" },
   { label: "所在地", value: "address" },
-  { label: "アクセス", value: "access" },
   { label: "電話番号", value: "phone" },
   { label: "FAX", value: "fax" },
   { label: "メールアドレス", value: "email" },
@@ -29,8 +27,8 @@ const storyChapters = [
     label: "序章",
     title: "起業前夜 〜成功の裏にあった、強烈な違和感〜",
     body: [
-      "物語の始まりは、清水駿之介が人材業界に身を置いていた時代に遡ります。",
-      "前職の美容関係でトップセールスを記録し、鳴り物入りで飛び込んだ人材の世界。しかし、そこで彼が目の当たりにしたのは、「入社してもすぐに辞めてしまう」圧倒的な離職率の高さと、効率重視のあまり「人をモノのように扱う」業界の悪しき風潮でした。",
+      "物語の始まりは、清水駿之介が人財業界に身を置いていた時代に遡ります。",
+      "前職の美容関係でトップセールスを記録し、鳴り物入りで飛び込んだ人財の世界。しかし、そこで彼が目の当たりにしたのは、「入社してもすぐに辞めてしまう」圧倒的な離職率の高さと、効率重視のあまり「人をモノのように扱う」業界の悪しき風潮でした。",
       "「なぜ、こんなに多くの人が仕事で苦しんでいるのか？」\n「なぜ、企業も人も幸せになれない採用が繰り返されるのか？」",
       "幼い頃から母に教え込まれた『挑戦を恐れない』という精神が、彼の心を突き動かします。「無いのであれば、自分が理想の仕組みを創るしかない」。働くことの価値観を根本から変革するため、清水は自ら起業の道へ踏み出す決意を固めました。",
     ],
@@ -130,8 +128,6 @@ export default function CompanyPage() {
                     </div>
                   </div>
                 );
-              } else if (item.value === "access") {
-                content = hq.access || "—";
               } else if (item.value === "phone") {
                 content = contact.phoneFormatted || contact.phone || "—";
               } else if (item.value === "fax") {
@@ -228,32 +224,20 @@ export default function CompanyPage() {
             {storyChapters.map((chapter, i) => (
               <div key={i}>
                 {/* Chapter heading */}
-                <div
-                  className="flex items-center gap-4"
-                  style={{ marginBottom: "24px" }}
+                <h3
+                  className="font-bold"
+                  style={{
+                    fontSize: "clamp(17px, 2.2vw, 21px)",
+                    lineHeight: 1.5,
+                    color: "#222",
+                    paddingBottom: "12px",
+                    marginBottom: "24px",
+                    borderBottom: "2px solid #C84B2F",
+                    display: "inline-block",
+                  }}
                 >
-                  <span
-                    className="shrink-0 inline-flex items-center justify-center rounded-full text-white font-bold"
-                    style={{
-                      width: "36px",
-                      height: "36px",
-                      fontSize: "13px",
-                      backgroundColor: "#C84B2F",
-                    }}
-                  >
-                    {chapter.label.replace("序章", "序").replace("第", "").replace("章", "")}
-                  </span>
-                  <h3
-                    className="font-bold"
-                    style={{
-                      fontSize: "clamp(17px, 2.2vw, 21px)",
-                      lineHeight: 1.5,
-                      color: "#222",
-                    }}
-                  >
-                    {chapter.title}
-                  </h3>
-                </div>
+                  {chapter.title}
+                </h3>
 
                 {/* Chapter body */}
                 <div
@@ -261,7 +245,6 @@ export default function CompanyPage() {
                     fontSize: "clamp(14px, 1.4vw, 15px)",
                     lineHeight: 2.0,
                     color: "#333",
-                    paddingLeft: "52px",
                   }}
                 >
                   {chapter.body.map((paragraph, j) => (
@@ -444,8 +427,6 @@ export default function CompanyPage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <CTASection />
     </>
   );
 }

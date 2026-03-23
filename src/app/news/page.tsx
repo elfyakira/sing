@@ -6,57 +6,57 @@ import PageHeader from "@/components/PageHeader";
 const allNews = [
   {
     date: "2026.03.01",
-    category: "お知らせ",
+    category: "ブログ",
     title: "ホームページをリニューアルしました",
   },
   {
+    date: "2026.02.23",
+    category: "ブログ",
+    title: "代表の清水が親孝行休暇を取得しました",
+  },
+  {
     date: "2026.02.15",
-    category: "セミナー",
-    title: "中小企業向け採用力強化セミナーを開催します",
+    category: "取り組み",
+    title: "大学キャリア教育セミナーに登壇しました",
   },
   {
     date: "2026.02.01",
-    category: "実績紹介",
+    category: "ブログ",
     title: "製造業A社様の採用ブランディング事例を公開しました",
   },
   {
     date: "2026.01.20",
-    category: "お知らせ",
-    title: "年末年始休業のお知らせ",
+    category: "取り組み",
+    title: "地域を代表する企業100選に選出されました",
   },
   {
     date: "2025.12.15",
-    category: "セミナー",
-    title: "高校新卒採用の成功事例セミナー（名古屋開催）",
+    category: "ブログ",
+    title: "高校新卒採用の成功事例をご紹介します",
   },
   {
     date: "2025.12.01",
-    category: "実績紹介",
-    title: "建設業B社様の組織改善支援事例を公開しました",
+    category: "取り組み",
+    title: "商工会議所と連携した地域企業支援プロジェクトを開始しました",
   },
   {
     date: "2025.11.15",
-    category: "お知らせ",
+    category: "ブログ",
     title: "Instagram公式アカウントを開設しました",
   },
   {
     date: "2025.11.01",
-    category: "セミナー",
-    title: "SNS採用活用セミナー（オンライン開催）",
-  },
-  {
-    date: "2025.10.15",
-    category: "実績紹介",
-    title: "サービス業C社様のSNSブランディング事例を公開しました",
+    category: "取り組み",
+    title: "SDGs推進パートナー企業として認定されました",
   },
   {
     date: "2025.10.01",
-    category: "お知らせ",
+    category: "ブログ",
     title: "株式会社Singを設立しました",
   },
 ];
 
-const categories = ["すべて", "お知らせ", "セミナー", "実績紹介"];
+const categories = ["すべて", "ブログ", "取り組み"];
 
 export default function NewsPage() {
   const [activeCategory, setActiveCategory] = useState("すべて");

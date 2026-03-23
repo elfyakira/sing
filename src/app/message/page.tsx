@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import CTASection from "@/components/CTASection";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = {
@@ -16,7 +15,7 @@ export default function MessagePage() {
     <>
       <PageHeader label="MESSAGE" title="代表挨拶" />
 
-      {/* CEO Profile Section - Left photo, Right text */}
+      {/* CEO Profile Section - Left text, Right photo */}
       <section
         className="bg-white"
         style={{ padding: "80px 20px 100px" }}
@@ -48,22 +47,8 @@ export default function MessagePage() {
             </h2>
           </div>
 
-          <div className="flex flex-col lg:flex-row gap-10 lg:gap-16">
-            {/* Left: CEO Photo */}
-            <div className="lg:w-[35%] shrink-0">
-              <div className="relative overflow-hidden rounded-lg">
-                <Image
-                  src="/images/ceo.jpg"
-                  alt="清水 駿之介"
-                  width={460}
-                  height={600}
-                  className="w-full h-auto"
-                  style={{ objectFit: "cover" }}
-                />
-              </div>
-            </div>
-
-            {/* Right: Name + Message */}
+          <div className="flex flex-col-reverse lg:flex-row gap-10 lg:gap-16">
+            {/* Left: Name + Message */}
             <div className="lg:w-[65%]">
               {/* CEO Name & Title */}
               <div style={{ marginBottom: "32px" }}>
@@ -92,50 +77,23 @@ export default function MessagePage() {
                   color: "#333333",
                 }}
               >
-                <p className="whitespace-pre-line" style={{ marginBottom: "24px" }}>
-                  {`「人が活躍し、心から輝ける職場をつくりたい」。\nその想いが、株式会社Singの原点です。`}
+                <p>
+                  「人が活躍し、心から輝ける職場をつくりたい」。その想いが、株式会社Singの原点です。企業は、人によってつくられます。そして働く人たちの想いによって、次の世代へと続いていきます。しかし現在、日本では深刻な人手不足や離職率の増加など、人財に関する課題が企業成長の大きな壁となっています。一方で採用サービスは乱立し、多くの企業が「自社に本当に必要な解決策」を見出せずにいます。私自身、人財業界に身を置く中で、離職率の高さや、人が本来持つ可能性が活かされていない現実に強い違和感と危機感を覚えました。人は、本来それぞれの個性や可能性を持っています。そしてその力は、環境次第で必ず輝くと私は信じています。だからこそSingでは、単なる「人手の確保」にとどまらず、採用→定着→活躍までを見据えた人づくりを支援しています。企業の理念や魅力を言語化するブランディング、現場に入り込み共に課題を解決する伴走型の組織支援を通して、企業が自ら成長し続けられる仕組みをつくる。現在の人手不足だけでなく、次世代の人財が希望を持って働ける社会をつくること。それが、私たちSingの使命です。
                 </p>
-                <p className="whitespace-pre-line" style={{ marginBottom: "24px" }}>
-                  {`企業は、人によってつくられます。\nそして働く人たちの想いによって、次の世代へと続いていきます。`}
-                </p>
-                <p className="whitespace-pre-line" style={{ marginBottom: "24px" }}>
-                  {`しかし現在、日本では深刻な人手不足や離職率の増加など、\n人財に関する課題が企業成長の大きな壁となっています。\n一方で採用サービスは乱立し、多くの企業が\n「自社に本当に必要な解決策」を見出せずにいます。`}
-                </p>
-                <p className="whitespace-pre-line" style={{ marginBottom: "24px" }}>
-                  {`私自身、人材業界に身を置く中で、\n離職率の高さや、人が本来持つ可能性が活かされていない現実に\n強い違和感と危機感を覚えました。`}
-                </p>
-                <p className="whitespace-pre-line" style={{ marginBottom: "24px" }}>
-                  {`人は、本来それぞれの個性や可能性を持っています。\nそしてその力は、環境次第で必ず輝くと私は信じています。`}
-                </p>
-                <p className="whitespace-pre-line" style={{ marginBottom: "24px" }}>
-                  だからこそSingでは、単なる「人手の確保」にとどまらず、
-                </p>
-                <p
-                  className="font-bold text-center"
-                  style={{
-                    fontSize: "clamp(16px, 1.8vw, 18px)",
-                    color: "#C84B2F",
-                    marginBottom: "24px",
-                    letterSpacing: "0.1em",
-                  }}
-                >
-                  採用 → 定着 → 活躍
-                </p>
-                <p className="whitespace-pre-line" style={{ marginBottom: "24px" }}>
-                  までを見据えた人づくりを支援しています。
-                </p>
-                <p className="whitespace-pre-line" style={{ marginBottom: "24px" }}>
-                  {`企業の理念や魅力を言語化するブランディング、\n現場に入り込み共に課題を解決する伴走型の組織支援を通して、\n企業が自ら成長し続けられる仕組みをつくる。`}
-                </p>
-                <p className="whitespace-pre-line" style={{ marginBottom: "24px" }}>
-                  {`現在の人手不足だけでなく、\n次世代の人材が希望を持って働ける社会をつくること。`}
-                </p>
-                <p
-                  className="font-bold whitespace-pre-line"
-                  style={{ fontSize: "clamp(15px, 1.5vw, 16px)", color: "#222" }}
-                >
-                  それが、私たちSingの使命です。
-                </p>
+              </div>
+            </div>
+
+            {/* Right: CEO Photo */}
+            <div className="lg:w-[35%] shrink-0">
+              <div className="relative overflow-hidden rounded-lg">
+                <Image
+                  src="/images/ceo.webp"
+                  alt="清水 駿之介"
+                  width={460}
+                  height={600}
+                  className="w-full h-auto"
+                  style={{ objectFit: "cover" }}
+                />
               </div>
             </div>
           </div>
@@ -171,10 +129,10 @@ export default function MessagePage() {
               }}
             >
               <p style={{ marginBottom: "20px" }}>
-                企業が抱える人材定着の最大の壁は「人間関係」にあります。そしてその原因の多くは、上司が「上司としての正しいマネジメント」を教わる機会がないまま現場に立っていることに起因しています。
+                企業が抱える人財定着の最大の壁は「人間関係」にあります。そしてその原因の多くは、上司が「上司としての正しいマネジメント」を教わる機会がないまま現場に立っていることに起因しています。
               </p>
               <p>
-                私が組織づくりにおいて提唱しているのは、「リーダーの仕事は、仕事をゲームにすること」だという考え方です。ゲームのように、目標をクリアする楽しさや、昨日より今日自分が成長しているという実感を得られる仕組みがあれば、人は自ら考え、喜んで動き出します。ただ業務スキルを教え込むのではなく、上司と部下が共にワクワクしながら成長の喜びを分かち合える「自走する組織」の仕組みを社会にインストールすること。それが、私たちの提供する人材育成の本質です。
+                私が組織づくりにおいて提唱しているのは、「リーダーの仕事は、仕事をゲームにすること」だという考え方です。ゲームのように、目標をクリアする楽しさや、昨日より今日自分が成長しているという実感を得られる仕組みがあれば、人は自ら考え、喜んで動き出します。ただ業務スキルを教え込むのではなく、上司と部下が共にワクワクしながら成長の喜びを分かち合える「自走する組織」の仕組みを社会にインストールすること。それが、私たちの提供する人財育成の本質です。
               </p>
             </div>
           </div>
@@ -306,8 +264,6 @@ export default function MessagePage() {
         </div>
       </section>
 
-      {/* CTA */}
-      <CTASection />
     </>
   );
 }
