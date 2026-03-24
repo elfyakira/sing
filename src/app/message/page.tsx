@@ -262,9 +262,19 @@ export default function MessagePage() {
                       fontSize: "14px",
                       color: "#888",
                       letterSpacing: "0.1em",
+                      marginBottom: "12px",
                     }}
                   >
                     トゥギャザー
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      color: "#555",
+                      lineHeight: 1.8,
+                    }}
+                  >
+                    清水が生涯をかけて実現を目指す児童養護施設の名前です。
                   </p>
                 </div>
 
