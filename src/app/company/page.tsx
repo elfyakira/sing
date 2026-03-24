@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import { company, contact, locations } from "@/lib/site";
 
@@ -71,6 +72,50 @@ export default function CompanyPage() {
   return (
     <>
       <PageHeader label="COMPANY" title="会社案内" />
+
+      {/* Section: 健康経営優良法人認定 */}
+      <section className="bg-white" style={{ padding: "80px 20px 100px" }}>
+        <div
+          className="mx-auto text-center"
+          style={{ maxWidth: "800px" }}
+        >
+          <Image
+            src="/images/kenkou-keiei-2026.jpg"
+            alt="健康経営優良法人2026 認定ロゴ"
+            width={320}
+            height={320}
+            className="mx-auto object-contain"
+            style={{ maxWidth: "320px", height: "auto" }}
+          />
+          <h2
+            className="font-bold"
+            style={{
+              fontSize: "clamp(20px, 3vw, 26px)",
+              color: "#222",
+              marginTop: "32px",
+              marginBottom: "24px",
+            }}
+          >
+            健康経営優良法人2026 認定
+          </h2>
+          <p
+            style={{
+              fontSize: "15px",
+              lineHeight: 2.0,
+              color: "#555",
+              textAlign: "left",
+            }}
+          >
+            この度、株式会社Singは「健康経営優良法人2026（中小規模法人部門）」に認定されました。
+            <br />
+            社員一人ひとりが心身ともに健康で、安心して働き続けられる環境づくりを大切にしてきた取り組みが評価されたことを大変嬉しく思います。
+            <br />
+            これからも、「人が輝く会社」を目指し、社員の健康を大切にした組織づくりを推進してまいります。
+            <br />
+            今後とも株式会社Singをよろしくお願いいたします。
+          </p>
+        </div>
+      </section>
 
       {/* Section 1: Company Overview */}
       <section className="bg-white" style={{ padding: "80px 20px 100px" }}>

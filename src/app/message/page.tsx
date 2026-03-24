@@ -180,7 +180,7 @@ export default function MessagePage() {
               }}
             >
               <span style={{ color: "#C84B2F", fontSize: "24px", lineHeight: 1.4 }}>—</span>
-              <span>4社の経営を通じて追求する「仕事を楽しむ」という本質</span>
+              <span>複数社の経営を通じて追求する「仕事を楽しむ」という本質</span>
             </h3>
             <div
               style={{
@@ -230,6 +230,17 @@ export default function MessagePage() {
               <p style={{ marginBottom: "20px" }}>
                 私たちがどれだけ企業の組織課題を解決し、素晴らしい職場を社会に増やしたとしても、次に社会へ羽ばたいていく子どもたちが夢を持てない環境であれば、未来は決して明るくなりません。様々な事情で親元を離れて暮らす子どもたちに、温かい居場所と万全な教育の機会を提供し、「大人になるって楽しいんだ」「働くことってこんなにワクワクするんだ」と胸を張って言える希望のバトンを渡したいのです。
               </p>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9", marginTop: "32px", width: "50%" }}
+              >
+                <Image
+                  src="/images/dream-orphanage.jpg"
+                  alt="児童養護施設の夢"
+                  fill
+                  className="object-cover"
+                />
+              </div>
             </div>
           </div>
 
@@ -243,7 +254,7 @@ export default function MessagePage() {
               }}
             >
               <p style={{ marginBottom: "20px" }}>
-                現在、4社の経営を通じてビジネスの基盤を拡大しているのも、すべてはこの夢を実現するためのプロセスに他なりません。
+                現在、複数社の経営を通じてビジネスの基盤を拡大しているのも、すべてはこの夢を実現するためのプロセスに他なりません。
               </p>
               <p style={{ marginBottom: "20px" }}>
                 「次世代へのバトンをつなぐ社会」を創り上げるため。これからも株式会社Singは、関わるすべての人と企業の可能性を最大化し、社会全体にポジティブな連鎖を生み出し続けてまいります。
