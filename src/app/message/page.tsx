@@ -230,16 +230,84 @@ export default function MessagePage() {
               <p style={{ marginBottom: "20px" }}>
                 私たちがどれだけ企業の組織課題を解決し、素晴らしい職場を社会に増やしたとしても、次に社会へ羽ばたいていく子どもたちが夢を持てない環境であれば、未来は決して明るくなりません。様々な事情で親元を離れて暮らす子どもたちに、温かい居場所と万全な教育の機会を提供し、「大人になるって楽しいんだ」「働くことってこんなにワクワクするんだ」と胸を張って言える希望のバトンを渡したいのです。
               </p>
+              {/* Together 施設紹介 */}
               <div
-                className="relative rounded-lg overflow-hidden"
-                style={{ aspectRatio: "16/9", marginTop: "32px", width: "50%" }}
+                className="rounded-xl overflow-hidden"
+                style={{
+                  marginTop: "40px",
+                  border: "2px solid #C84B2F",
+                  backgroundColor: "#FDF8F6",
+                }}
               >
-                <Image
-                  src="/images/dream-orphanage.jpg"
-                  alt="児童養護施設の夢"
-                  fill
-                  className="object-cover"
-                />
+                {/* タイトル */}
+                <div
+                  className="text-center"
+                  style={{ padding: "32px 24px 20px" }}
+                >
+                  <p
+                    className="font-bold"
+                    style={{
+                      fontFamily: "'Anton', sans-serif",
+                      fontSize: "clamp(28px, 4vw, 40px)",
+                      letterSpacing: "0.05em",
+                      color: "#C84B2F",
+                      lineHeight: 1,
+                      marginBottom: "8px",
+                    }}
+                  >
+                    Together
+                  </p>
+                  <p
+                    style={{
+                      fontSize: "14px",
+                      color: "#888",
+                      letterSpacing: "0.1em",
+                    }}
+                  >
+                    トゥギャザー
+                  </p>
+                </div>
+
+                {/* 横スクロールアニメーション */}
+                <div
+                  className="overflow-hidden"
+                  style={{ padding: "0 0 32px" }}
+                >
+                  <div
+                    className="flex gap-4 animate-scroll-x"
+                    style={{ width: "max-content" }}
+                  >
+                    {[
+                      "/images/together-01.jpg",
+                      "/images/together-02.jpg",
+                      "/images/together-03.jpg",
+                      "/images/together-04.jpg",
+                      "/images/together-05.jpg",
+                      "/images/together-06.jpg",
+                      "/images/dream-orphanage.jpg",
+                      "/images/together-01.jpg",
+                      "/images/together-02.jpg",
+                      "/images/together-03.jpg",
+                      "/images/together-04.jpg",
+                      "/images/together-05.jpg",
+                      "/images/together-06.jpg",
+                      "/images/dream-orphanage.jpg",
+                    ].map((src, i) => (
+                      <div
+                        key={i}
+                        className="relative shrink-0 rounded-lg overflow-hidden"
+                        style={{ width: "280px", aspectRatio: "16/10" }}
+                      >
+                        <Image
+                          src={src}
+                          alt={`Together施設イメージ ${(i % 7) + 1}`}
+                          fill
+                          className="object-cover"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
               </div>
             </div>
           </div>
