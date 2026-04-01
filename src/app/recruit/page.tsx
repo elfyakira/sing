@@ -2,8 +2,13 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
+import StructuredData from "@/components/StructuredData";
 import { contact } from "@/lib/site";
-import { FadeInUp } from  "@/components/animations";
+import { FadeInUp } from "@/components/animations";
+import {
+  generateBreadcrumbSchema,
+  generateJobPostingSchema,
+} from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "採用情報",
@@ -52,6 +57,28 @@ const requirementsData = [
 export default function RecruitPage() {
   return (
     <>
+      <StructuredData
+        data={[
+          generateBreadcrumbSchema([
+            { name: "ホーム", url: "https://singgroup.biz" },
+            { name: "採用情報", url: "https://singgroup.biz/recruit" },
+          ]),
+          generateJobPostingSchema({
+            title: "コンサルタント / クリエイティブディレクター",
+            description:
+              "中小企業の採用支援（求人設計・媒体運用・面接同席）、組織コンサルティング、採用ブランディングに関わるクリエイティブ制作（映像・Web・パンフレット等）",
+            datePosted: "2025-01-01",
+            employmentType: "FULL_TIME",
+            baseSalary: {
+              currency: "JPY",
+              minValue: 220000,
+              maxValue: 400000,
+              unitText: "MONTH",
+            },
+            qualifications: "学歴不問・未経験歓迎。普通自動車免許（AT限定可）",
+          }),
+        ]}
+      />
       {/* Section 1: Page Header */}
       <PageHeader
         label="RECRUIT"

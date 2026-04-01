@@ -1,7 +1,9 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
+import StructuredData from "@/components/StructuredData";
 import { company, contact, locations } from "@/lib/site";
+import { generateBreadcrumbSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "会社案内",
@@ -71,6 +73,12 @@ export default function CompanyPage() {
 
   return (
     <>
+      <StructuredData
+        data={generateBreadcrumbSchema([
+          { name: "ホーム", url: "https://singgroup.biz" },
+          { name: "会社案内", url: "https://singgroup.biz/company" },
+        ])}
+      />
       <PageHeader label="COMPANY" title="会社案内" />
 
       {/* Section: 健康経営優良法人認定 */}

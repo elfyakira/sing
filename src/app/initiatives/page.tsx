@@ -2,7 +2,9 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
+import StructuredData from "@/components/StructuredData";
 import { FadeInUp } from "@/components/animations";
+import { generateBreadcrumbSchema } from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "社会への取り組み",
@@ -49,6 +51,12 @@ const initiatives = [
 export default function InitiativesPage() {
   return (
     <>
+      <StructuredData
+        data={generateBreadcrumbSchema([
+          { name: "ホーム", url: "https://singgroup.biz" },
+          { name: "社会への取り組み", url: "https://singgroup.biz/initiatives" },
+        ])}
+      />
       <PageHeader label="INITIATIVES" title="社会への取り組み" />
 
       {/* Intro Section */}

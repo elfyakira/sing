@@ -2,27 +2,13 @@ import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import { seo, company, contact, locations, images } from "@/lib/site";
-
-// JSON-LD構造化データ
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "LocalBusiness",
-  name: company.name,
-  description: seo.defaultDescription,
-  url: seo.siteUrl,
-  telephone: contact.phone,
-  email: contact.email,
-  address: locations.headquarters.address
-    ? {
-        "@type": "PostalAddress",
-        streetAddress: locations.headquarters.address,
-        postalCode: locations.headquarters.zipCode,
-        addressCountry: "JP",
-      }
-    : undefined,
-  image: images.logo,
-};
+import StructuredData from "@/components/StructuredData";
+import { seo, company } from "@/lib/site";
+import {
+  generateOrganizationSchema,
+  generateWebSiteSchema,
+  generateLocalBusinessSchema,
+} from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   metadataBase: seo.siteUrl ? new URL(seo.siteUrl) : undefined,
@@ -89,9 +75,12 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        <StructuredData
+          data={[
+            generateOrganizationSchema(),
+            generateWebSiteSchema(),
+            generateLocalBusinessSchema(),
+          ]}
         />
       </head>
       <body>

@@ -2,7 +2,11 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import { site } from "@/lib/site";
+import StructuredData from "@/components/StructuredData";
+import {
+  generateBreadcrumbSchema,
+  generateCorePersonSchema,
+} from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "代表挨拶",
@@ -13,6 +17,15 @@ export const metadata: Metadata = {
 export default function MessagePage() {
   return (
     <>
+      <StructuredData
+        data={[
+          generateBreadcrumbSchema([
+            { name: "ホーム", url: "https://singgroup.biz" },
+            { name: "代表挨拶", url: "https://singgroup.biz/message" },
+          ]),
+          generateCorePersonSchema(),
+        ]}
+      />
       <PageHeader label="MESSAGE" title="代表挨拶" />
 
       {/* CEO Profile Section - Left text, Right photo */}

@@ -2,7 +2,14 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
-import { FadeInUp, StaggerContainer } from "@/components/animations";
+import StructuredData from "@/components/StructuredData";
+import { FadeInUp } from "@/components/animations";
+import {
+  generateBreadcrumbSchema,
+  generateServiceSchema,
+  generateFAQSchema,
+  generateHowToSchema,
+} from "@/lib/structured-data";
 
 export const metadata: Metadata = {
   title: "事業内容",
@@ -113,6 +120,40 @@ const faqs = [
 export default function ServicePage() {
   return (
     <>
+      <StructuredData
+        data={[
+          generateBreadcrumbSchema([
+            { name: "ホーム", url: "https://singgroup.biz" },
+            { name: "事業内容", url: "https://singgroup.biz/service" },
+          ]),
+          generateServiceSchema({
+            name: "ツナゲル（採用支援）",
+            description: "求める人物像の設計、採用コンセプトの構築、現場社員の声の言語化を通じて、企業の本当の魅力が伝わる採用ブランディングを構築。",
+            url: "https://singgroup.biz/service#service-01",
+            serviceType: "RecruitmentSupport",
+          }),
+          generateServiceSchema({
+            name: "カツヤク（人事・組織コンサルティング）",
+            description: "管理職育成、人事制度設計、社員定着の仕組みづくりを支援。採用した人財が活躍し続けるための組織基盤づくり。",
+            url: "https://singgroup.biz/service#service-02",
+            serviceType: "OrganizationConsulting",
+          }),
+          generateServiceSchema({
+            name: "Singメディア（SNS・デジタルブランディング）",
+            description: "YouTube、Instagram、TikTokなどSNS戦略、月刊Sing、採用サイト・動画・パンフレット制作までをワンストップで支援。",
+            url: "https://singgroup.biz/service#service-03",
+            serviceType: "DigitalBranding",
+          }),
+          generateFAQSchema(
+            faqs.map((f) => ({ question: f.q, answer: f.a }))
+          ),
+          generateHowToSchema({
+            name: "Singの支援プロセス",
+            description: "株式会社Singの支援開始から自走支援までの5ステップ",
+            steps: steps.map((s) => ({ title: s.title, text: s.desc })),
+          }),
+        ]}
+      />
       {/* Section 1: Page Header */}
       <PageHeader label="SERVICE" title="事業内容" />
 
