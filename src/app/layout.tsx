@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import Script from "next/script";
 import "./globals.css";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
@@ -75,6 +76,18 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-56Y20GMKP2"
+          strategy="afterInteractive"
+        />
+        <Script id="gtag-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-56Y20GMKP2');
+          `}
+        </Script>
         <StructuredData
           data={[
             generateOrganizationSchema(),
