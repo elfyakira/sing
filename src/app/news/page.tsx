@@ -1,9 +1,17 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 
-const allNews: { date: string; category: string; title: string }[] = [];
+const allNews: { date: string; category: string; title: string; thumbnail?: string }[] = [
+  {
+    date: "2026-04-03",
+    category: "ブログ",
+    title: "ホームページをリニューアルしました",
+    thumbnail: "/images/news-renewal.png",
+  },
+];
 
 const categories = ["すべて", "ブログ", "取り組み"];
 
@@ -90,51 +98,61 @@ export default function NewsPage() {
               >
                 {/* PC Layout */}
                 <div className="news-row-pc">
-                  <span
-                    style={{
-                      fontFamily: "'Inter', sans-serif",
-                      fontSize: 14,
-                      color: "#5A5A5A",
-                      width: 120,
-                      flexShrink: 0,
-                    }}
-                  >
-                    {item.date}
-                  </span>
-                  <span
-                    style={{
-                      fontSize: 12,
-                      color: "#C84B2F",
-                      border: "1px solid #C84B2F",
-                      padding: "2px 12px",
-                      borderRadius: 2,
-                      flexShrink: 0,
-                    }}
-                  >
-                    {item.category}
-                  </span>
-                  <span
-                    className="news-title"
-                    style={{
-                      fontSize: 15,
-                      color: "#222",
-                      marginLeft: 16,
-                      cursor: "pointer",
-                      transition: "color 0.2s",
-                    }}
-                    onMouseEnter={(e) => {
-                      e.currentTarget.style.color = "#C84B2F";
-                    }}
-                    onMouseLeave={(e) => {
-                      e.currentTarget.style.color = "#222";
-                    }}
-                  >
-                    {item.title}
-                  </span>
+                  {item.thumbnail && (
+                    <div style={{ width: 160, height: 100, flexShrink: 0, marginRight: 20, position: "relative", borderRadius: 4, overflow: "hidden" }}>
+                      <Image src={item.thumbnail} alt={item.title} fill style={{ objectFit: "cover" }} />
+                    </div>
+                  )}
+                  <div style={{ display: "flex", flexDirection: "column", gap: 8, flex: 1 }}>
+                    <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+                      <span
+                        style={{
+                          fontFamily: "'Inter', sans-serif",
+                          fontSize: 14,
+                          color: "#5A5A5A",
+                        }}
+                      >
+                        {item.date}
+                      </span>
+                      <span
+                        style={{
+                          fontSize: 12,
+                          color: "#C84B2F",
+                          border: "1px solid #C84B2F",
+                          padding: "2px 12px",
+                          borderRadius: 2,
+                        }}
+                      >
+                        {item.category}
+                      </span>
+                    </div>
+                    <span
+                      className="news-title"
+                      style={{
+                        fontSize: 15,
+                        color: "#222",
+                        cursor: "pointer",
+                        transition: "color 0.2s",
+                      }}
+                      onMouseEnter={(e) => {
+                        e.currentTarget.style.color = "#C84B2F";
+                      }}
+                      onMouseLeave={(e) => {
+                        e.currentTarget.style.color = "#222";
+                      }}
+                    >
+                      {item.title}
+                    </span>
+                  </div>
                 </div>
 
                 {/* SP Layout */}
                 <div className="news-row-sp">
+                  {item.thumbnail && (
+                    <div style={{ width: "100%", height: 180, position: "relative", borderRadius: 4, overflow: "hidden", marginBottom: 12 }}>
+                      <Image src={item.thumbnail} alt={item.title} fill style={{ objectFit: "cover" }} />
+                    </div>
+                  )}
                   <div
                     style={{
                       display: "flex",
