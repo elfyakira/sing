@@ -2,14 +2,16 @@
 
 import { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
-const allNews: { date: string; category: string; title: string; thumbnail?: string }[] = [
+const allNews: { date: string; category: string; title: string; thumbnail?: string; slug: string }[] = [
   {
     date: "2026-04-03",
     category: "ブログ",
     title: "ホームページをリニューアルしました",
     thumbnail: "/images/news-renewal.png",
+    slug: "renewal",
   },
 ];
 
@@ -87,13 +89,17 @@ export default function NewsPage() {
           {/* News List */}
           <div>
             {filteredNews.map((item, index) => (
-              <div
+              <Link
                 key={`${item.date}-${item.title}`}
+                href={`/news/${item.slug}`}
                 style={{
+                  display: "block",
                   borderTop: index === 0 ? "1px solid #E8E4DE" : "none",
                   borderBottom: "1px solid #E8E4DE",
                   paddingTop: 20,
                   paddingBottom: 20,
+                  textDecoration: "none",
+                  color: "inherit",
                 }}
               >
                 {/* PC Layout */}
@@ -131,14 +137,7 @@ export default function NewsPage() {
                       style={{
                         fontSize: 15,
                         color: "#222",
-                        cursor: "pointer",
                         transition: "color 0.2s",
-                      }}
-                      onMouseEnter={(e) => {
-                        e.currentTarget.style.color = "#C84B2F";
-                      }}
-                      onMouseLeave={(e) => {
-                        e.currentTarget.style.color = "#222";
                       }}
                     >
                       {item.title}
@@ -191,7 +190,7 @@ export default function NewsPage() {
                     {item.title}
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
@@ -214,6 +213,9 @@ export default function NewsPage() {
           .news-row-sp {
             display: block;
           }
+        }
+        a:hover .news-title {
+          color: #C84B2F !important;
         }
         @media (max-width: 767px) {
           div[style*="gap: 24px"] {

@@ -483,6 +483,87 @@ export default function Home() {
       </section>
 
 
+      {/* Section 7: Blog / News */}
+      <section className="relative z-10" style={{ backgroundColor: "#fff", padding: "120px 0" }}>
+        <div className="mx-auto px-5" style={{ maxWidth: "1000px" }}>
+          <p
+            className="text-accent mb-4"
+            style={{
+              fontSize: "clamp(48px, 8vw, 80px)",
+              fontFamily: "'Anton', sans-serif",
+              letterSpacing: "0.05em",
+              lineHeight: 1,
+            }}
+          >
+            Blog
+          </p>
+          <p
+            className="font-bold text-[#222222] mb-10"
+            style={{ fontSize: "clamp(18px, 2.5vw, 24px)" }}
+          >
+            最新の情報をお届けします。
+          </p>
+
+          {/* Blog Card */}
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/news/renewal" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news-renewal.png"
+                  alt="ホームページをリニューアルしました"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-04-03
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    ブログ
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  ホームページをリニューアルしました
+                </p>
+              </div>
+            </Link>
+          </div>
+
+          <div className="flex items-center mt-14">
+            <Link
+              href="/news"
+              className="inline-flex items-center gap-6 text-[#222222] group"
+            >
+              <span className="text-[18px] font-bold tracking-wide">NEWS</span>
+              <span
+                className="flex items-center justify-center rounded-full bg-accent group-hover:scale-105 transition-transform"
+                style={{ width: "80px", height: "80px" }}
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Fixed CTA (SP only) */}
       <FixedCTA />
     </main>
