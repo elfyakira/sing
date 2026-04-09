@@ -7,9 +7,11 @@ import { FadeInUp } from "@/components/animations";
 
 const categories = [
   { id: "all", label: "ALL" },
-  { id: "web-video", label: "HP・動画制作" },
+  { id: "hp", label: "HP制作" },
+  { id: "lp", label: "LP制作" },
+  { id: "pv", label: "PV制作" },
   { id: "animation", label: "アニメ動画制作" },
-  { id: "katsuyaku", label: "カツヤク実施" },
+  { id: "katsuyaku", label: "カツヤク" },
 ] as const;
 
 type CategoryId = (typeof categories)[number]["id"];
@@ -20,77 +22,85 @@ interface WorkItem {
   title: string;
   description: string;
   image: string;
+  url?: string;
   tags?: string[];
 }
 
 // --- 実績データ（随時追加・更新してください） ---
 const works: WorkItem[] = [
-  // HP・動画制作
+  // HP制作
   {
-    id: "web-01",
-    category: "web-video",
-    title: "製造業A社様 採用サイト制作",
-    description: "企業の魅力を最大限に引き出す採用特化型Webサイトを制作。応募数が前年比150%に向上。",
-    image: "/images/work-placeholder.jpg",
-    tags: ["Webサイト", "採用ブランディング"],
+    id: "hp-01",
+    category: "hp",
+    title: "株式会社竹内金型製作所 様",
+    description: "",
+    image: "/images/works/takeuchi.png",
+    url: "https://www.tkss.co.jp/",
+    tags: ["HP制作"],
   },
   {
-    id: "web-02",
-    category: "web-video",
-    title: "サービス業B社様 会社紹介動画",
-    description: "社員インタビューを中心とした会社紹介動画を制作。採用説明会での活用で応募者の志望度が向上。",
-    image: "/images/work-placeholder.jpg",
-    tags: ["動画制作", "会社紹介"],
+    id: "hp-02",
+    category: "hp",
+    title: "株式会社尾北 様",
+    description: "",
+    image: "/images/works/bihoku.png",
+    url: "https://www.k-bihoku.co.jp/",
+    tags: ["HP制作"],
   },
   {
-    id: "web-03",
-    category: "web-video",
-    title: "IT企業C社様 コーポレートサイトリニューアル",
-    description: "ブランドイメージを刷新するコーポレートサイトのフルリニューアルを実施。",
-    image: "/images/work-placeholder.jpg",
-    tags: ["Webサイト", "コーポレート"],
-  },
-  // アニメ動画制作
-  {
-    id: "anim-01",
-    category: "animation",
-    title: "物流業D社様 サービス紹介アニメーション",
-    description: "複雑なサービスフローをわかりやすく伝えるアニメーション動画を制作。",
-    image: "/images/work-placeholder.jpg",
-    tags: ["アニメーション", "サービス紹介"],
+    id: "hp-03",
+    category: "hp",
+    title: "株式会社住理工メテックス 様",
+    description: "",
+    image: "/images/works/metex.png",
+    url: "https://www.metexsumiriko.com/",
+    tags: ["HP制作"],
   },
   {
-    id: "anim-02",
-    category: "animation",
-    title: "飲食業E社様 採用アニメ動画",
-    description: "若年層に響くポップなアニメーションで、働く魅力を表現した採用動画。",
-    image: "/images/work-placeholder.jpg",
-    tags: ["アニメーション", "採用"],
+    id: "hp-04",
+    category: "hp",
+    title: "株式会社唯野工業 様",
+    description: "",
+    image: "/images/works/tadano.png",
+    url: "https://www.tadanogroup.com/",
+    tags: ["HP制作"],
   },
-  // カツヤク実施
+  // LP制作
   {
-    id: "katsu-01",
-    category: "katsuyaku",
-    title: "建設業F社様 組織改革プロジェクト",
-    description: "評価制度の再設計と管理職研修を実施。離職率が30%改善。",
-    image: "/images/work-placeholder.jpg",
-    tags: ["組織改革", "評価制度"],
-  },
-  {
-    id: "katsu-02",
-    category: "katsuyaku",
-    title: "小売業G社様 新人定着プログラム",
-    description: "入社後6ヶ月の定着支援プログラムを導入。早期離職率を大幅に削減。",
-    image: "/images/work-placeholder.jpg",
-    tags: ["定着支援", "研修"],
+    id: "lp-01",
+    category: "lp",
+    title: "出光リテール販売株式会社 中部カンパニー 様",
+    description: "",
+    image: "/images/works/idemitsu.png",
+    url: "https://www.idemitsu-ritehanchubu.com/",
+    tags: ["LP制作"],
   },
   {
-    id: "katsu-03",
-    category: "katsuyaku",
-    title: "医療法人H様 マネジメント研修",
-    description: "中間管理職向けマネジメント研修を全3回で実施。チーム生産性が向上。",
-    image: "/images/work-placeholder.jpg",
-    tags: ["マネジメント", "研修"],
+    id: "lp-02",
+    category: "lp",
+    title: "GTソリューション 様",
+    description: "",
+    image: "/images/works/gts.png",
+    url: "https://www.gts-jp-recruit.com/",
+    tags: ["LP制作", "採用"],
+  },
+  {
+    id: "lp-03",
+    category: "lp",
+    title: "株式会社佐藤螺子 様",
+    description: "",
+    image: "/images/works/sato-rashi.png",
+    url: "https://www.satorashisaiyo.com/",
+    tags: ["LP制作", "採用"],
+  },
+  {
+    id: "lp-04",
+    category: "lp",
+    title: "株式会社コベルク 様",
+    description: "",
+    image: "/images/works/coverk.png",
+    url: "https://www.jp-cowerk.com/",
+    tags: ["LP制作"],
   },
 ];
 
@@ -150,13 +160,25 @@ export default function WorksPage() {
             </p>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredWorks.map((work) => (
+              {filteredWorks.map((work) => {
+                const CardTag = work.url ? "a" : "div";
+                const cardProps = work.url
+                  ? {
+                      href: work.url,
+                      target: "_blank",
+                      rel: "noopener noreferrer",
+                    }
+                  : {};
+                return (
                 <FadeInUp key={work.id}>
-                  <div
-                    className="group rounded-lg overflow-hidden"
+                  <CardTag
+                    {...cardProps}
+                    className="group rounded-lg overflow-hidden block"
                     style={{
                       border: "1px solid #e8e8e8",
                       transition: "box-shadow 0.3s",
+                      textDecoration: "none",
+                      color: "inherit",
                     }}
                     onMouseEnter={(e) =>
                       (e.currentTarget.style.boxShadow =
@@ -171,20 +193,30 @@ export default function WorksPage() {
                       className="relative overflow-hidden"
                       style={{ aspectRatio: "16/10" }}
                     >
-                      <div
-                        className="absolute inset-0 bg-gray-200 flex items-center justify-center"
-                        style={{ backgroundColor: "#E8E4DE" }}
-                      >
-                        <span
-                          style={{
-                            fontSize: "13px",
-                            color: "#999",
-                            letterSpacing: "0.05em",
-                          }}
+                      {work.image && work.image !== "/images/work-placeholder.jpg" ? (
+                        <Image
+                          src={work.image}
+                          alt={work.title}
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                          style={{ objectFit: "cover", objectPosition: "top" }}
+                        />
+                      ) : (
+                        <div
+                          className="absolute inset-0 bg-gray-200 flex items-center justify-center"
+                          style={{ backgroundColor: "#E8E4DE" }}
                         >
-                          COMING SOON
-                        </span>
-                      </div>
+                          <span
+                            style={{
+                              fontSize: "13px",
+                              color: "#999",
+                              letterSpacing: "0.05em",
+                            }}
+                          >
+                            COMING SOON
+                          </span>
+                        </div>
+                      )}
                     </div>
 
                     {/* Info */}
@@ -249,9 +281,10 @@ export default function WorksPage() {
                         </div>
                       )}
                     </div>
-                  </div>
+                  </CardTag>
                 </FadeInUp>
-              ))}
+                );
+              })}
             </div>
           )}
         </div>
