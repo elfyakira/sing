@@ -36,7 +36,6 @@ const works: WorkItem[] = [
     description: "",
     image: "/images/works/takeuchi.png",
     url: "https://www.tkss.co.jp/",
-    tags: ["HP制作"],
   },
   {
     id: "hp-02",
@@ -45,7 +44,6 @@ const works: WorkItem[] = [
     description: "",
     image: "/images/works/bihoku.png",
     url: "https://www.k-bihoku.co.jp/",
-    tags: ["HP制作"],
   },
   {
     id: "hp-03",
@@ -54,7 +52,6 @@ const works: WorkItem[] = [
     description: "",
     image: "/images/works/metex.png",
     url: "https://www.metexsumiriko.com/",
-    tags: ["HP制作"],
   },
   {
     id: "hp-04",
@@ -63,7 +60,6 @@ const works: WorkItem[] = [
     description: "",
     image: "/images/works/tadano.png",
     url: "https://www.tadanogroup.com/",
-    tags: ["HP制作"],
   },
   // LP制作
   {
@@ -73,7 +69,6 @@ const works: WorkItem[] = [
     description: "",
     image: "/images/works/idemitsu.png",
     url: "https://www.idemitsu-ritehanchubu.com/",
-    tags: ["LP制作"],
   },
   {
     id: "lp-02",
@@ -82,7 +77,6 @@ const works: WorkItem[] = [
     description: "",
     image: "/images/works/gts.png",
     url: "https://www.gts-jp-recruit.com/",
-    tags: ["LP制作", "採用"],
   },
   {
     id: "lp-03",
@@ -91,7 +85,6 @@ const works: WorkItem[] = [
     description: "",
     image: "/images/works/sato-rashi.png",
     url: "https://www.satorashisaiyo.com/",
-    tags: ["LP制作", "採用"],
   },
   {
     id: "lp-04",
@@ -100,7 +93,6 @@ const works: WorkItem[] = [
     description: "",
     image: "/images/works/coverk.png",
     url: "https://www.jp-cowerk.com/",
-    tags: ["LP制作"],
   },
 ];
 
