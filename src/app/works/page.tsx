@@ -21,7 +21,8 @@ interface WorkItem {
   category: CategoryId;
   title: string;
   description: string;
-  image: string;
+  image?: string;
+  video?: string;
   url?: string;
   tags?: string[];
 }
@@ -93,6 +94,28 @@ const works: WorkItem[] = [
     description: "",
     image: "/images/works/coverk.png",
     url: "https://www.jp-cowerk.com/",
+  },
+  // PV制作
+  {
+    id: "pv-01",
+    category: "pv",
+    title: "株式会社竹内金型製作所 様",
+    description: "企業紹介動画",
+    video: "https://assets.singgroup.biz/pv/takeuchi_corporate.mp4",
+  },
+  {
+    id: "pv-02",
+    category: "pv",
+    title: "企業紹介動画",
+    description: "テロップなしver",
+    video: "https://assets.singgroup.biz/pv/corporate_intro.mp4",
+  },
+  {
+    id: "pv-03",
+    category: "pv",
+    title: "プロモーションビデオ",
+    description: "",
+    video: "https://assets.singgroup.biz/pv/pv_4.mp4",
   },
 ];
 
@@ -185,7 +208,22 @@ export default function WorksPage() {
                       className="relative overflow-hidden"
                       style={{ aspectRatio: "16/10" }}
                     >
-                      {work.image && work.image !== "/images/work-placeholder.jpg" ? (
+                      {work.video ? (
+                        <video
+                          src={work.video}
+                          controls
+                          preload="metadata"
+                          playsInline
+                          style={{
+                            position: "absolute",
+                            inset: 0,
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                            backgroundColor: "#000",
+                          }}
+                        />
+                      ) : work.image && work.image !== "/images/work-placeholder.jpg" ? (
                         <Image
                           src={work.image}
                           alt={work.title}
