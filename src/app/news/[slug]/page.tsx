@@ -10,6 +10,80 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; body: React.ReactNode }
 > = {
+  "technoshinei-chubu-rugby": {
+    date: "2026-04-15",
+    category: "取り組み",
+    title: "株式会社テクノシンエイ様より中部大学ラグビー部へ温かいご支援",
+    thumbnail: "/images/news/technoshinei-cover.jpg",
+    body: (
+      <>
+        <p>
+          この度、株式会社テクノシンエイ様より、中部大学ラグビー部の合宿に向けて、応援とともに素敵な差し入れが届けられました。
+        </p>
+        <p>
+          日々厳しいトレーニングに励む選手の皆様にとって、このようなご支援は大きな励みとなります。株式会社テクノシンエイ様の温かいお気持ちと継続的なご支援に、心より感謝申し上げます。
+        </p>
+
+        <div className="article-gallery">
+          <div className="article-image">
+            <Image
+              src="/images/news/technoshinei-01.jpg"
+              alt="株式会社テクノシンエイ様からの差し入れの様子 1"
+              width={1600}
+              height={1200}
+              sizes="(max-width: 780px) 100vw, 780px"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+          <div className="article-image">
+            <Image
+              src="/images/news/technoshinei-02.jpg"
+              alt="株式会社テクノシンエイ様からの差し入れの様子 2"
+              width={1600}
+              height={1200}
+              sizes="(max-width: 780px) 100vw, 780px"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+          <div className="article-image">
+            <Image
+              src="/images/news/technoshinei-03.jpg"
+              alt="株式会社テクノシンエイ様からの差し入れの様子 3"
+              width={1600}
+              height={1200}
+              sizes="(max-width: 780px) 100vw, 780px"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+        </div>
+
+        <p>
+          スポーツに真摯に向き合う中部大学ラグビー部の皆様、そしてそれを支える企業の想い。このような素晴らしい取り組みが広がっていくことで、より多くの方々にスポーツの魅力や支援の大切さが伝わっていくことを願っております。
+        </p>
+        <p>
+          株式会社Singといたしましても、できるだけ多くの方々にこうした取り組みを知っていただき、応援の輪が広がっていくことを心より願っております。
+        </p>
+        <p>
+          今後も中部大学ラグビー部のさらなるご活躍を応援するとともに、株式会社テクノシンエイ様のご発展をお祈り申し上げます。
+        </p>
+
+        <p>
+          【株式会社テクノシンエイ】
+          <br />
+          <a href="http://www.t-shinei.co.jp/" target="_blank" rel="noopener noreferrer">
+            http://www.t-shinei.co.jp/
+          </a>
+        </p>
+        <p>
+          【中部大学ラグビー部】
+          <br />
+          <a href="https://chubu-tigers.com/" target="_blank" rel="noopener noreferrer">
+            https://chubu-tigers.com/
+          </a>
+        </p>
+      </>
+    ),
+  },
   renewal: {
     date: "2026-04-03",
     category: "ブログ",
@@ -155,6 +229,33 @@ export default function NewsDetailPage({ params }: { params: Promise<{ slug: str
           margin-bottom: 12px;
           padding-left: 14px;
           border-left: 3px solid #C84B2F;
+        }
+        .article-body ul {
+          font-size: 15px;
+          line-height: 2.0;
+          color: #333;
+          margin-bottom: 24px;
+          padding-left: 1.4em;
+          list-style: disc;
+        }
+        .article-body ul li {
+          margin-bottom: 8px;
+        }
+        .article-body a {
+          color: #C84B2F;
+          text-decoration: underline;
+          word-break: break-all;
+        }
+        .article-body .article-gallery {
+          display: grid;
+          grid-template-columns: 1fr;
+          gap: 20px;
+          margin: 32px 0 40px;
+        }
+        .article-body .article-image {
+          border-radius: 8px;
+          overflow: hidden;
+          background-color: #f5f5f5;
         }
       `}</style>
     </>

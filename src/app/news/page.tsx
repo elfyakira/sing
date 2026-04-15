@@ -7,6 +7,13 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; slug: string }[] = [
   {
+    date: "2026-04-15",
+    category: "取り組み",
+    title: "株式会社テクノシンエイ様より中部大学ラグビー部へ温かいご支援",
+    thumbnail: "/images/news/technoshinei-cover.jpg",
+    slug: "technoshinei-chubu-rugby",
+  },
+  {
     date: "2026-04-03",
     category: "ブログ",
     title: "ホームページをリニューアルしました",
