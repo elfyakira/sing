@@ -8,8 +8,158 @@ import PageHeader from "@/components/PageHeader";
 
 const articles: Record<
   string,
-  { date: string; category: string; title: string; thumbnail: string; body: React.ReactNode }
+  { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "kasugai-gujo-odori-vol3": {
+    date: "2026-04-16",
+    category: "取り組み",
+    title: "地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！",
+    thumbnail: "/images/news/kasugai-gujo-odori-01.jpg",
+    thumbnailPosition: "center 20%",
+    body: (
+      <>
+        <p>
+          株式会社Singは、2026年5月23日（土）に開催される
+          <br />
+          「第3回 かすがい郡上踊り」において、スポンサーとして参画し、ステージ企画にも参加いたします。
+        </p>
+        <p>
+          本イベントは、岐阜県郡上市の伝統文化である「郡上おどり」を、春日井の地で再現し、地域の方々が世代を超えてつながる場として開催されているものです。
+        </p>
+
+        <p>
+          Singはこれまで、企業の採用・定着・活躍支援を通じて、「人が輝き続ける組織づくり」に向き合ってきました。
+          <br />
+          私たちは考えています。
+        </p>
+
+        <p style={{ fontWeight: 700, fontSize: 18 }}>人が輝けば、企業は続く。</p>
+
+        <p>
+          そしてその企業は、地域の中で生き、支え合いながら存在している。
+          <br />
+          つまり、“企業の成長”と“地域の活性”は切り離せないものです。
+        </p>
+
+        <p>現在、多くの企業で</p>
+        <p style={{ marginBottom: 8 }}>・採用しても定着しない</p>
+        <p>・育てても活躍の場がない</p>
+        <p>といった課題が生まれています。</p>
+
+        <p>
+          その根本にあるのは、“人と人とのつながりの希薄さ”ではないかと私たちは考えています。
+          <br />
+          だからこそSingは、採用・定着・活躍を一気通貫で支援するだけでなく、地域や教育、文化といった領域にも関わりながら、人が長く活躍できる社会づくりに取り組んでいます。
+        </p>
+
+        <p>
+          当日は、踊り・ステージ・マルシェなど、誰でも楽しめるコンテンツが多数用意されています。
+          <br />
+          Singもステージを通じて、この場をさらに盛り上げていきます。
+        </p>
+
+        <p>ぜひ現地で、“人と人がつながる空気”を体感してください。</p>
+
+        <h3>■イベント概要</h3>
+        <p style={{ marginBottom: 8 }}>・日時：2026年5月23日（土）13:00〜20:30</p>
+        <p style={{ marginBottom: 8 }}>・会場：JR勝川駅前通商店街 / 勝川駅前公園 ほか</p>
+        <p>・雨天決行</p>
+
+        <div className="article-gallery">
+          <div className="article-image">
+            <Image
+              src="/images/news/kasugai-gujo-odori-01.jpg"
+              alt="第3回 かすがい郡上踊り 雑誌掲載 1"
+              width={1600}
+              height={2263}
+              sizes="(max-width: 780px) 100vw, 780px"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+          <div className="article-image">
+            <Image
+              src="/images/news/kasugai-gujo-odori-02.jpg"
+              alt="第3回 かすがい郡上踊り 雑誌掲載 2"
+              width={1600}
+              height={2263}
+              sizes="(max-width: 780px) 100vw, 780px"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+        </div>
+      </>
+    ),
+  },
+  "one-dining-table-fes-vol4": {
+    date: "2026-04-16",
+    category: "ブログ",
+    title: "【今年も出店決定】One Dining Table Fes vol.4 にSingが参加します！",
+    thumbnail: "/images/news/one-dining-table-fes-cover.jpg",
+    thumbnailPosition: "center 20%",
+    body: (
+      <>
+        <p>
+          昨年、多くの方にご来場いただき大盛況となった
+          <br />
+          「One Dining Table Fes」に、今年も出店させていただくことが決定しました！
+        </p>
+        <p>
+          2026年6月13日（土）11:00～17:00、会場は名古屋・オアシス21。
+          <br />
+          入場無料で、なんと約5万人規模の来場を見込む大型フェスです。
+        </p>
+
+        <h3>■「いただきます」から始まる、つながりの場</h3>
+        <p>
+          このイベントは、「いただきますは楽しい。」をテーマに、
+          <br />
+          食を通じて人と人がつながるきっかけを生み出すフェスです。
+        </p>
+        <p>
+          子どもたちの成長支援や食育、地域とのつながりを大切にしながら、
+          <br />
+          “ただのイベントでは終わらない価値”がここにはあります。
+        </p>
+
+        <h3>■昨年のSingブースは…まさかの大行列</h3>
+        <p>昨年のSingブースでは、「うまい棒取り放題」企画を実施。</p>
+
+        <p>結果はというと…</p>
+        <p style={{ marginBottom: 8 }}>👉 会場でもトップクラスの大行列</p>
+        <p style={{ marginBottom: 8 }}>👉 子どもも大人も大盛り上がり</p>
+        <p>👉 気づけば“人だかり”ができるブースに</p>
+
+        <p>正直、想像以上の反響でした。</p>
+
+        <p>今年のテーマは「ツナガル」の先にある“ツム（紡ぐ）”。</p>
+
+        <p>Singとしても、ただ楽しむだけでなく、</p>
+
+        <p style={{ marginBottom: 8 }}>・人と人がつながるきっかけ</p>
+        <p style={{ marginBottom: 8 }}>・未来につながる出会い</p>
+        <p>・子どもたちにとっての新しい体験</p>
+
+        <p>そんな場をつくれるようなブースを準備しています。</p>
+
+        <p>
+          昨年来ていただいた方も、今年初めての方も。
+          <br />
+          ふらっと立ち寄るだけでも大歓迎です。
+        </p>
+
+        <p>
+          “いただきます”から始まるこのフェスで、
+          <br />
+          また新しい出会いが生まれることを楽しみにしています。
+        </p>
+
+        <p style={{ marginBottom: 8 }}>📍開催日：2026年6月13日（土）</p>
+        <p style={{ marginBottom: 8 }}>📍時間：11:00〜17:00</p>
+        <p style={{ marginBottom: 8 }}>📍会場：オアシス21（名古屋市）</p>
+        <p>📍入場：無料</p>
+      </>
+    ),
+  },
   "technoshinei-chubu-rugby": {
     date: "2026-04-15",
     category: "取り組み",
@@ -176,7 +326,7 @@ export default function NewsDetailPage({ params }: { params: Promise<{ slug: str
               marginBottom: 48,
             }}
           >
-            <Image src={article.thumbnail} alt={article.title} fill style={{ objectFit: "cover" }} />
+            <Image src={article.thumbnail} alt={article.title} fill style={{ objectFit: "cover", objectPosition: article.thumbnailPosition ?? "center" }} />
           </div>
 
           {/* Body */}

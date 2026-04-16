@@ -7,6 +7,20 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; slug: string }[] = [
   {
+    date: "2026-04-16",
+    category: "取り組み",
+    title: "地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！",
+    thumbnail: "/images/news/kasugai-gujo-odori-01.jpg",
+    slug: "kasugai-gujo-odori-vol3",
+  },
+  {
+    date: "2026-04-16",
+    category: "ブログ",
+    title: "【今年も出店決定】One Dining Table Fes vol.4 にSingが参加します！",
+    thumbnail: "/images/news/one-dining-table-fes-cover.jpg",
+    slug: "one-dining-table-fes-vol4",
+  },
+  {
     date: "2026-04-15",
     category: "取り組み",
     title: "株式会社テクノシンエイ様より中部大学ラグビー部へ温かいご支援",

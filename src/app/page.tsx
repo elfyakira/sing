@@ -506,6 +506,82 @@ export default function Home() {
 
           {/* Blog Card */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/news/kasugai-gujo-odori-vol3" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news/kasugai-gujo-odori-01.jpg"
+                  alt="地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  style={{ objectPosition: "center 20%" }}
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-04-16
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    取り組み
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！
+                </p>
+              </div>
+            </Link>
+            <Link href="/news/one-dining-table-fes-vol4" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news/one-dining-table-fes-cover.jpg"
+                  alt="【今年も出店決定】One Dining Table Fes vol.4 にSingが参加します！"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  style={{ objectPosition: "center 20%" }}
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-04-16
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    ブログ
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  【今年も出店決定】One Dining Table Fes vol.4 にSingが参加します！
+                </p>
+              </div>
+            </Link>
             <Link href="/news/technoshinei-chubu-rugby" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
               <div
                 className="relative rounded-lg overflow-hidden"
