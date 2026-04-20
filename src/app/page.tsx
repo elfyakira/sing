@@ -152,6 +152,98 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section 2.5: Partners / Client Logos */}
+      <section className="relative z-10 bg-white" style={{ padding: "100px 0" }}>
+        <div className="mx-auto px-5" style={{ maxWidth: "1200px" }}>
+          <p
+            className="text-center text-accent mb-3 font-bold tracking-[0.2em]"
+            style={{ fontSize: "14px" }}
+          >
+            PARTNERS
+          </p>
+          <h2
+            className="text-center font-bold mb-12"
+            style={{
+              fontSize: "clamp(24px, 3.5vw, 36px)",
+              color: "#1a1a1a",
+              lineHeight: 1.4,
+            }}
+          >
+            ご縁をいただいている企業・団体の皆さま
+          </h2>
+          <div
+            className="grid gap-6 items-center"
+            style={{
+              gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
+            }}
+          >
+            {[
+              "1.jpg",
+              "一榮工業ロゴ.png",
+              "17.png",
+              "18.png",
+              "19.png",
+              "23.png",
+              "24.png",
+              "コベルク.png",
+              "26.png",
+              "尾北ロゴ_edited_edited.png",
+              "サンキョーヒカリロゴ.png",
+              "新光機器ロゴ.png",
+              "axa_logo.png",
+              "27.png",
+              "28.png",
+              "29.png",
+              "30.png",
+              "竹内金型-Photoroom.png",
+              "31.png",
+              "32.png",
+              "37.png",
+              "logo_header01.png",
+              "ワールドケミカル.png",
+              "unnamed (1).jpg",
+              "会社ロゴpng (1).png",
+              "企業ロゴ (24) (1).png",
+              "企業ロゴ (26) (1).png",
+              "企業ロゴ (27) (1).png",
+              "T1R_edited.png",
+              "企業ロゴ (35).png",
+              "logo-mini-Photoroom.png",
+              "ゆめスタパートナーロゴ（テッペンパン）.png",
+              "作成用 (2).png",
+              "東洋樹脂ロゴ.png",
+              "アイコン - 洞口克己.jpg",
+              "ジャパンエレベーター.PNG",
+              "稲沢-Photoroom.png",
+              "ゆめスタパートナーロゴ（市邨高校）.png",
+              "ゆめスタパートナーロゴ（国際交流音楽祭実行委員会）.png",
+              "logo_header01 (1).png",
+              "稲沢機械製作所ロゴ.png",
+              "カネハチロゴ.png",
+              "吉澤工業ロゴ.gif",
+              "ゆめスタパートナーロゴ（石川深雪）.png",
+              "ゆめスタパートナーロゴ（モヒカン先生）.png",
+            ].map((file) => (
+              <div
+                key={file}
+                className="flex items-center justify-center p-3"
+                style={{ height: "90px" }}
+              >
+                <img
+                  src={`/images/logos/${encodeURIComponent(file)}`}
+                  alt=""
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: "100%",
+                    objectFit: "contain",
+                  }}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Section 3: Services */}
       <section className="relative z-10" style={{ backgroundColor: "#F5F5F5", padding: "120px 0" }}>
         <div className="mx-auto px-5" style={{ maxWidth: "1000px" }}>
