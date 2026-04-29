@@ -25,6 +25,7 @@ export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [fieldErrors, setFieldErrors] = useState<Record<string, string>>({});
   const [isDesktop, setIsDesktop] = useState(false);
   const [hasStarted, setHasStarted] = useState(false);
 
@@ -53,7 +54,15 @@ export default function ContactPage() {
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
-    setForm({ ...form, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setForm({ ...form, [name]: value });
+    if (fieldErrors[name]) {
+      setFieldErrors((prev) => {
+        const next = { ...prev };
+        delete next[name];
+        return next;
+      });
+    }
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -62,6 +71,7 @@ export default function ContactPage() {
 
     setLoading(true);
     setError("");
+    setFieldErrors({});
 
     try {
       const res = await fetch("/api/contact", {
@@ -70,7 +80,20 @@ export default function ContactPage() {
         body: JSON.stringify({ ...form, agreed }),
       });
 
-      if (!res.ok) throw new Error("送信に失敗しました。");
+      if (!res.ok) {
+        const data = await res.json().catch(() => null);
+        if (res.status === 400 && Array.isArray(data?.errors)) {
+          const errs: Record<string, string> = {};
+          for (const err of data.errors as { field: string; message: string }[]) {
+            errs[err.field] = err.message;
+          }
+          setFieldErrors(errs);
+          setError("入力内容をご確認ください。");
+          return;
+        }
+        throw new Error("送信に失敗しました。");
+      }
+
       events.formSubmit("sing_hp_contact");
       setSubmitted(true);
     } catch {
@@ -79,6 +102,12 @@ export default function ContactPage() {
       setLoading(false);
     }
   };
+
+  const errorTextStyle = {
+    fontSize: 12,
+    color: "#C84B2F",
+    marginTop: 6,
+  } as const;
 
   return (
     <>
@@ -235,6 +264,9 @@ export default function ContactPage() {
                       </label>
                     ))}
                   </div>
+                  {fieldErrors.inquiryType && (
+                    <p style={errorTextStyle}>{fieldErrors.inquiryType}</p>
+                  )}
                 </div>
 
                 {/* 会社名 */}
@@ -318,6 +350,9 @@ export default function ContactPage() {
                       (e.target.style.borderBottomColor = "#D9D3CB")
                     }
                   />
+                  {fieldErrors.name && (
+                    <p style={errorTextStyle}>{fieldErrors.name}</p>
+                  )}
                 </div>
 
                 {/* メールアドレス */}
@@ -366,6 +401,9 @@ export default function ContactPage() {
                       (e.target.style.borderBottomColor = "#D9D3CB")
                     }
                   />
+                  {fieldErrors.email && (
+                    <p style={errorTextStyle}>{fieldErrors.email}</p>
+                  )}
                 </div>
 
                 {/* 電話番号 */}
@@ -401,6 +439,9 @@ export default function ContactPage() {
                       (e.target.style.borderBottomColor = "#D9D3CB")
                     }
                   />
+                  {fieldErrors.phone && (
+                    <p style={errorTextStyle}>{fieldErrors.phone}</p>
+                  )}
                 </div>
 
                 {/* ご相談内容 */}
@@ -448,6 +489,9 @@ export default function ContactPage() {
                       (e.target.style.borderBottomColor = "#D9D3CB")
                     }
                   />
+                  {fieldErrors.message && (
+                    <p style={errorTextStyle}>{fieldErrors.message}</p>
+                  )}
                 </div>
 
                 {/* Privacy policy checkbox */}
