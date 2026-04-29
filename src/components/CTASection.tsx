@@ -40,6 +40,8 @@ export default function CTASection({
           href={buttonHref}
           className="inline-block bg-accent text-white font-semibold rounded-btn transition-colors hover:bg-accent-dark mb-4"
           style={{ padding: "18px 48px", fontSize: "16px" }}
+          data-cta={buttonText}
+          data-cta-location="cta_section"
         >
           {buttonText}
         </Link>

@@ -1,8 +1,12 @@
 import type { Metadata, Viewport } from "next";
 import Script from "next/script";
 import "./globals.css";
+import { Suspense } from "react";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import ScrollTracker from "@/components/ScrollTracker";
+import PageViewTracker from "@/components/PageViewTracker";
+import ClickTracker from "@/components/ClickTracker";
 import StructuredData from "@/components/StructuredData";
 import { seo, company } from "@/lib/site";
 import {
@@ -97,9 +101,14 @@ export default function RootLayout({
         />
       </head>
       <body>
+        <Suspense fallback={null}>
+          <PageViewTracker />
+        </Suspense>
+        <ClickTracker />
         <Header />
         {children}
         <Footer />
+        <ScrollTracker />
       </body>
     </html>
   );
