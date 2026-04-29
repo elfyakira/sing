@@ -157,5 +157,17 @@
       "Singという社名には「歌う」という意味を込めています。一人ひとりが自分らしい声で歌えるように。企業と人が調和して、美しいハーモニーを奏でられるように。",
       "まだ小さな会社ですが、だからこそ一社一社に本気で向き合えます。御社の課題を、一緒に解決させてください。"
     ]
+  },
+  "googleForm": {
+    "formUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfvc1ImvZlFKVjZ-idO9Hw-aaRpK0ksTIV7s-DZyjM53RdT3A/formResponse",
+    "entries": {
+      "inquiryType": "entry.2087654470",
+      "companyName": "entry.1560823406",
+      "name": "entry.645092704",
+      "email": "entry.796655970",
+      "phone": "entry.1961883360",
+      "message": "entry.192106775",
+      "consent": "entry.1654390205"
+    }
   }
 }

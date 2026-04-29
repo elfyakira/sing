@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 import { company, contact, locations } from "@/lib/site";
+import { events } from "@/lib/analytics";
 
 const inquiryTypes = [
   "サービスについてのお問い合わせ",
@@ -25,6 +26,14 @@ export default function ContactPage() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [isDesktop, setIsDesktop] = useState(false);
+  const [hasStarted, setHasStarted] = useState(false);
+
+  const handleFirstInput = () => {
+    if (!hasStarted) {
+      events.formStart("sing_hp_contact");
+      setHasStarted(true);
+    }
+  };
 
   useEffect(() => {
     const mql = window.matchMedia("(min-width: 1024px)");
@@ -58,10 +67,11 @@ export default function ContactPage() {
       const res = await fetch("/api/contact", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
+        body: JSON.stringify({ ...form, agreed }),
       });
 
       if (!res.ok) throw new Error("送信に失敗しました。");
+      events.formSubmit("sing_hp_contact");
       setSubmitted(true);
     } catch {
       setError("送信に失敗しました。時間をおいて再度お試しください。");
@@ -157,7 +167,7 @@ export default function ContactPage() {
               </p>
 
               {/* Form */}
-              <form onSubmit={handleSubmit} className="contact-form">
+              <form onSubmit={handleSubmit} onFocusCapture={handleFirstInput} className="contact-form">
                 {/* お問い合わせ種別 */}
                 <div style={{ marginBottom: 32 }}>
                   <label
