@@ -7,6 +7,13 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; slug: string }[] = [
   {
+    date: "2026-05-11",
+    category: "ブログ",
+    title: "健康経営優良法人認定祝賀フォーラムに参加しました",
+    thumbnail: "/images/news/kenko-keiei-2026-cover.jpg",
+    slug: "kenko-keiei-2026-forum",
+  },
+  {
     date: "2026-04-16",
     category: "取り組み",
     title: "地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！",
