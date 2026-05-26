@@ -106,14 +106,14 @@ const works: WorkItem[] = [
   {
     id: "pv-02",
     category: "pv",
-    title: "企業紹介動画",
+    title: "株式会社竹内工業 様",
     description: "テロップなしver",
     video: "https://assets.singgroup.biz/pv/corporate_intro.mp4",
   },
   {
     id: "pv-03",
     category: "pv",
-    title: "プロモーションビデオ",
+    title: "株式会社コベルク 様",
     description: "",
     video: "https://assets.singgroup.biz/pv/pv_4.mp4",
   },

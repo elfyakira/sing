@@ -5,6 +5,7 @@
       { "label": "代表挨拶", "href": "/message" },
       { "label": "会社案内", "href": "/company" },
       { "label": "サービス", "href": "/service" },
+      { "label": "制作実績", "href": "/works" },
       { "label": "新着情報", "href": "/news" },
       { "label": "採用情報", "href": "/recruit" }
     ],
@@ -13,6 +14,7 @@
       { "label": "代表挨拶", "href": "/message" },
       { "label": "会社案内", "href": "/company" },
       { "label": "サービス", "href": "/service" },
+      { "label": "制作実績", "href": "/works" },
       { "label": "新着情報", "href": "/news" },
       { "label": "採用情報", "href": "/recruit" },
       { "label": "お問い合わせ", "href": "/contact" }
