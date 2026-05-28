@@ -67,6 +67,7 @@ const works: WorkItem[] = [
     category: "hp",
     title: "有限会社トキワ工業 様",
     description: "",
+    image: "/images/works/tokiwakogyo.png",
     url: "https://www.tokiwakogyo.com/",
   },
   // LP制作
