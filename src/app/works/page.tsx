@@ -62,6 +62,13 @@ const works: WorkItem[] = [
     image: "/images/works/tadano.png",
     url: "https://www.tadanogroup.com/",
   },
+  {
+    id: "hp-05",
+    category: "hp",
+    title: "有限会社トキワ工業 様",
+    description: "",
+    url: "https://www.tokiwakogyo.com/",
+  },
   // LP制作
   {
     id: "lp-01",
