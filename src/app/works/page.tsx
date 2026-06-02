@@ -1,9 +1,53 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import { FadeInUp } from "@/components/animations";
+
+// 画面内に表示されている間だけ再生する動画コンポーネント
+function WorkVideo({ src }: { src: string }) {
+  const ref = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    const video = ref.current;
+    if (!video) return;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          video.play().catch(() => {});
+        } else {
+          video.pause();
+        }
+      },
+      { threshold: 0.4 }
+    );
+
+    observer.observe(video);
+    return () => observer.disconnect();
+  }, []);
+
+  return (
+    <video
+      ref={ref}
+      src={src}
+      controls
+      muted
+      loop
+      preload="metadata"
+      playsInline
+      style={{
+        position: "absolute",
+        inset: 0,
+        width: "100%",
+        height: "100%",
+        objectFit: "cover",
+        backgroundColor: "#000",
+      }}
+    />
+  );
+}
 
 const categories = [
   { id: "all", label: "ALL" },
@@ -125,6 +169,14 @@ const works: WorkItem[] = [
     description: "",
     video: "https://assets.singgroup.biz/pv/pv_4.mp4",
   },
+  // アニメ動画制作
+  {
+    id: "animation-01",
+    category: "animation",
+    title: "元ラグビー日本代表 長江有祐 様",
+    description: "",
+    video: "https://assets.singgroup.biz/pv/nagae.pv.mp4",
+  },
 ];
 
 export default function WorksPage() {
@@ -217,20 +269,7 @@ export default function WorksPage() {
                       style={{ aspectRatio: "16/10" }}
                     >
                       {work.video ? (
-                        <video
-                          src={work.video}
-                          controls
-                          preload="metadata"
-                          playsInline
-                          style={{
-                            position: "absolute",
-                            inset: 0,
-                            width: "100%",
-                            height: "100%",
-                            objectFit: "cover",
-                            backgroundColor: "#000",
-                          }}
-                        />
+                        <WorkVideo src={work.video} />
                       ) : work.image && work.image !== "/images/work-placeholder.jpg" ? (
                         <Image
                           src={work.image}
