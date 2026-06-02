@@ -31,20 +31,20 @@ interface WorkItem {
 const works: WorkItem[] = [
   // HP制作
   {
+    id: "hp-05",
+    category: "hp",
+    title: "有限会社トキワ工業 様",
+    description: "",
+    image: "/images/works/tokiwakogyo.png",
+    url: "https://www.tokiwakogyo.com/",
+  },
+  {
     id: "hp-01",
     category: "hp",
     title: "株式会社竹内金型製作所 様",
     description: "",
     image: "/images/works/takeuchi.png",
     url: "https://www.tkss.co.jp/",
-  },
-  {
-    id: "hp-02",
-    category: "hp",
-    title: "株式会社尾北 様",
-    description: "",
-    image: "/images/works/bihoku.png",
-    url: "https://www.k-bihoku.co.jp/",
   },
   {
     id: "hp-03",
@@ -55,20 +55,20 @@ const works: WorkItem[] = [
     url: "https://www.metexsumiriko.com/",
   },
   {
+    id: "hp-02",
+    category: "hp",
+    title: "株式会社尾北 様",
+    description: "",
+    image: "/images/works/bihoku.png",
+    url: "https://www.k-bihoku.co.jp/",
+  },
+  {
     id: "hp-04",
     category: "hp",
     title: "株式会社唯野工業 様",
     description: "",
     image: "/images/works/tadano.png",
     url: "https://www.tadanogroup.com/",
-  },
-  {
-    id: "hp-05",
-    category: "hp",
-    title: "有限会社トキワ工業 様",
-    description: "",
-    image: "/images/works/tokiwakogyo.png",
-    url: "https://www.tokiwakogyo.com/",
   },
   // LP制作
   {
