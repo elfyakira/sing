@@ -702,17 +702,6 @@ export default function ContactPage() {
                   </a>
                 </dd>
               </div>
-              <div>
-                <dt
-                  className="font-bold"
-                  style={{ fontSize: 13, color: "#5A5A5A", marginBottom: 4 }}
-                >
-                  設立
-                </dt>
-                <dd style={{ fontSize: 15, color: "#222" }}>
-                  {company.established}
-                </dd>
-              </div>
             </dl>
           </div>
 
