@@ -161,7 +161,16 @@ export default function CompanyPage() {
                     <p style={{ marginBottom: "16px" }}>
                       〒{hq.zipCode}
                       <br />
-                      {hq.address}
+                      {hq.address
+                        .split("アーバンハイツ")
+                        .flatMap((part, i) =>
+                          i === 0
+                            ? [part]
+                            : [
+                                <br key={i} className="sm:hidden" />,
+                                "アーバンハイツ" + part,
+                              ]
+                        )}
                     </p>
                     {/* Google Maps embed */}
                     <div
@@ -269,7 +278,7 @@ export default function CompanyPage() {
           >
             「仕事が苦しい」という常識を覆す。
             <br />
-            一人の青年の違和感から始まった、希望をつなぐ物語。
+            一人の青年の違和感から始まった、<br className="sm:hidden" />希望をつなぐ物語。
           </p>
 
           {/* Story chapters */}
@@ -365,7 +374,7 @@ export default function CompanyPage() {
                 color: "#222222",
               }}
             >
-              未来を変える、未来へ繋ぐ、未来が輝く
+              未来を変える、未来へ繋ぐ、<br className="sm:hidden" />未来が輝く
             </p>
           </div>
 
@@ -391,7 +400,7 @@ export default function CompanyPage() {
                 color: "#222222",
               }}
             >
-              次世代へのバトンを繋いで、誰もが笑顔で活躍できる社会の実現
+              次世代へのバトンを繋いで、<br className="sm:hidden" />誰もが笑顔で活躍できる社会の実現
             </p>
           </div>
 
@@ -473,7 +482,7 @@ export default function CompanyPage() {
                 PASSION
               </p>
               <p style={{ fontSize: "15px", color: "#222222" }}>
-                誰よりも高い情熱を持って、笑顔を絶やさず明るく生きよう。
+                誰よりも高い情熱を持って、<br className="sm:hidden" />笑顔を絶やさず明るく生きよう。
               </p>
             </div>
           </div>

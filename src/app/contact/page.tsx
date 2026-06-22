@@ -666,7 +666,16 @@ export default function ContactPage() {
                 </dt>
                 <dd style={{ fontSize: 15, color: "#222" }}>
                   〒{locations.headquarters.zipCode}{" "}
-                  {locations.headquarters.address}
+                  {locations.headquarters.address
+                    .split("アーバンハイツ")
+                    .flatMap((part, i) =>
+                      i === 0
+                        ? [part]
+                        : [
+                            <br key={i} className="sm:hidden" />,
+                            "アーバンハイツ" + part,
+                          ]
+                    )}
                 </dd>
               </div>
               <div>

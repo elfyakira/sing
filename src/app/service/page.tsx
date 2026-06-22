@@ -22,7 +22,7 @@ const services = [
     num: "01",
     nameEn: "Connect",
     name: "ツナゲル",
-    subtitle: "「採れる採用」から「活躍する人財を採る採用」へ",
+    subtitle: "「採れる採用」から\n「活躍する人財を採る採用」へ",
     body: "求人を出しても応募が来ない。採用しても定着しない。その原因の多くは、「誰に届けたいか」「自社の魅力は何か」が明確になっていないことにあります。Singの採用支援は、企業の内側に眠る魅力を掘り起こし、本当に必要な人財に届く採用設計を行います。",
     video: "/videos/service-01.mp4",
     problems: [
@@ -36,7 +36,7 @@ const services = [
     num: "02",
     nameEn: "Activate",
     name: "カツヤク",
-    subtitle: "人が辞めない組織は、\"仕組み\"でつくれる",
+    subtitle: "人が辞めない組織は、\n\"仕組み\"でつくれる",
     body: "採用した人財が活躍し続けるためには、組織の土壌が整っている必要があります。評価制度、育成環境、マネジメント体制。Singは「人が辞めない組織づくり」を仕組みから支援します。",
     video: "/videos/service-02.mp4",
     problems: [
@@ -205,7 +205,7 @@ export default function ServicePage() {
       {/* Anchor Links */}
       <section className="bg-white" style={{ padding: "48px 20px 80px" }}>
         <div className="mx-auto" style={{ maxWidth: "1100px" }}>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {services.map((service) => (
               <a
                 key={service.num}
@@ -292,7 +292,12 @@ export default function ServicePage() {
                     marginBottom: "20px",
                   }}
                 >
-                  {service.subtitle}
+                  {service.subtitle.split("\n").map((line, i, arr) => (
+                    <span key={i}>
+                      {line}
+                      {i < arr.length - 1 && <br className="sm:hidden" />}
+                    </span>
+                  ))}
                 </h2>
 
                 {/* Body */}

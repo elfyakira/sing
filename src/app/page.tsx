@@ -169,7 +169,7 @@ export default function Home() {
               lineHeight: 1.4,
             }}
           >
-            ご縁をいただいている企業・団体の皆さま
+            ご縁をいただいている<br className="sm:hidden" />企業・団体の皆さま
           </h2>
           <div
             className="grid gap-6 items-center"
@@ -265,15 +265,15 @@ export default function Home() {
             人が輝く企業をつくるために。
           </p>
 
-          <div className="grid grid-cols-3 gap-6">
-            {services.map((svc) => (
+          <div className="flex flex-col gap-8 sm:grid sm:grid-cols-3 sm:gap-6">
+            {services.map((svc, i) => (
               <Link
                 key={svc.num}
                 href="/service"
-                className="group"
+                className={`group flex items-center gap-4 sm:block ${i % 2 === 1 ? "flex-row-reverse" : ""}`}
               >
                 <div
-                  className="relative rounded-lg overflow-hidden transition-shadow hover:shadow-lg"
+                  className="relative rounded-lg overflow-hidden transition-shadow hover:shadow-lg w-1/2 shrink-0 sm:w-full"
                   style={{ aspectRatio: "1/1" }}
                 >
                   <video
@@ -286,7 +286,7 @@ export default function Home() {
                     <source src={svc.video} type="video/mp4" />
                   </video>
                 </div>
-                <div className="flex items-start gap-3 mt-4">
+                <div className="flex items-start gap-3 flex-1 mt-0 sm:mt-4">
                   <span className="block bg-accent shrink-0" style={{ width: "3px", height: "24px", marginTop: "4px" }} />
                   <div>
                     <h3
@@ -423,11 +423,11 @@ export default function Home() {
       </section>
 
       {/* Section 5: Why Sing */}
-      <section className="relative z-10" style={{ backgroundColor: "#F5F5F5", padding: "120px 0" }}>
+      <section className="relative z-10 pt-[120px] pb-20 lg:pb-[120px]" style={{ backgroundColor: "#F5F5F5" }}>
         <div className="mx-auto px-5 lg:px-10" style={{ maxWidth: "1200px" }}>
-          <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
-            {/* Left: Text */}
-            <div className="lg:w-[50%]">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 items-center">
+            {/* Text */}
+            <div className="order-1 lg:order-none lg:col-start-1 lg:row-start-1">
               <p
                 className="text-accent mb-3"
                 style={{
@@ -469,26 +469,10 @@ export default function Home() {
                 <br />
                 企業が人とともに成長し続ける仕組みづくりを支援しています。
               </p>
-              <div className="flex items-center mt-10">
-                <Link
-                  href="/service#why-sing"
-                  className="inline-flex items-center gap-6 text-[#222222] group"
-                >
-                  <span className="text-[18px] font-bold tracking-wide">MORE</span>
-                  <span
-                    className="flex items-center justify-center rounded-full bg-accent group-hover:scale-105 transition-transform"
-                    style={{ width: "80px", height: "80px" }}
-                  >
-                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M5 12h14M13 6l6 6-6 6" />
-                    </svg>
-                  </span>
-                </Link>
-              </div>
             </div>
 
-            {/* Right: Image */}
-            <div className="lg:w-[50%] w-full">
+            {/* Image */}
+            <div className="order-2 lg:order-none w-full mt-12 lg:mt-0 lg:col-start-2 lg:row-start-1 lg:row-span-2">
               <div className="relative rounded-lg overflow-hidden" style={{ aspectRatio: "4/3" }}>
                 <Image
                   src="/images/why-sing.jpg"
@@ -498,12 +482,30 @@ export default function Home() {
                 />
               </div>
             </div>
+
+            {/* Button */}
+            <div className="order-3 lg:order-none flex items-center mt-10 lg:col-start-1 lg:row-start-2">
+              <Link
+                href="/service#why-sing"
+                className="inline-flex items-center gap-6 text-[#222222] group"
+              >
+                <span className="text-[18px] font-bold tracking-wide">MORE</span>
+                <span
+                  className="flex items-center justify-center rounded-full bg-accent group-hover:scale-105 transition-transform"
+                  style={{ width: "80px", height: "80px" }}
+                >
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <path d="M5 12h14M13 6l6 6-6 6" />
+                  </svg>
+                </span>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
 
       {/* Section 6: Join Us */}
-      <section className="relative z-10" style={{ backgroundColor: "#F5F1EB", padding: "120px 0" }}>
+      <section className="relative z-10 pt-20 pb-[120px] lg:pt-[120px]" style={{ backgroundColor: "#F5F1EB" }}>
         <div className="mx-auto px-5 lg:px-10" style={{ maxWidth: "1200px" }}>
           <div className="bg-[#1A2E44] rounded-2xl flex flex-col lg:flex-row items-center gap-12 lg:gap-16" style={{ padding: "clamp(24px, 3vw, 40px) clamp(32px, 5vw, 64px)" }}>
             {/* Left: Photo */}

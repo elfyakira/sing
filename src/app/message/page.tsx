@@ -55,8 +55,7 @@ export default function MessagePage() {
                 color: "#222222",
               }}
             >
-              「仕事は苦しいもの」という常識を変え、<br />
-              次世代へ希望のバトンをつなぐ社会へ。
+              「仕事は苦しいもの」という<br className="sm:hidden" />常識を変え、<br className="hidden sm:inline" />次世代へ希望の<br className="sm:hidden" />バトンをつなぐ社会へ。
             </h2>
           </div>
 
@@ -131,7 +130,7 @@ export default function MessagePage() {
               }}
             >
               <span style={{ color: "#C84B2F", fontSize: "24px", lineHeight: 1.4 }}>—</span>
-              <span>人間関係の悩みを絶ち、「仕事をゲーム化する」育成哲学</span>
+              <span>人間関係の悩みを絶ち、<br className="sm:hidden" />「仕事をゲーム化する」育成哲学</span>
             </h3>
             <div
               style={{
@@ -162,7 +161,7 @@ export default function MessagePage() {
               }}
             >
               <span style={{ color: "#C84B2F", fontSize: "24px", lineHeight: 1.4 }}>—</span>
-              <span>すべての原動力は、「挑戦を恐れない」母からの教え</span>
+              <span>すべての原動力は、「挑戦を恐れない」<br className="sm:hidden" />母からの教え</span>
             </h3>
             <div
               style={{
@@ -193,7 +192,7 @@ export default function MessagePage() {
               }}
             >
               <span style={{ color: "#C84B2F", fontSize: "24px", lineHeight: 1.4 }}>—</span>
-              <span>複数社の経営を通じて追求する「仕事を楽しむ」という本質</span>
+              <span>複数社の経営を通じて追求する<br className="sm:hidden" />「仕事を楽しむ」という本質</span>
             </h3>
             <div
               style={{
@@ -227,7 +226,7 @@ export default function MessagePage() {
               }}
             >
               <span style={{ color: "#C84B2F", fontSize: "24px", lineHeight: 1.4 }}>—</span>
-              <span>将来の夢。児童養護施設をつくり、次世代へバトンをつなぐ</span>
+              <span>将来の夢。児童養護施設をつくり、<br className="sm:hidden" />次世代へバトンをつなぐ</span>
             </h3>
             <div
               style={{

@@ -110,7 +110,7 @@ export default function RecruitPage() {
                 color: "#222",
               }}
             >
-              企業と若者をつなぎ、人が育つ社会をつくる。
+              企業と若者をつなぎ、<br className="sm:hidden" />人が育つ社会をつくる。
               <br />
               それが、私たちの仕事です。
             </h2>
@@ -134,7 +134,7 @@ export default function RecruitPage() {
       {/* Anchor Links */}
       <section className="bg-white" style={{ padding: "48px 20px 80px" }}>
         <div className="mx-auto" style={{ maxWidth: "1100px" }}>
-          <div className="grid grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
             {anchorLinks.map((link) => (
               <a
                 key={link.num}
@@ -415,7 +415,7 @@ export default function RecruitPage() {
                 marginBottom: "24px",
               }}
             >
-              一緒に、地域の未来をつくりませんか。
+              一緒に、地域の未来を<br className="sm:hidden" />つくりませんか。
             </h2>
             <p
               style={{
