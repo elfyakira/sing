@@ -174,7 +174,7 @@ export default function Home() {
           <div
             className="grid gap-6 items-center"
             style={{
-              gridTemplateColumns: "repeat(auto-fill, minmax(140px, 1fr))",
+              gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
             }}
           >
             {[
@@ -227,14 +227,14 @@ export default function Home() {
               <div
                 key={file}
                 className="flex items-center justify-center p-3"
-                style={{ height: "90px" }}
+                style={{ height: "115px" }}
               >
                 <img
                   src={`/images/logos/${encodeURIComponent(file)}`}
                   alt=""
                   style={{
-                    maxWidth: "100%",
-                    maxHeight: "100%",
+                    width: "100%",
+                    height: "100%",
                     objectFit: "contain",
                   }}
                 />
