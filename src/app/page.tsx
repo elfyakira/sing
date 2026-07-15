@@ -220,7 +220,7 @@ export default function Home() {
               "logo_header01 (1).png",
               "稲沢機械製作所ロゴ.png",
               "カネハチロゴ.png",
-              "吉澤工業ロゴ.gif",
+              "吉澤工業ロゴ.png",
               "ゆめスタパートナーロゴ（石川深雪）.png",
               "ゆめスタパートナーロゴ（モヒカン先生）.png",
             ].map((file) => (
