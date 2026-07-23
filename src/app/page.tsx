@@ -172,10 +172,7 @@ export default function Home() {
             ご縁をいただいている<br className="sm:hidden" />企業・団体の皆さま
           </h2>
           <div
-            className="grid gap-6 items-center"
-            style={{
-              gridTemplateColumns: "repeat(auto-fill, minmax(180px, 1fr))",
-            }}
+            className="grid grid-cols-3 gap-3 sm:gap-6 items-center sm:[grid-template-columns:repeat(auto-fill,minmax(180px,1fr))]"
           >
             {[
               "1.jpg",
