@@ -517,7 +517,7 @@ export default function CompanyPage() {
       </section>
 
       {/* Section 4: 社名の由来 */}
-      <section style={{ backgroundColor: "#F5F1EB", padding: "100px 20px" }}>
+      <section id="origin" style={{ backgroundColor: "#F5F1EB", padding: "100px 20px", scrollMarginTop: "100px" }}>
         <div className="mx-auto" style={{ maxWidth: "900px" }}>
           {/* Section title */}
           <div className="text-center" style={{ marginBottom: "48px" }}>

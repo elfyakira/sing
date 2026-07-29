@@ -250,7 +250,7 @@ export default function Home() {
 
           <div className="flex items-center mt-12">
             <Link
-              href="/company"
+              href="/company#origin"
               className="inline-flex items-center gap-6 text-[#222222] group"
             >
               <span className="text-[18px] font-bold tracking-wide">COMPANY</span>
