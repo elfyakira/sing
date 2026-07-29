@@ -27,6 +27,24 @@ const services = [
   },
 ];
 
+const naming = [
+  {
+    word: "Sing",
+    title: "想いを響かせる",
+    teaser: "一人ひとりが持つ理念や想いを社会へ届け、共感を生み、新たな価値へとつなげる。",
+  },
+  {
+    word: "Story",
+    title: "物語を紡ぐ",
+    teaser: "企業が歩んできた軌跡と未来への想いを、一つのストーリーとして形にする。",
+  },
+  {
+    word: "Start",
+    title: "未来を始める",
+    teaser: "一つの出会い、一つの挑戦が、新しい未来を切り拓く最初の一歩になる。",
+  },
+];
+
 const initiatives = [
   {
     id: "initiative-01",
@@ -144,6 +162,103 @@ export default function Home() {
                 style={{ width: "80px", height: "80px" }}
               >
                 <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#C41E2F" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M5 12h14M13 6l6 6-6 6" />
+                </svg>
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2.4: Origin / 社名の由来 */}
+      <section className="relative z-10" style={{ backgroundColor: "#F5F1EB", padding: "120px 0" }}>
+        <div className="mx-auto px-5" style={{ maxWidth: "1000px" }}>
+          <p
+            className="text-accent mb-4"
+            style={{
+              fontSize: "clamp(48px, 8vw, 80px)",
+              fontFamily: "'Anton', sans-serif",
+              letterSpacing: "0.05em",
+              lineHeight: 1,
+            }}
+          >
+            Origin
+          </p>
+          <p
+            className="font-bold text-[#222222] mb-4"
+            style={{ fontSize: "clamp(18px, 2.5vw, 24px)" }}
+          >
+            社名に込めた、3つの想い。
+          </p>
+          <p
+            className="text-[#666]"
+            style={{ fontSize: "15px", lineHeight: 2.0, marginBottom: "56px" }}
+          >
+            株式会社Singという社名には、<br className="sm:hidden" />私たちが大切にしている3つの想いが込められています。
+          </p>
+
+          {/* Three pillars */}
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 sm:gap-6">
+            {naming.map((item) => (
+              <div
+                key={item.word}
+                className="rounded-xl"
+                style={{
+                  backgroundColor: "#fff",
+                  border: "1px solid #EAE3D9",
+                  padding: "32px 28px",
+                }}
+              >
+                <p
+                  className="text-accent"
+                  style={{
+                    fontFamily: "'Anton', sans-serif",
+                    fontSize: "clamp(28px, 4vw, 36px)",
+                    letterSpacing: "0.04em",
+                    lineHeight: 1,
+                    marginBottom: "14px",
+                  }}
+                >
+                  {item.word}
+                </p>
+                <p
+                  className="font-bold text-[#222222]"
+                  style={{
+                    fontSize: "17px",
+                    paddingBottom: "12px",
+                    marginBottom: "16px",
+                    borderBottom: "2px solid #e67635",
+                    display: "inline-block",
+                  }}
+                >
+                  {item.title}
+                </p>
+                <p className="text-[#666]" style={{ fontSize: "13px", lineHeight: 1.9 }}>
+                  {item.teaser}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          {/* -ing closing note */}
+          <p
+            className="text-[#555]"
+            style={{ fontSize: "14px", lineHeight: 2.0, marginTop: "40px" }}
+          >
+            そして、Singing・Storying・Starting——<br className="sm:hidden" />完成を目指すのではなく、挑戦し、進化し続ける「現在進行形」の姿勢を大切にしています。
+          </p>
+
+          <div className="flex items-center mt-12">
+            <Link
+              href="/company"
+              className="inline-flex items-center gap-6 text-[#222222] group"
+            >
+              <span className="text-[18px] font-bold tracking-wide">COMPANY</span>
+              <span
+                className="flex items-center justify-center rounded-full bg-accent group-hover:scale-105 transition-transform"
+                style={{ width: "80px", height: "80px" }}
+              >
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                   <path d="M5 12h14M13 6l6 6-6 6" />
                 </svg>
               </span>
