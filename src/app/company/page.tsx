@@ -68,6 +68,33 @@ const storyChapters = [
   },
 ];
 
+const namingPillars = [
+  {
+    word: "Sing",
+    title: "想いを響かせる",
+    body: [
+      "「Sing」は英語で「歌う」という意味があります。歌には、人の心を動かし、勇気を与え、人生を変える力があります。",
+      "私たちは、企業や経営者、一人ひとりが持つ理念や想いを社会へ届け、共感を生み、新たな価値へとつなげていきます。企業の価値を響かせること。それが私たちの使命です。",
+    ],
+  },
+  {
+    word: "Story",
+    title: "物語を紡ぐ",
+    body: [
+      "すべての企業には、創業の想い、挑戦、そして未来へのビジョンがあります。しかし、その価値は伝わらなければ存在しないのと同じです。",
+      "私たちは、企業や人が歩んできた軌跡や未来への想いを、一つのストーリーとして形にします。人は商品ではなく、その背景にある物語に共感し、信頼を築いていきます。だからこそ、私たちは物語を大切にしています。",
+    ],
+  },
+  {
+    word: "Start",
+    title: "未来を始める",
+    body: [
+      "私たちは、単にサービスを提供する会社ではありません。企業の成長が始まる瞬間。新しい挑戦が始まる瞬間。誰かの人生が動き出す瞬間。その「始まり」を創ることこそ、私たちの存在意義です。",
+      "一つの出会い、一つのブランド、一つの挑戦が、新しい未来を切り拓く最初の一歩になると信じています。",
+    ],
+  },
+];
+
 export default function CompanyPage() {
   const hq = locations.headquarters;
 
@@ -485,6 +512,258 @@ export default function CompanyPage() {
                 誰よりも高い情熱を持って、<br className="sm:hidden" />笑顔を絶やさず明るく生きよう。
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: 社名の由来 */}
+      <section style={{ backgroundColor: "#F5F1EB", padding: "100px 20px" }}>
+        <div className="mx-auto" style={{ maxWidth: "900px" }}>
+          {/* Section title */}
+          <div className="text-center" style={{ marginBottom: "48px" }}>
+            <p
+              style={{
+                fontSize: "clamp(36px, 5vw, 48px)",
+                fontFamily: "'Anton', sans-serif",
+                letterSpacing: "0.05em",
+                color: "#C84B2F",
+                lineHeight: 1,
+                marginBottom: "8px",
+              }}
+            >
+              Origin
+            </p>
+            <h2
+              className="font-bold"
+              style={{ fontSize: "clamp(20px, 3vw, 26px)", color: "#222" }}
+            >
+              社名の由来
+            </h2>
+          </div>
+
+          {/* Lead */}
+          <div className="text-center" style={{ marginBottom: "56px" }}>
+            <p
+              style={{
+                fontSize: "clamp(15px, 1.6vw, 17px)",
+                lineHeight: 2.0,
+                color: "#333",
+                marginBottom: "32px",
+              }}
+            >
+              株式会社Singという社名には、<br className="sm:hidden" />
+              私たちが大切にしている<br className="sm:hidden" />3つの想いが込められています。
+            </p>
+
+            {/* Sing / Story / Start */}
+            <div
+              className="flex flex-wrap items-center justify-center"
+              style={{ gap: "12px 20px", marginBottom: "28px" }}
+            >
+              {["Sing", "Story", "Start"].map((word, i) => (
+                <div
+                  key={word}
+                  className="flex items-center"
+                  style={{ gap: "12px 20px" }}
+                >
+                  {i > 0 && (
+                    <span
+                      className="hidden sm:inline"
+                      style={{ color: "#C84B2F", fontSize: "24px" }}
+                    >
+                      ·
+                    </span>
+                  )}
+                  <span
+                    style={{
+                      fontFamily: "'Anton', sans-serif",
+                      fontSize: "clamp(28px, 4vw, 40px)",
+                      letterSpacing: "0.04em",
+                      color: "#C84B2F",
+                      lineHeight: 1,
+                    }}
+                  >
+                    {word}
+                  </span>
+                </div>
+              ))}
+            </div>
+
+            <p
+              style={{
+                fontSize: "clamp(14px, 1.4vw, 15px)",
+                lineHeight: 2.0,
+                color: "#555",
+              }}
+            >
+              この3つは、私たちが目指す価値そのものです。
+            </p>
+          </div>
+
+          {/* Three pillars */}
+          <div className="space-y-6 sm:space-y-8">
+            {namingPillars.map((pillar) => (
+              <div
+                key={pillar.word}
+                className="rounded-xl"
+                style={{
+                  backgroundColor: "#fff",
+                  border: "1px solid #EAE3D9",
+                  padding: "36px 32px",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "'Anton', sans-serif",
+                    fontSize: "clamp(24px, 3.2vw, 32px)",
+                    letterSpacing: "0.04em",
+                    color: "#C84B2F",
+                    lineHeight: 1,
+                    marginBottom: "10px",
+                  }}
+                >
+                  {pillar.word}
+                </p>
+                <p
+                  className="font-bold"
+                  style={{
+                    fontSize: "clamp(16px, 2vw, 19px)",
+                    color: "#222",
+                    paddingBottom: "16px",
+                    marginBottom: "20px",
+                    borderBottom: "2px solid #C84B2F",
+                    display: "inline-block",
+                  }}
+                >
+                  {pillar.title}
+                </p>
+                <div
+                  style={{
+                    fontSize: "clamp(14px, 1.4vw, 15px)",
+                    lineHeight: 2.0,
+                    color: "#333",
+                  }}
+                >
+                  {pillar.body.map((paragraph, j) => (
+                    <p
+                      key={j}
+                      style={{
+                        marginBottom:
+                          j < pillar.body.length - 1 ? "16px" : 0,
+                      }}
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </div>
+            ))}
+          </div>
+
+          {/* 私たちが目指す未来 */}
+          <div style={{ marginTop: "80px" }}>
+            <h3
+              className="font-bold text-center"
+              style={{
+                fontSize: "clamp(18px, 2.4vw, 24px)",
+                color: "#222",
+                marginBottom: "32px",
+              }}
+            >
+              私たちが目指す未来
+            </h3>
+            <div
+              style={{
+                fontSize: "clamp(14px, 1.4vw, 15px)",
+                lineHeight: 2.0,
+                color: "#333",
+              }}
+            >
+              <p style={{ marginBottom: "20px" }}>
+                株式会社Singが目指しているのは、企業のブランディングを支援することだけではありません。企業の成長によって生まれた価値が、次の世代へ循環していく社会を創ることです。
+              </p>
+              <p style={{ marginBottom: "20px" }}>
+                私たちは、次世代の若者や子どもたちへ投資をする経営者を100人育成することを、一つの大きな使命として掲げています。企業は利益を生み出すだけの存在ではなく、その利益を未来へ還元し、次の世代へ希望をつないでいく存在であってほしい。一人の経営者が一人の子どもの未来を変え、その輪が100人の経営者へ広がれば、社会は確実に変わっていく。私たちは、その循環を生み出す起点となる企業を目指しています。
+              </p>
+              <p style={{ marginBottom: "20px" }}>
+                そして、その先にある代表の人生をかけた夢があります。それが、
+                <strong style={{ color: "#C84B2F" }}>
+                  児童養護施設「Together」
+                </strong>
+                の実現です。
+              </p>
+              <p style={{ marginBottom: "20px" }}>
+                家庭環境や経済的な事情によって夢を諦めなければならない子どもたちが、一人でも減る社会をつくりたい。安心して暮らせる場所があり、信頼できる大人がいて、自分の可能性を信じられる環境をつくりたい。
+              </p>
+              <p>
+                Togetherは、子どもたちを守る場所であると同時に、地域・企業・社会が一つになって未来を育てる場所でもあります。株式会社Singは、この夢を実現するために存在しています。
+              </p>
+            </div>
+          </div>
+
+          {/* -ing / closing */}
+          <div
+            className="text-center"
+            style={{
+              marginTop: "72px",
+              paddingTop: "56px",
+              borderTop: "1px solid #DDD3C6",
+            }}
+          >
+            <div
+              style={{
+                fontSize: "clamp(14px, 1.4vw, 15px)",
+                lineHeight: 2.0,
+                color: "#333",
+                marginBottom: "40px",
+              }}
+            >
+              <p style={{ marginBottom: "20px" }}>
+                そして、この3つの言葉には、もう一つ大切な意味があります。それは、
+                <strong style={{ color: "#C84B2F" }}>「-ing」</strong>です。
+              </p>
+              <p style={{ marginBottom: "20px" }}>
+                私たちは、Singing・Storying・Startingという「現在進行形」の姿勢を大切にしています。想いを響かせ続けること。物語を紡ぎ続けること。未来への挑戦を始め続けること。そして、その挑戦を次の世代へつなぎ続けること。
+              </p>
+              <p>
+                完成を目指すのではなく、挑戦し、成長し、進化し続ける。その歩みそのものが、新たな未来を創る力になると信じています。
+              </p>
+            </div>
+
+            <p
+              className="font-bold"
+              style={{
+                fontSize: "clamp(20px, 3vw, 28px)",
+                lineHeight: 1.6,
+                color: "#222",
+                marginBottom: "20px",
+              }}
+            >
+              だから、私たちはSing。
+            </p>
+            <p
+              style={{
+                fontFamily: "'Anton', sans-serif",
+                fontSize: "clamp(20px, 2.8vw, 28px)",
+                letterSpacing: "0.04em",
+                color: "#C84B2F",
+                lineHeight: 1.4,
+              }}
+            >
+              Sing · Story · Start
+              <br />
+              Singing · Storying · Starting
+            </p>
+            <p
+              style={{
+                fontSize: "clamp(14px, 1.4vw, 15px)",
+                lineHeight: 2.0,
+                color: "#555",
+                marginTop: "24px",
+              }}
+            >
+              想いを響かせ、物語を紡ぎ、未来を創り続ける。
+            </p>
           </div>
         </div>
       </section>
