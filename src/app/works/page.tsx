@@ -114,6 +114,22 @@ const works: WorkItem[] = [
     image: "/images/works/tadano.png",
     url: "https://www.tadanogroup.com/",
   },
+  {
+    id: "hp-06",
+    category: "hp",
+    title: "信藤建設株式会社 様",
+    description: "",
+    image: "/images/works/shindou.png",
+    url: "https://www.shindou-kk.co.jp/",
+  },
+  {
+    id: "hp-07",
+    category: "hp",
+    title: "株式会社ティーエヌ製作所 様",
+    description: "",
+    image: "/images/works/tn-seisakusho.png",
+    url: "https://tn-seisakusho.com/",
+  },
   // LP制作
   {
     id: "lp-01",
@@ -147,6 +163,14 @@ const works: WorkItem[] = [
     image: "/images/works/coverk.png",
     url: "https://www.jp-cowerk.com/",
   },
+  {
+    id: "lp-05",
+    category: "lp",
+    title: "有限会社あーきぺんこ 様",
+    description: "",
+    image: "/images/works/artkey-p.png",
+    url: "https://www.artkey-p-recruit.com/",
+  },
   // PV制作
   {
     id: "pv-01",
@@ -168,6 +192,13 @@ const works: WorkItem[] = [
     title: "株式会社コベルク 様",
     description: "",
     video: "https://assets.singgroup.biz/pv/pv_4.mp4",
+  },
+  {
+    id: "pv-04",
+    category: "pv",
+    title: "信藤建設株式会社 様",
+    description: "採用PV",
+    video: "https://assets.singgroup.biz/pv/shindou_recruit.mp4",
   },
   // アニメ動画制作
   {
