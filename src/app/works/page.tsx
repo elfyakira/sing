@@ -55,7 +55,6 @@ const categories = [
   { id: "lp", label: "LP制作" },
   { id: "pv", label: "PV制作" },
   { id: "animation", label: "アニメ動画制作" },
-  { id: "katsuyaku", label: "カツヤク" },
 ] as const;
 
 type CategoryId = (typeof categories)[number]["id"];
@@ -207,6 +206,13 @@ const works: WorkItem[] = [
     title: "元ラグビー日本代表 長江有祐 様",
     description: "",
     video: "https://assets.singgroup.biz/pv/nagae.pv.mp4",
+  },
+  {
+    id: "animation-02",
+    category: "animation",
+    title: "つなみら 様",
+    description: "",
+    video: "https://assets.singgroup.biz/pv/tsunamira_anime.mp4",
   },
 ];
 
