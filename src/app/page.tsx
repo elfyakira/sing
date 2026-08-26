@@ -15,12 +15,6 @@ const services = [
   },
   {
     num: "02",
-    title: "カツヤク",
-    video: "/videos/service-02.mp4",
-    teaser: "入社がゴールではない。人が定着し、成長し続ける組織づくりの伴走支援。",
-  },
-  {
-    num: "03",
     title: "Singメディア",
     video: "/videos/service-03.mp4",
     teaser: "届けたい想いを、届くカタチに。企業の魅力を最大化する情報発信支援。",
@@ -377,7 +371,7 @@ export default function Home() {
             人が輝く企業をつくるために。
           </p>
 
-          <div className="flex flex-col gap-8 sm:grid sm:grid-cols-3 sm:gap-6">
+          <div className="flex flex-col gap-8 sm:grid sm:grid-cols-2 sm:gap-6">
             {services.map((svc, i) => (
               <Link
                 key={svc.num}

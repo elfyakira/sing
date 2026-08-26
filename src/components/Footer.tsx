@@ -8,8 +8,7 @@ const siteMapSections = [
     titleJa: "事業内容",
     links: [
       { label: "ツナゲル", href: "/service#service-01" },
-      { label: "カツヤク", href: "/service#service-02" },
-      { label: "Singメディア", href: "/service#service-03" },
+      { label: "Singメディア", href: "/service#service-02" },
     ],
   },
   {

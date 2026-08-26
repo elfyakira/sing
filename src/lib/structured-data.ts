@@ -7,7 +7,7 @@ const SITE_URL = 'https://singgroup.biz';
 const ORG_NAME = '株式会社Sing';
 const ORG_LEGAL_NAME = '株式会社Sing';
 const ORG_DESCRIPTION =
-  '愛知県春日井市を拠点に、中小企業の採用支援（ツナゲル）・組織コンサルティング（カツヤク）・ブランディング支援を一気通貫で提供。採用で終わらない、人が長く活躍できる仕組みづくりを伴走支援する。';
+  '愛知県春日井市を拠点に、中小企業の採用支援（ツナゲル）・ブランディング支援（Singメディア）を一気通貫で提供。採用で終わらない、人が長く活躍できる仕組みづくりを伴走支援する。';
 const ORG_ID = `${SITE_URL}/#organization`;
 const WEBSITE_ID = `${SITE_URL}/#website`;
 const FOUNDER_ID = `${SITE_URL}/#person-shimizu-shunnosuke`;
@@ -147,15 +147,6 @@ export function generateOrganizationSchema() {
           '@id': `${SITE_URL}/services/tsunageru/#service`,
           name: 'ツナゲル（採用支援）',
           serviceType: 'RecruitmentSupport',
-        },
-      },
-      {
-        '@type': 'Offer',
-        itemOffered: {
-          '@type': 'Service',
-          '@id': `${SITE_URL}/services/katsuyaku/#service`,
-          name: 'カツヤク（人事・組織コンサルティング）',
-          serviceType: 'OrganizationConsulting',
         },
       },
       {

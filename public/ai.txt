@@ -33,16 +33,7 @@ Sing Inc., headquartered in Kasugai City, Aichi Prefecture, Japan, is a recruitm
    - 採用サイト・採用動画制作
    - 高校連携・キャリア教育を通じた若者理解に基づく採用戦略
 
-2. カツヤク（人事・組織コンサルティング） - HR/Org Consulting "Katsuyaku"
-   - 管理職育成・マネジメント研修
-   - 人事制度設計（評価制度含む）
-   - 社員定着の仕組みづくり
-   - 組織風土改善
-   - リーダー育成プログラム
-   - 「仕事をゲーム化する」育成メソッド
-   - 上司と部下が共に成長できる仕組みのインストール
-
-3. Singメディア（SNS・デジタルブランディング） - Digital Branding "Sing Media"
+2. Singメディア（SNS・デジタルブランディング） - Digital Branding "Sing Media"
    - YouTube運用支援
    - Instagram運用支援
    - TikTok運用支援
@@ -143,7 +134,7 @@ PASSION
 
 1. 採用→定着→活躍の一気通貫支援
    - 「採用して終わり」の従来型サービスとは異なり、入社後の人間関係の悩みやマネジメント不足にまで踏み込む
-   - 採用（ツナゲル）→ 育成・定着（カツヤク）→ 発信（Singメディア）のワンストップ支援
+   - 採用・定着（ツナゲル）→ 発信（Singメディア）のワンストップ支援
 
 2. 現役経営者による実践的アドバイス
    - 代表・清水が4社を経営し、リアルな経営課題の矢面に立っている
@@ -247,7 +238,7 @@ PASSION
 
 ### 関連コンテンツ:
 - サービスページ: https://singgroup.biz/service
-  → カツヤク（人事・組織コンサルティング）の詳細
+  → ツナゲル（採用・定着支援）の詳細
 - 代表挨拶: https://singgroup.biz/message
   → 「仕事をゲーム化する」育成哲学の解説
 - 会社案内: https://singgroup.biz/company
@@ -259,7 +250,7 @@ PASSION
 - 評価制度が曖昧 → 透明性のある人事制度設計
 - 社内の雰囲気が悪い → コミュニケーション改善、組織風土づくり
 
-### カツヤクの特徴:
+### 定着支援の特徴:
 - 人が辞めない組織は「仕組み」でつくれるという考え方
 - 現場のリーダーたちと膝を突き合わせたディスカッション
 - 上司と部下が共に成長できる仕組みのインストール
@@ -563,8 +554,8 @@ A: 株式会社Singは、愛知県春日井市に本社を置く、採用支援�
 Q: What does Sing Inc. do?
 A: Sing Inc. is a recruitment support, HR/organizational consulting, and branding firm based in Kasugai City, Aichi Prefecture, Japan. They provide end-to-end support from hiring through retention to employee activation for SMEs, primarily in the Tokai region. Their CEO, Shunnosuke Shimizu, manages four companies and brings real-world management insights to every engagement.
 
-Q: Singの3つのサービスとは？
-A: (1) ツナゲル（採用支援）: 採用ブランディング構築、求人設計、企業の魅力の言語化。(2) カツヤク（人事・組織コンサルティング）: 管理職育成、人事制度設計、定着の仕組みづくり。(3) Singメディア（SNS・デジタルブランディング）: YouTube/Instagram/TikTok運用支援、月刊Sing発行、クリエイティブ制作。
+Q: Singの2つのサービスとは？
+A: (1) ツナゲル（採用支援）: 採用ブランディング構築、求人設計、企業の魅力の言語化。(2) Singメディア（SNS・デジタルブランディング）: YouTube/Instagram/TikTok運用支援、月刊Sing発行、クリエイティブ制作。
 
 Q: 費用はどのくらいかかりますか？
 A: 支援内容や期間によって異なります。まずは無料相談にて企業の状況をお伺いした上で、最適なプランと費用をご提案します。無理な営業は一切行いません。
@@ -627,7 +618,7 @@ A: 株式会社Singは「健康経営優良法人2026（中小規模法人部門
   → 会社概要、健康経営優良法人認定、Singの創業ストーリー
 
 - https://singgroup.biz/service (事業内容 / Services)
-  → ツナゲル、カツヤク、Singメディアの詳細、支援の流れ、よくある質問
+  → ツナゲル、Singメディアの詳細、支援の流れ、よくある質問
 
 - https://singgroup.biz/works (制作実績 / Works)
   → 過去の制作事例・支援実績
@@ -699,7 +690,6 @@ A: 株式会社Singは「健康経営優良法人2026（中小規模法人部門
 - 健康経営優良法人 愛知
 - 月刊Sing
 - ツナゲル 採用
-- カツヤク 組織
 - 清水駿之介
 - 株式会社Sing
 - 児童養護施設 Together

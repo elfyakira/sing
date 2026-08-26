@@ -14,7 +14,7 @@ import {
 export const metadata: Metadata = {
   title: "事業内容",
   description:
-    "株式会社Singの3つのサービス。採用支援（ツナゲル）・組織づくり支援（カツヤク）・情報発信支援（Singメディア）をワンストップで支援します。",
+    "株式会社Singの2つのサービス。採用支援（ツナゲル）・情報発信支援（Singメディア）をワンストップで支援します。",
 };
 
 const services = [
@@ -34,20 +34,6 @@ const services = [
   },
   {
     num: "02",
-    nameEn: "Activate",
-    name: "カツヤク",
-    subtitle: "人が辞めない組織は、\n\"仕組み\"でつくれる",
-    body: "採用した人財が活躍し続けるためには、組織の土壌が整っている必要があります。評価制度、育成環境、マネジメント体制。Singは「人が辞めない組織づくり」を仕組みから支援します。",
-    video: "/videos/service-02.mp4",
-    problems: [
-      { title: "早期離職が止まらない", desc: "せっかく採用しても、数ヶ月で辞めてしまう。" },
-      { title: "管理職が育たない", desc: "現場のリーダーが育たず、組織が回らない。" },
-      { title: "評価制度が曖昧", desc: "評価基準が不透明で、社員のモチベーションが低下している。" },
-      { title: "社内の雰囲気が悪い", desc: "コミュニケーション不足で、チームの一体感がない。" },
-    ],
-  },
-  {
-    num: "03",
     nameEn: "Media",
     name: "Singメディア",
     subtitle: "届けたい想いを、届くカタチに",
@@ -133,15 +119,9 @@ export default function ServicePage() {
             serviceType: "RecruitmentSupport",
           }),
           generateServiceSchema({
-            name: "カツヤク（人事・組織コンサルティング）",
-            description: "管理職育成、人事制度設計、社員定着の仕組みづくりを支援。採用した人財が活躍し続けるための組織基盤づくり。",
-            url: "https://singgroup.biz/service#service-02",
-            serviceType: "OrganizationConsulting",
-          }),
-          generateServiceSchema({
             name: "Singメディア（SNS・デジタルブランディング）",
             description: "YouTube、Instagram、TikTokなどSNS戦略、月刊Sing、採用サイト・動画・パンフレット制作までをワンストップで支援。",
-            url: "https://singgroup.biz/service#service-03",
+            url: "https://singgroup.biz/service#service-02",
             serviceType: "DigitalBranding",
           }),
           generateFAQSchema(
@@ -183,7 +163,7 @@ export default function ServicePage() {
             >
               人が輝く企業をつくるために。
               <br />
-              3つの支援領域で、採用から活躍までを一気通貫で支援します。
+              2つの支援領域で、採用から活躍までを一気通貫で支援します。
             </h2>
           </div>
 
@@ -205,7 +185,7 @@ export default function ServicePage() {
       {/* Anchor Links */}
       <section className="bg-white" style={{ padding: "48px 20px 80px" }}>
         <div className="mx-auto" style={{ maxWidth: "1100px" }}>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
             {services.map((service) => (
               <a
                 key={service.num}
@@ -242,7 +222,7 @@ export default function ServicePage() {
         </div>
       </section>
 
-      {/* Sections 3-5: Service Details */}
+      {/* Sections 3-4: Service Details */}
       {services.map((service) => (
         <section
           key={service.num}
