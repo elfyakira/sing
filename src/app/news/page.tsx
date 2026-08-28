@@ -7,6 +7,13 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; slug: string }[] = [
   {
+    date: "2026-08-28",
+    category: "取り組み",
+    title: "誠信高校サッカー部を応援しています",
+    thumbnail: "/images/news/seishin-soccer-cover.jpg",
+    slug: "seishin-soccer-support",
+  },
+  {
     date: "2026-05-11",
     category: "ブログ",
     title: "健康経営優良法人認定祝賀フォーラムに参加しました",

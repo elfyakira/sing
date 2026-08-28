@@ -10,6 +10,54 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "seishin-soccer-support": {
+    date: "2026-08-28",
+    category: "取り組み",
+    title: "誠信高校サッカー部を応援しています",
+    thumbnail: "/images/news/seishin-soccer-cover.jpg",
+    body: (
+      <>
+        <p>
+          先日、誠信高校サッカー部の先生と選手の皆さんが、Singに来てくださいました。
+        </p>
+        <p>
+          これまでの活動や成績のご報告、そしてこれからの目標について、選手の皆さんから直接お話を伺うことができました。目標に向かってひたむきに努力を重ねる姿、そしてこれからへの力強い言葉に、私たちの方がたくさんの刺激をいただいた時間となりました。
+        </p>
+
+        <div className="article-gallery">
+          <div className="article-image">
+            <Image
+              src="/images/news/seishin-soccer-cover.jpg"
+              alt="Singを訪問してくださった誠信高校サッカー部の先生と選手の皆さん"
+              width={1600}
+              height={1200}
+              sizes="(max-width: 780px) 100vw, 780px"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+        </div>
+
+        <p>
+          お持ちいただいたユニフォームには、「Sing」のロゴも入れていただいています。こうして選手の皆さんの挑戦を、かたちにして応援させていただけることを大変嬉しく思います。
+        </p>
+
+        <h3>■頑張る人の挑戦を、地域から応援する</h3>
+        <p>
+          株式会社Singは、企業の採用・定着・活躍支援を通じて「人が輝き続ける組織づくり」に取り組んでいます。その根底にあるのは、頑張る人の挑戦を地域みんなで支えていきたいという想いです。
+        </p>
+        <p>
+          部活動に打ち込む高校生の日々は、これから社会に出ていくうえでの大きな土台になります。仲間と目標を共有し、うまくいかない時期も乗り越えながら前に進んでいく経験は、そのまま働くことにもつながっていく力だと私たちは考えています。
+        </p>
+        <p>
+          だからこそSingは、事業を通じた支援だけでなく、地域のスポーツや教育の現場にも関わりながら、若い世代の挑戦を応援していきたいと考えています。
+        </p>
+        <p>
+          Singはこれからも、誠信高校サッカー部の皆さんを応援していきます。
+        </p>
+        <p>選手の皆さん、頑張ってください！</p>
+      </>
+    ),
+  },
   "kenko-keiei-2026-forum": {
     date: "2026-05-11",
     category: "ブログ",
