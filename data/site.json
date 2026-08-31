@@ -114,28 +114,58 @@
   "works": [],
   "news": [
     {
+      "date": "2026-08-31",
+      "category": "ブログ",
+      "title": "前田奈子さんをBizreaで取材しました！",
+      "slug": "bizrea-maeda-nako-interview"
+    },
+    {
+      "date": "2026-08-31",
+      "category": "ブログ",
+      "title": "nobodyknows+ ノリ・ダ・ファンキーシビレサスさんを取材しました！",
+      "slug": "bizrea-nobodyknows-interview"
+    },
+    {
+      "date": "2026-08-31",
+      "category": "ブログ",
+      "title": "【取材決定】春日井市の魅力を発信する「サボはる」さんを月刊Sing春日井で取材します！",
+      "slug": "sabo-haru-interview"
+    },
+    {
       "date": "2026-08-28",
       "category": "取り組み",
       "title": "誠信高校サッカー部を応援しています",
       "slug": "seishin-soccer-support"
     },
     {
-      "date": "2026-03-01",
-      "category": "お知らせ",
+      "date": "2026-05-11",
+      "category": "ブログ",
+      "title": "健康経営優良法人認定祝賀フォーラムに参加しました",
+      "slug": "kenko-keiei-2026-forum"
+    },
+    {
+      "date": "2026-04-16",
+      "category": "取り組み",
+      "title": "地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！",
+      "slug": "kasugai-gujo-odori-vol3"
+    },
+    {
+      "date": "2026-04-16",
+      "category": "ブログ",
+      "title": "【今年も出店決定】One Dining Table Fes vol.4 にSingが参加します！",
+      "slug": "one-dining-table-fes-vol4"
+    },
+    {
+      "date": "2026-04-15",
+      "category": "取り組み",
+      "title": "株式会社テクノシンエイ様より中部大学ラグビー部へ温かいご支援",
+      "slug": "technoshinei-chubu-rugby"
+    },
+    {
+      "date": "2026-04-03",
+      "category": "ブログ",
       "title": "ホームページをリニューアルしました",
       "slug": "renewal"
-    },
-    {
-      "date": "2026-02-15",
-      "category": "セミナー",
-      "title": "中小企業向け採用力強化セミナーを開催します",
-      "slug": "seminar-202602"
-    },
-    {
-      "date": "2026-02-01",
-      "category": "実績紹介",
-      "title": "製造業A社様の採用ブランディング事例を公開しました",
-      "slug": "case-study-a"
     }
   ],
   "recruit": {

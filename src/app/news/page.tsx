@@ -5,7 +5,29 @@ import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
 
-const allNews: { date: string; category: string; title: string; thumbnail?: string; slug: string }[] = [
+const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
+  {
+    date: "2026-08-31",
+    category: "ブログ",
+    title: "前田奈子さんをBizreaで取材しました！",
+    thumbnail: "/images/news/maeda-nako-cover.jpg",
+    thumbnailPosition: "center 30%",
+    slug: "bizrea-maeda-nako-interview",
+  },
+  {
+    date: "2026-08-31",
+    category: "ブログ",
+    title: "nobodyknows+ ノリ・ダ・ファンキーシビレサスさんを取材しました！",
+    thumbnail: "/images/news/bizrea-nobodyknows-cover.jpg",
+    slug: "bizrea-nobodyknows-interview",
+  },
+  {
+    date: "2026-08-31",
+    category: "ブログ",
+    title: "【取材決定】春日井市の魅力を発信する「サボはる」さんを月刊Sing春日井で取材します！",
+    thumbnail: "/images/news/sabo-haru-cover.jpg",
+    slug: "sabo-haru-interview",
+  },
   {
     date: "2026-08-28",
     category: "取り組み",
@@ -141,7 +163,7 @@ export default function NewsPage() {
                 <div className="news-row-pc">
                   {item.thumbnail && (
                     <div style={{ width: 160, height: 100, flexShrink: 0, marginRight: 20, position: "relative", borderRadius: 4, overflow: "hidden" }}>
-                      <Image src={item.thumbnail} alt={item.title} fill style={{ objectFit: "cover" }} />
+                      <Image src={item.thumbnail} alt={item.title} fill style={{ objectFit: "cover", objectPosition: item.thumbnailPosition ?? "center" }} />
                     </div>
                   )}
                   <div style={{ display: "flex", flexDirection: "column", gap: 8, flex: 1 }}>
@@ -184,7 +206,7 @@ export default function NewsPage() {
                 <div className="news-row-sp">
                   {item.thumbnail && (
                     <div style={{ width: "100%", height: 180, position: "relative", borderRadius: 4, overflow: "hidden", marginBottom: 12 }}>
-                      <Image src={item.thumbnail} alt={item.title} fill style={{ objectFit: "cover" }} />
+                      <Image src={item.thumbnail} alt={item.title} fill style={{ objectFit: "cover", objectPosition: item.thumbnailPosition ?? "center" }} />
                     </div>
                   )}
                   <div
