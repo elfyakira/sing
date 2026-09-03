@@ -7,6 +7,14 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
   {
+    date: "2026-09-03",
+    category: "ブログ",
+    title: "「毎日が就活」ようへいさんをBizreaで取材しました！",
+    thumbnail: "/images/news/bizrea-yohei-cover.jpg",
+    thumbnailPosition: "center 30%",
+    slug: "bizrea-yohei-interview",
+  },
+  {
     date: "2026-08-31",
     category: "ブログ",
     title: "前田奈子さんをBizreaで取材しました！",

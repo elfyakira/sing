@@ -10,6 +10,34 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "bizrea-yohei-interview": {
+    date: "2026-09-03",
+    category: "ブログ",
+    title: "「毎日が就活」ようへいさんをBizreaで取材しました！",
+    thumbnail: "/images/news/bizrea-yohei-cover.jpg",
+    thumbnailPosition: "center 30%",
+    body: (
+      <>
+        <p>
+          この度、就活情報を発信するインフルエンサー兼モデルとして活躍されている、ようへいさんにBizreaの取材をさせていただきました！
+        </p>
+        <p>
+          Instagram「毎日が就活」では、就職活動に役立つ情報や考え方などを発信し、多くの就活生に向けて情報を届けているようへいさん。
+        </p>
+        <p>
+          今回の取材では、就活に関する情報発信を始めたきっかけや、発信を続ける中で大切にしていること、これまでの活動についてなど、さまざまなお話を伺いました。
+        </p>
+        <p>
+          また、インフルエンサーとしてだけでなく、モデルとしても活動されているようへいさんならではの経験や想いにも触れる、貴重な取材となりました。
+        </p>
+        <p>取材内容の詳細は、今後Bizreaにて公開予定です。</p>
+        <p>どんなお話を聞くことができたのか、ぜひ公開を楽しみにお待ちください！</p>
+        <p>
+          Singでは、これからもさまざまな分野で活躍する方々にスポットを当て、その人ならではの想いや活動の魅力を発信してまいります。
+        </p>
+      </>
+    ),
+  },
   "bizrea-maeda-nako-interview": {
     date: "2026-08-31",
     category: "ブログ",
