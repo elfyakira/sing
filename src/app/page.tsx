@@ -704,6 +704,119 @@ export default function Home() {
 
           {/* Blog Card */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/news/sing-rental-farm" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news/rental-farm-noridagarden.jpg"
+                  alt="Singでもレンタル畑をスタートします！"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  style={{ objectPosition: "center 35%" }}
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-09-14
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    取り組み
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  Singでもレンタル畑をスタートします！
+                </p>
+              </div>
+            </Link>
+            <Link href="/news/sekida-fes-2026" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news/sekida-fes-photo.jpg"
+                  alt="11月22日開催！「関田区フェス」が篠木公園で開催されます"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-09-14
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    ブログ
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  11月22日開催！「関田区フェス」が篠木公園で開催されます
+                </p>
+              </div>
+            </Link>
+            <Link href="/news/sing-kasugai-launch" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news/sing-kasugai-sekida.jpg"
+                  alt="「月刊Sing春日井」創刊！春日井市内の各所で配布しています"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  style={{ objectPosition: "center 42%" }}
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-09-14
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    ブログ
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  「月刊Sing春日井」創刊！春日井市内の各所で配布しています
+                </p>
+              </div>
+            </Link>
             <Link href="/news/bizrea-yohei-interview" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
               <div
                 className="relative rounded-lg overflow-hidden"

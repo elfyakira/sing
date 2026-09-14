@@ -10,6 +10,95 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "sing-rental-farm": {
+    date: "2026-09-14",
+    category: "取り組み",
+    title: "Singでもレンタル畑をスタートします！",
+    thumbnail: "/images/news/rental-farm-noridagarden.jpg",
+    thumbnailPosition: "center 35%",
+    body: (
+      <>
+        <p>
+          この度、株式会社Singでは、春日井で農業を通じた新しい取り組みを行っている<strong>「noridaGARDEN&amp;co.」さんのレンタル畑</strong>をお借りすることになりました！
+        </p>
+        <p>
+          noridaGARDEN&amp;co.さんでは、企業などが畑をレンタルし、野菜を育てたり、農業体験を行ったり、収穫した野菜を地域へ届けたりと、さまざまな形で畑を活用できる取り組みを行っています。
+        </p>
+        <p>
+          また、畑の日々の管理をお任せできるため、農業の知識や経験がなくても、気軽に畑を活用できるのも魅力のひとつです。
+        </p>
+        <p>
+          Singでも、これから実際に畑を活用しながら、社員での農業体験をはじめ、地域のみなさまとの交流や新しいつながりづくりへと広げていきたいと考えています。
+        </p>
+        <p>
+          野菜を育てることだけでなく、畑を通して人と人がつながるきっかけをつくり、Singらしい新しい取り組みにしていければと思っています。
+        </p>
+        <p>今後は、畑での活動や野菜の成長の様子なども随時発信してまいります。</p>
+        <p>新しい取り組みを、ぜひ楽しみにしていてください！🌱</p>
+        <p>
+          【noridaGARDEN&amp;co.（Instagram）】
+          <br />
+          <a href="https://www.instagram.com/noridagarden/" target="_blank" rel="noopener noreferrer">
+            https://www.instagram.com/noridagarden/
+          </a>
+        </p>
+      </>
+    ),
+  },
+  "sekida-fes-2026": {
+    date: "2026-09-14",
+    category: "ブログ",
+    title: "11月22日開催！「関田区フェス」が篠木公園で開催されます",
+    thumbnail: "/images/news/sekida-fes-photo.jpg",
+    body: (
+      <>
+        <p>
+          11月22日、春日井市の篠木公園にて、<strong>「関田区フェス」</strong>が開催されます！
+        </p>
+        <p>地域のみなさんに楽しんでいただけるイベントとして、当日はさまざまな企画を予定しています。</p>
+        <p>
+          現在、イベント内容や当日の企画について準備を進めており、詳しい内容については改めてお知らせする予定です。
+        </p>
+        <p>会場は篠木公園です。</p>
+        <p>
+          地域のみなさんが集まり、楽しい時間を過ごせるイベントになる予定ですので、ぜひ楽しみにお待ちください！
+        </p>
+        <p>
+          今後、企画内容や詳細が決まり次第、SingのホームページやSNSでも順次ご紹介していきます。
+        </p>
+        <p>11月22日は、ぜひ「関田区フェス」へお越しください！</p>
+      </>
+    ),
+  },
+  "sing-kasugai-launch": {
+    date: "2026-09-14",
+    category: "ブログ",
+    title: "「月刊Sing春日井」創刊！春日井市内の各所で配布しています",
+    thumbnail: "/images/news/sing-kasugai-sekida.jpg",
+    thumbnailPosition: "center 42%",
+    body: (
+      <>
+        <p>
+          この度、グループ会社の一般社団法人春日井ツナガルミライ協会より、地域情報誌「月刊Sing春日井」を創刊しました！
+        </p>
+        <p>
+          「月刊Sing春日井」は、春日井の「人・仕事・お店・まち」にスポットを当て、地域の魅力をより多くの方に知っていただくための地域マガジンです。
+        </p>
+        <p>
+          創刊号では、春日井で活躍する方々や地域のお店、企業などを取り上げ、それぞれの背景にある想いや魅力をご紹介しています。
+        </p>
+        <p>
+          現在、春日井市内の商工会議所、飲食店、商業施設など、さまざまな場所に設置させていただいています。
+        </p>
+        <p>また、関田公民館にも設置させていただきました！</p>
+        <p>見かけた際は、ぜひお手に取ってご覧ください。</p>
+        <p>
+          これからも「月刊Sing春日井」を通して、まだ知られていない春日井の魅力や、地域で活躍する人・企業・お店の想いを発信し、春日井のまちをもっと身近に、もっと面白く感じていただけるきっかけを届けてまいります。
+        </p>
+        <p>今後の「月刊Sing春日井」にも、ぜひご注目ください！</p>
+      </>
+    ),
+  },
   "bizrea-yohei-interview": {
     date: "2026-09-03",
     category: "ブログ",

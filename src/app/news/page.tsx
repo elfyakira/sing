@@ -7,6 +7,29 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
   {
+    date: "2026-09-14",
+    category: "取り組み",
+    title: "Singでもレンタル畑をスタートします！",
+    thumbnail: "/images/news/rental-farm-noridagarden.jpg",
+    thumbnailPosition: "center 35%",
+    slug: "sing-rental-farm",
+  },
+  {
+    date: "2026-09-14",
+    category: "ブログ",
+    title: "11月22日開催！「関田区フェス」が篠木公園で開催されます",
+    thumbnail: "/images/news/sekida-fes-photo.jpg",
+    slug: "sekida-fes-2026",
+  },
+  {
+    date: "2026-09-14",
+    category: "ブログ",
+    title: "「月刊Sing春日井」創刊！春日井市内の各所で配布しています",
+    thumbnail: "/images/news/sing-kasugai-sekida.jpg",
+    thumbnailPosition: "center 42%",
+    slug: "sing-kasugai-launch",
+  },
+  {
     date: "2026-09-03",
     category: "ブログ",
     title: "「毎日が就活」ようへいさんをBizreaで取材しました！",
