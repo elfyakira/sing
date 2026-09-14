@@ -214,6 +214,13 @@ const works: WorkItem[] = [
     description: "",
     video: "https://assets.singgroup.biz/pv/tsunamira_anime.mp4",
   },
+  {
+    id: "animation-03",
+    category: "animation",
+    title: "一般社団法人ゆめスタパートナーズ 様",
+    description: "",
+    video: "https://assets.singgroup.biz/pv/yumepa_anime.mp4",
+  },
 ];
 
 export default function WorksPage() {
