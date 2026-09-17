@@ -221,6 +221,13 @@ const works: WorkItem[] = [
     description: "",
     video: "https://assets.singgroup.biz/pv/yumepa_anime.mp4",
   },
+  {
+    id: "animation-04",
+    category: "animation",
+    title: "株式会社Singホールディングス アニメPV",
+    description: "",
+    video: "https://assets.singgroup.biz/pv/singhd_anime.mp4",
+  },
 ];
 
 export default function WorksPage() {
