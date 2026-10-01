@@ -78,7 +78,7 @@ const works: WorkItem[] = [
     category: "hp",
     title: "有限会社トキワ工業 様",
     description: "",
-    image: "/images/works/tokiwakogyo.png",
+    image: "/images/works/tokiwakogyo.webp",
     url: "https://www.tokiwakogyo.com/",
   },
   {
@@ -86,7 +86,7 @@ const works: WorkItem[] = [
     category: "hp",
     title: "株式会社竹内金型製作所 様",
     description: "",
-    image: "/images/works/takeuchi.png",
+    image: "/images/works/takeuchi.webp",
     url: "https://www.tkss.co.jp/",
   },
   {
@@ -94,7 +94,7 @@ const works: WorkItem[] = [
     category: "hp",
     title: "株式会社住理工メテックス 様",
     description: "",
-    image: "/images/works/metex.png",
+    image: "/images/works/metex.webp",
     url: "https://www.metexsumiriko.com/",
   },
   {
@@ -102,7 +102,7 @@ const works: WorkItem[] = [
     category: "hp",
     title: "株式会社尾北 様",
     description: "",
-    image: "/images/works/bihoku.png",
+    image: "/images/works/bihoku.webp",
     url: "https://www.k-bihoku.co.jp/",
   },
   {
@@ -110,7 +110,7 @@ const works: WorkItem[] = [
     category: "hp",
     title: "株式会社唯野工業 様",
     description: "",
-    image: "/images/works/tadano.png",
+    image: "/images/works/tadano.webp",
     url: "https://www.tadanogroup.com/",
   },
   {
@@ -118,7 +118,7 @@ const works: WorkItem[] = [
     category: "hp",
     title: "信藤建設株式会社 様",
     description: "",
-    image: "/images/works/shindou.png",
+    image: "/images/works/shindou.webp",
     url: "https://www.shindou-kk.co.jp/",
   },
   {
@@ -126,7 +126,7 @@ const works: WorkItem[] = [
     category: "hp",
     title: "株式会社ティーエヌ製作所 様",
     description: "",
-    image: "/images/works/tn-seisakusho.png",
+    image: "/images/works/tn-seisakusho.webp",
     url: "https://tn-seisakusho.com/",
   },
   // LP制作
@@ -135,7 +135,7 @@ const works: WorkItem[] = [
     category: "lp",
     title: "出光リテール販売株式会社 中部カンパニー 様",
     description: "",
-    image: "/images/works/idemitsu.png",
+    image: "/images/works/idemitsu.webp",
     url: "https://www.idemitsu-ritehanchubu.com/",
   },
   {
@@ -143,7 +143,7 @@ const works: WorkItem[] = [
     category: "lp",
     title: "GTソリューション 様",
     description: "",
-    image: "/images/works/gts.png",
+    image: "/images/works/gts.webp",
     url: "https://www.gts-jp-recruit.com/",
   },
   {
@@ -151,7 +151,7 @@ const works: WorkItem[] = [
     category: "lp",
     title: "株式会社佐藤螺子 様",
     description: "",
-    image: "/images/works/sato-rashi.png",
+    image: "/images/works/sato-rashi.webp",
     url: "https://www.satorashisaiyo.com/",
   },
   {
@@ -159,7 +159,7 @@ const works: WorkItem[] = [
     category: "lp",
     title: "株式会社コベルク 様",
     description: "",
-    image: "/images/works/coverk.png",
+    image: "/images/works/coverk.webp",
     url: "https://www.jp-cowerk.com/",
   },
   {
@@ -167,7 +167,7 @@ const works: WorkItem[] = [
     category: "lp",
     title: "有限会社あーきぺんこ 様",
     description: "",
-    image: "/images/works/artkey-p.png",
+    image: "/images/works/artkey-p.webp",
     url: "https://www.artkey-p-recruit.com/",
   },
   // PV制作
@@ -326,6 +326,7 @@ export default function WorksPage() {
                           src={work.image}
                           alt={work.title}
                           fill
+                          unoptimized
                           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                           style={{ objectFit: "cover", objectPosition: "top" }}
                         />
