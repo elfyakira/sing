@@ -454,6 +454,98 @@ export default function RecruitPage() {
             </p>
           </FadeInUp>
         </div>
+
+        {/* Harassment prevention policy */}
+        <div
+          className="mx-auto"
+          style={{ maxWidth: "1200px", marginTop: "clamp(32px, 4vw, 48px)" }}
+        >
+          <div
+            className="text-left"
+            style={{
+              backgroundColor: "#FFFFFF",
+              borderRadius: "12px",
+              padding: "clamp(22px, 4vw, 44px)",
+              color: "#333333",
+              fontSize: "16px",
+              lineHeight: 1.8,
+              overflowWrap: "anywhere",
+            }}
+          >
+            <h2
+              className="flex items-start font-bold"
+              style={{
+                color: "#1A2E44",
+                fontSize: "clamp(18px, 2.2vw, 22px)",
+                lineHeight: 1.6,
+                marginBottom: "16px",
+                gap: "14px",
+              }}
+            >
+              <span
+                aria-hidden="true"
+                className="shrink-0"
+                style={{
+                  width: "24px",
+                  height: "2px",
+                  backgroundColor: "#C84B2F",
+                  marginTop: "0.8em",
+                }}
+              />
+              <span>【重要】就職活動中の皆様へ：ハラスメント防止に関する当社の基本方針</span>
+            </h2>
+            <p style={{ marginBottom: "24px" }}>
+              株式会社Singは、すべての求職者の皆様が安心して就職活動に臨めるよう、採用選考におけるハラスメント防止に全社を挙げて取り組んでいます。
+            </p>
+
+            <h3 className="font-bold" style={{ color: "#1A2E44", fontSize: "18px", lineHeight: 1.6, marginBottom: "4px" }}>
+              1. 基本方針
+            </h3>
+            <p style={{ marginBottom: "24px" }}>
+              当社は、インターンシップ、会社説明会、面接、OB・OG訪問など、あらゆる採用活動の場において、性的な言動による就活セクハラや、職権を背景としたパワーハラスメント行為を一切容認しません。
+            </p>
+
+            <h3 className="font-bold" style={{ color: "#1A2E44", fontSize: "18px", lineHeight: 1.6, marginBottom: "4px" }}>
+              2. 採用選考におけるルール
+            </h3>
+            <p style={{ marginBottom: "24px" }}>
+              当社の従業員は、選考において公私の分別を厳守します。求職者の皆様に対し、業務や選考に無関係なプライベートな質問をすることや、不適切な時間・場所（夜間の飲食店など）での面談を要求することはいたしません。また、連絡は原則として公式の採用システムまたは社内メールを通じて行います。
+            </p>
+
+            <h3 className="font-bold" style={{ color: "#1A2E44", fontSize: "18px", lineHeight: 1.6, marginBottom: "4px" }}>
+              3. 就活ハラスメント相談窓口
+            </h3>
+            <p style={{ marginBottom: "8px" }}>
+              万が一、当社の選考過程や従業員とのやり取りにおいて、ハラスメントにあたる行為や不安に思われる言動がございましたら、遠慮なく下記窓口までご連絡ください。
+            </p>
+            <ul className="list-disc" style={{ paddingLeft: "1.5em" }}>
+              <li>
+                <strong>相談窓口：</strong> 人事部 採用ハラスメント相談担当　笠本
+              </li>
+              <li>
+                <strong>連絡先：</strong>{" "}
+                <a
+                  href="mailto:skasamoto@jp-sing.com"
+                  className="underline"
+                  style={{ color: "#1A2E44" }}
+                >
+                  skasamoto@jp-sing.com
+                </a>{" "}
+                /{" "}
+                <a
+                  href={`tel:${contact.phoneTel}`}
+                  className="underline"
+                  style={{ color: "#1A2E44" }}
+                >
+                  0568-50-2799
+                </a>
+              </li>
+              <li>
+                ※ご相談いただいた内容によって、選考や合否に影響が出ることは一切ございません。秘密は厳格に守られます。
+              </li>
+            </ul>
+          </div>
+        </div>
       </section>
     </>
   );
