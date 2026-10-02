@@ -7,6 +7,36 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
   {
+    date: "2026-10-02",
+    category: "ブログ",
+    title: "何を食べても美味しい！春日井の中華料理「Chinese Dining 杏子楼」さんへ",
+    thumbnail: "/images/news/kyoshiro-kasugai.jpg",
+    thumbnailPosition: "center 48%",
+    slug: "kyoshiro-kasugai",
+  },
+  {
+    date: "2026-10-02",
+    category: "ブログ",
+    title: "今池のお祭りへ！nobodyknows+さんのライブを楽しんできました！",
+    thumbnail: "/images/news/imaike-festival-nobodyknows.jpg",
+    slug: "imaike-festival-nobodyknows",
+  },
+  {
+    date: "2026-10-02",
+    category: "取り組み",
+    title: "レンタル畑で野菜を植えました！大根・ロメインレタス・ガーデンレタスの成長記録！",
+    thumbnail: "/images/news/rental-farm-planting-01.jpg",
+    slug: "rental-farm-planting",
+  },
+  {
+    date: "2026-10-02",
+    category: "取り組み",
+    title: "「月刊Sing春日井」が中部大学に設置スタート！",
+    thumbnail: "/images/news/sing-kasugai-chubu-univ-01.jpg",
+    thumbnailPosition: "center 60%",
+    slug: "sing-kasugai-chubu-univ",
+  },
+  {
     date: "2026-09-14",
     category: "取り組み",
     title: "Singでもレンタル畑をスタートします！",
