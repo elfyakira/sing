@@ -727,7 +727,7 @@ export default function NewsDetailPage({ params }: { params: Promise<{ slug: str
               marginBottom: 48,
             }}
           >
-            <Image src={article.thumbnail} alt={article.title} fill style={{ objectFit: "cover", objectPosition: article.thumbnailPosition ?? "center" }} />
+            <Image src={article.thumbnail} alt={article.title} fill unoptimized style={{ objectFit: "cover", objectPosition: article.thumbnailPosition ?? "center" }} />
           </div>
 
           {/* Body */}

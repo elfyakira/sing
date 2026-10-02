@@ -224,7 +224,7 @@ export default function NewsPage() {
                 <div className="news-row-pc">
                   {item.thumbnail && (
                     <div style={{ width: 160, height: 100, flexShrink: 0, marginRight: 20, position: "relative", borderRadius: 4, overflow: "hidden" }}>
-                      <Image src={item.thumbnail} alt={item.title} fill style={{ objectFit: "cover", objectPosition: item.thumbnailPosition ?? "center" }} />
+                      <Image src={item.thumbnail} alt={item.title} fill unoptimized style={{ objectFit: "cover", objectPosition: item.thumbnailPosition ?? "center" }} />
                     </div>
                   )}
                   <div style={{ display: "flex", flexDirection: "column", gap: 8, flex: 1 }}>
@@ -267,7 +267,7 @@ export default function NewsPage() {
                 <div className="news-row-sp">
                   {item.thumbnail && (
                     <div style={{ width: "100%", height: 180, position: "relative", borderRadius: 4, overflow: "hidden", marginBottom: 12 }}>
-                      <Image src={item.thumbnail} alt={item.title} fill style={{ objectFit: "cover", objectPosition: item.thumbnailPosition ?? "center" }} />
+                      <Image src={item.thumbnail} alt={item.title} fill unoptimized style={{ objectFit: "cover", objectPosition: item.thumbnailPosition ?? "center" }} />
                     </div>
                   )}
                   <div
