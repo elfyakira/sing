@@ -199,6 +199,13 @@ const works: WorkItem[] = [
     description: "採用PV",
     video: "https://assets.singgroup.biz/pv/shindou_recruit.mp4",
   },
+  {
+    id: "pv-05",
+    category: "pv",
+    title: "株式会社尾北 様",
+    description: "",
+    video: "/videos/bihoku_pv.mp4",
+  },
   // アニメ動画制作
   {
     id: "animation-01",
@@ -210,7 +217,7 @@ const works: WorkItem[] = [
   {
     id: "animation-02",
     category: "animation",
-    title: "つなみら 様",
+    title: "一般社団法人春日井つながる未来協会 様",
     description: "",
     video: "https://assets.singgroup.biz/pv/tsunamira_anime.mp4",
   },
