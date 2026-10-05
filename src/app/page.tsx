@@ -713,7 +713,6 @@ export default function Home() {
                   src="/images/news/kyoshiro-kasugai.jpg"
                   alt="何を食べても美味しい！春日井の中華料理「Chinese Dining 杏子楼」さんへ"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ objectPosition: "center 48%" }}
                 />
@@ -752,7 +751,6 @@ export default function Home() {
                   src="/images/news/imaike-festival-nobodyknows.jpg"
                   alt="今池のお祭りへ！nobodyknows+さんのライブを楽しんできました！"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -790,7 +788,6 @@ export default function Home() {
                   src="/images/news/rental-farm-planting-01.jpg"
                   alt="レンタル畑で野菜を植えました！大根・ロメインレタス・ガーデンレタスの成長記録！"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -828,7 +825,6 @@ export default function Home() {
                   src="/images/news/sing-kasugai-chubu-univ-01.jpg"
                   alt="「月刊Sing春日井」が中部大学に設置スタート！"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ objectPosition: "center 60%" }}
                 />
@@ -867,7 +863,6 @@ export default function Home() {
                   src="/images/news/rental-farm-noridagarden.jpg"
                   alt="Singでもレンタル畑をスタートします！"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ objectPosition: "center 35%" }}
                 />
@@ -906,7 +901,6 @@ export default function Home() {
                   src="/images/news/sekida-fes-photo.jpg"
                   alt="11月22日開催！「関田区フェス」が篠木公園で開催されます"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -944,7 +938,6 @@ export default function Home() {
                   src="/images/news/sing-kasugai-sekida.jpg"
                   alt="「月刊Sing春日井」創刊！春日井市内の各所で配布しています"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ objectPosition: "center 42%" }}
                 />
@@ -983,7 +976,6 @@ export default function Home() {
                   src="/images/news/bizrea-yohei-cover.jpg"
                   alt="「毎日が就活」ようへいさんをBizreaで取材しました！"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ objectPosition: "center 30%" }}
                 />
@@ -1022,7 +1014,6 @@ export default function Home() {
                   src="/images/news/maeda-nako-cover.jpg"
                   alt="前田奈子さんをBizreaで取材しました！"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ objectPosition: "center 30%" }}
                 />
@@ -1061,7 +1052,6 @@ export default function Home() {
                   src="/images/news/bizrea-nobodyknows-cover.jpg"
                   alt="nobodyknows+ ノリ・ダ・ファンキーシビレサスさんを取材しました！"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -1099,7 +1089,6 @@ export default function Home() {
                   src="/images/news/sabo-haru-cover.jpg"
                   alt="【取材決定】春日井市の魅力を発信する「サボはる」さんを月刊Sing春日井で取材します！"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -1137,7 +1126,6 @@ export default function Home() {
                   src="/images/news/seishin-soccer-cover.jpg"
                   alt="誠信高校サッカー部を応援しています"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -1175,7 +1163,6 @@ export default function Home() {
                   src="/images/news/kenko-keiei-2026-cover.jpg"
                   alt="健康経営優良法人認定祝賀フォーラムに参加しました"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -1213,7 +1200,6 @@ export default function Home() {
                   src="/images/news/kasugai-gujo-odori-01.jpg"
                   alt="地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ objectPosition: "center 20%" }}
                 />
@@ -1252,7 +1238,6 @@ export default function Home() {
                   src="/images/news/one-dining-table-fes-cover.jpg"
                   alt="【今年も出店決定】One Dining Table Fes vol.4 にSingが参加します！"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                   style={{ objectPosition: "center 20%" }}
                 />
@@ -1291,7 +1276,6 @@ export default function Home() {
                   src="/images/news/technoshinei-cover.jpg"
                   alt="株式会社テクノシンエイ様より中部大学ラグビー部へ温かいご支援"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>
@@ -1329,7 +1313,6 @@ export default function Home() {
                   src="/images/news-renewal.png"
                   alt="ホームページをリニューアルしました"
                   fill
-                  unoptimized
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
                 />
               </div>

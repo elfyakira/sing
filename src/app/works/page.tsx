@@ -333,7 +333,6 @@ export default function WorksPage() {
                           src={work.image}
                           alt={work.title}
                           fill
-                          unoptimized
                           sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                           style={{ objectFit: "cover", objectPosition: "top" }}
                         />
