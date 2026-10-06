@@ -67,9 +67,14 @@ export default function RecruitPage() {
           ]),
           generateJobPostingSchema({
             title: "コンサルタント / クリエイティブディレクター",
-            description:
-              "中小企業の採用支援（求人設計・媒体運用・面接同席）、組織コンサルティング、採用ブランディングに関わるクリエイティブ制作（映像・Web・パンフレット等）",
-            datePosted: "2025-01-01",
+            // 表示中の募集要項から生成し、ページ表示と構造化データの内容を一致させる
+            description: requirementsData
+              .map((r) => `<p><strong>${r.label}</strong>：${r.value}</p>`)
+              .join(""),
+            url: "https://singgroup.biz/recruit",
+            // 募集内容を更新したら datePosted も更新し、validThrough を過ぎる前に延長する
+            datePosted: "2026-10-06",
+            validThrough: "2027-03-31T23:59:59+09:00",
             employmentType: "FULL_TIME",
             baseSalary: {
               currency: "JPY",

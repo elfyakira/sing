@@ -638,7 +638,7 @@ const articles: Record<
     date: "2026-04-03",
     category: "ブログ",
     title: "ホームページをリニューアルしました",
-    thumbnail: "/images/news-renewal.png",
+    thumbnail: "/images/news-renewal.webp",
     body: (
       <>
         <p>

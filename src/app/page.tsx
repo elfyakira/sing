@@ -1316,7 +1316,7 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news-renewal.png"
+                  src="/images/news-renewal.webp"
                   alt="ホームページをリニューアルしました"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

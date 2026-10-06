@@ -128,7 +128,7 @@ const allNews: { date: string; category: string; title: string; thumbnail?: stri
     date: "2026-04-03",
     category: "ブログ",
     title: "ホームページをリニューアルしました",
-    thumbnail: "/images/news-renewal.png",
+    thumbnail: "/images/news-renewal.webp",
     slug: "renewal",
   },
 ];
