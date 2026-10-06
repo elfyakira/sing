@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
@@ -6,11 +7,12 @@ import StructuredData from "@/components/StructuredData";
 import { FadeInUp } from "@/components/animations";
 import { generateBreadcrumbSchema } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "社会への取り組み",
   description:
     "株式会社Singの社会貢献活動。地域社会や次世代の人財育成、SDGs、キャリア教育支援、地域企業との連携など、人と企業、そして地域がつながる活動をご紹介します。",
-};
+  path: "/initiatives",
+});
 
 const initiatives = [
   {

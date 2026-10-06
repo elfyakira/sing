@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
@@ -10,11 +11,12 @@ import {
   generateJobPostingSchema,
 } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "採用情報",
   description:
     "株式会社Singの採用情報。企業と若者をつなぎ、人が育つ社会をつくる仲間を募集しています。未経験歓迎。",
-};
+  path: "/recruit",
+});
 
 const anchorLinks = [
   { num: "01", name: "代表メッセージ", id: "ceo-message" },

@@ -23,11 +23,6 @@ export const metadata: Metadata = {
   },
   description: seo.defaultDescription,
 
-  // canonical URL
-  alternates: {
-    canonical: "/",
-  },
-
   // robots
   robots: {
     index: true,

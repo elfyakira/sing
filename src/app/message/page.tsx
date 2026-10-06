@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
@@ -8,11 +9,12 @@ import {
   generateCorePersonSchema,
 } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "代表挨拶",
   description:
     "株式会社Sing代表・清水駿之介からのメッセージ。採用支援・組織コンサルティングへの想いと企業理念をお伝えします。",
-};
+  path: "/message",
+});
 
 export default function MessagePage() {
   return (

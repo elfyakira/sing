@@ -67,7 +67,7 @@
     "logoOnly": "/images/logo-only.png"
   },
   "seo": {
-    "siteUrl": "https://jp-sing.com",
+    "siteUrl": "https://singgroup.biz",
     "titleSuffix": " | 株式会社Sing",
     "defaultTitle": "株式会社Sing | 採用支援・組織コンサルティング・ブランディング",
     "defaultDescription": "株式会社Singは、採用支援・人事組織コンサルティング・営業企業ブランディング・SNSデジタルブランディング・クリエイティブ制作を一気通貫で支援します。採用で終わらない、定着と活躍の先まで共に歩くパートナーです。"
@@ -117,103 +117,137 @@
       "date": "2026-10-02",
       "category": "ブログ",
       "title": "何を食べても美味しい！春日井の中華料理「Chinese Dining 杏子楼」さんへ",
-      "slug": "kyoshiro-kasugai"
+      "slug": "kyoshiro-kasugai",
+      "description": "春日井市如意申町の中華料理店「Chinese Dining 杏子楼」さんへ。株式会社Singのスタッフもいつもお世話になっている、何を食べても美味しいお店の魅力をご紹介します。",
+      "thumbnail": "/images/news/kyoshiro-kasugai.jpg"
     },
     {
       "date": "2026-10-02",
       "category": "ブログ",
       "title": "今池のお祭りへ！nobodyknows+さんのライブを楽しんできました！",
-      "slug": "imaike-festival-nobodyknows"
+      "slug": "imaike-festival-nobodyknows",
+      "description": "9月21日、名古屋・今池で開催されたお祭りへ。nobodyknows+さんのライブで盛り上がった会場の様子と、お祭りの熱気をレポートします。",
+      "thumbnail": "/images/news/imaike-festival-nobodyknows.jpg"
     },
     {
       "date": "2026-10-02",
       "category": "取り組み",
       "title": "レンタル畑で野菜を植えました！大根・ロメインレタス・ガーデンレタスの成長記録！",
-      "slug": "rental-farm-planting"
+      "slug": "rental-farm-planting",
+      "description": "株式会社Singが春日井市で借りているレンタル畑の近況レポート。大根・ロメインレタス・ガーデンレタスの3種類を植え付け、これからの成長記録をお届けします。",
+      "thumbnail": "/images/news/rental-farm-planting-01.jpg"
     },
     {
       "date": "2026-10-02",
       "category": "取り組み",
       "title": "「月刊Sing春日井」が中部大学に設置スタート！",
-      "slug": "sing-kasugai-chubu-univ"
+      "slug": "sing-kasugai-chubu-univ",
+      "description": "地域情報誌「月刊Sing春日井」が中部大学に設置されることになりました。春日井市の人・仕事・お店・まちの情報を、学生の皆さんにもお届けします。",
+      "thumbnail": "/images/news/sing-kasugai-chubu-univ-02.jpg"
     },
     {
       "date": "2026-09-14",
       "category": "取り組み",
       "title": "Singでもレンタル畑をスタートします！",
-      "slug": "sing-rental-farm"
+      "slug": "sing-rental-farm",
+      "description": "株式会社Singは、春日井で農業を通じた取り組みを行う「noridaGARDEN&co.」さんのレンタル畑をお借りすることになりました。企業と地域をつなぐ新しい挑戦です。",
+      "thumbnail": "/images/news/rental-farm-noridagarden.jpg"
     },
     {
       "date": "2026-09-14",
       "category": "ブログ",
       "title": "11月22日開催！「関田区フェス」が篠木公園で開催されます",
-      "slug": "sekida-fes-2026"
+      "slug": "sekida-fes-2026",
+      "description": "11月22日、春日井市の篠木公園で「関田区フェス」が開催されます。地域のみなさんに楽しんでいただけるさまざまな企画を準備中です。",
+      "thumbnail": "/images/news/sekida-fes-photo.jpg"
     },
     {
       "date": "2026-09-14",
       "category": "ブログ",
       "title": "「月刊Sing春日井」創刊！春日井市内の各所で配布しています",
-      "slug": "sing-kasugai-launch"
+      "slug": "sing-kasugai-launch",
+      "description": "地域情報誌「月刊Sing春日井」を創刊しました。春日井の「人・仕事・お店・まち」にスポットを当てた地域マガジンを、春日井市内の各所で配布しています。",
+      "thumbnail": "/images/news/sing-kasugai-sekida.jpg"
     },
     {
       "date": "2026-09-03",
       "category": "ブログ",
       "title": "「毎日が就活」ようへいさんをBizreaで取材しました！",
-      "slug": "bizrea-yohei-interview"
+      "slug": "bizrea-yohei-interview",
+      "description": "Instagram「毎日が就活」で就活情報を発信するインフルエンサー兼モデルのようへいさんを、Bizreaで取材しました。就職活動や仕事への考え方を伺いました。",
+      "thumbnail": "/images/news/bizrea-yohei-cover.jpg"
     },
     {
       "date": "2026-08-31",
       "category": "ブログ",
       "title": "前田奈子さんをBizreaで取材しました！",
-      "slug": "bizrea-maeda-nako-interview"
+      "slug": "bizrea-maeda-nako-interview",
+      "description": "女優・モデル・インフルエンサー・イラストレーターとして活躍するまえだなこさんを、Bizreaで取材しました。これまでの歩みや仕事への想いを伺いました。",
+      "thumbnail": "/images/news/maeda-nako-cover.jpg"
     },
     {
       "date": "2026-08-31",
       "category": "ブログ",
       "title": "nobodyknows+ ノリ・ダ・ファンキーシビレサスさんを取材しました！",
-      "slug": "bizrea-nobodyknows-interview"
+      "slug": "bizrea-nobodyknows-interview",
+      "description": "nobodyknows+のノリ・ダ・ファンキーシビレサスさんを、グループ会社Bizreaで取材しました。これまでの活動や経験についてお話を伺いました。",
+      "thumbnail": "/images/news/bizrea-nobodyknows-cover.jpg"
     },
     {
       "date": "2026-08-31",
       "category": "ブログ",
       "title": "【取材決定】春日井市の魅力を発信する「サボはる」さんを月刊Sing春日井で取材します！",
-      "slug": "sabo-haru-interview"
+      "slug": "sabo-haru-interview",
+      "description": "春日井市の魅力を発信するインフルエンサー「サボはる」さんを、月刊Sing春日井で取材することが決定しました。春日井のお店やグルメ、地域スポットの魅力に迫ります。",
+      "thumbnail": "/images/news/sabo-haru-cover.jpg"
     },
     {
       "date": "2026-08-28",
       "category": "取り組み",
       "title": "誠信高校サッカー部を応援しています",
-      "slug": "seishin-soccer-support"
+      "slug": "seishin-soccer-support",
+      "description": "株式会社Singは誠信高校サッカー部を応援しています。先生と選手の皆さんがSingに来社し、これまでの活動・成績のご報告とこれからの目標をお話しくださいました。",
+      "thumbnail": "/images/news/seishin-soccer-cover.jpg"
     },
     {
       "date": "2026-05-11",
       "category": "ブログ",
       "title": "健康経営優良法人認定祝賀フォーラムに参加しました",
-      "slug": "kenko-keiei-2026-forum"
+      "slug": "kenko-keiei-2026-forum",
+      "description": "株式会社Singは「健康経営優良法人2026」に認定され、春日井市の認定祝賀フォーラムに参加しました。各企業の健康経営の取り組みや当日の様子をご紹介します。",
+      "thumbnail": "/images/news/kenko-keiei-2026-cover.jpg"
     },
     {
       "date": "2026-04-16",
       "category": "取り組み",
       "title": "地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！",
-      "slug": "kasugai-gujo-odori-vol3"
+      "slug": "kasugai-gujo-odori-vol3",
+      "description": "株式会社Singは、2026年5月23日（土）開催の「第3回かすがい郡上踊り」にスポンサーとして参画し、ステージ企画にも参加します。地域と人をつなぐ挑戦です。",
+      "thumbnail": "/images/news/kasugai-gujo-odori-01.jpg"
     },
     {
       "date": "2026-04-16",
       "category": "ブログ",
       "title": "【今年も出店決定】One Dining Table Fes vol.4 にSingが参加します！",
-      "slug": "one-dining-table-fes-vol4"
+      "slug": "one-dining-table-fes-vol4",
+      "description": "2026年6月13日（土）、名古屋・オアシス21で開催される「One Dining Table Fes vol.4」に、株式会社Singが今年も出店します。入場無料・約5万人規模の大型フェスです。",
+      "thumbnail": "/images/news/one-dining-table-fes-cover.jpg"
     },
     {
       "date": "2026-04-15",
       "category": "取り組み",
       "title": "株式会社テクノシンエイ様より中部大学ラグビー部へ温かいご支援",
-      "slug": "technoshinei-chubu-rugby"
+      "slug": "technoshinei-chubu-rugby",
+      "description": "株式会社テクノシンエイ様より、中部大学ラグビー部の合宿に向けて温かいご支援と差し入れが届けられました。株式会社Singが橋渡しした地域企業と大学スポーツの連携をご紹介します。",
+      "thumbnail": "/images/news/technoshinei-cover.jpg"
     },
     {
       "date": "2026-04-03",
       "category": "ブログ",
       "title": "ホームページをリニューアルしました",
-      "slug": "renewal"
+      "slug": "renewal",
+      "description": "株式会社Singのホームページを全面リニューアルしました。採用支援「ツナゲル」・情報発信支援「Singメディア」の紹介や、社会への取り組みの発信を充実させています。",
+      "thumbnail": "/images/news-renewal.png"
     }
   ],
   "recruit": {

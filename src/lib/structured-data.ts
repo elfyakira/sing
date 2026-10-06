@@ -109,7 +109,7 @@ export function generateOrganizationSchema() {
       streetAddress: '如意申町7丁目15-5 アーバンハイツ春日井302号',
       addressLocality: '春日井市',
       addressRegion: '愛知県',
-      postalCode: '480-0343',
+      postalCode: '486-0918',
       addressCountry: 'JP',
     },
     contactPoint: {
@@ -203,14 +203,6 @@ export function generateWebSiteSchema() {
       '@id': ORG_ID,
     },
     inLanguage: 'ja',
-    potentialAction: {
-      '@type': 'SearchAction',
-      target: {
-        '@type': 'EntryPoint',
-        urlTemplate: `${SITE_URL}/search?q={search_term_string}`,
-      },
-      'query-input': 'required name=search_term_string',
-    },
   };
 }
 
@@ -237,7 +229,9 @@ export function generateBreadcrumbSchema(breadcrumbs: BreadcrumbItem[]) {
 
 export function generateArticleSchema(article: ArticleData) {
   const authorRef =
-    typeof article.author === 'string'
+    article.author === ORG_NAME
+      ? { '@id': ORG_ID }
+      : typeof article.author === 'string'
       ? {
           '@type': 'Person',
           name: article.author,
@@ -415,7 +409,10 @@ export function generateLocalBusinessSchema() {
   return {
     '@context': 'https://schema.org',
     '@type': 'LocalBusiness',
-    '@id': ORG_ID,
+    '@id': `${SITE_URL}/#localbusiness`,
+    parentOrganization: {
+      '@id': ORG_ID,
+    },
     name: ORG_NAME,
     legalName: ORG_LEGAL_NAME,
     description: ORG_DESCRIPTION,
@@ -435,7 +432,7 @@ export function generateLocalBusinessSchema() {
       streetAddress: '如意申町7丁目15-5 アーバンハイツ春日井302号',
       addressLocality: '春日井市',
       addressRegion: '愛知県',
-      postalCode: '480-0343',
+      postalCode: '486-0918',
       addressCountry: 'JP',
     },
     geo: {
@@ -495,7 +492,7 @@ export function generateJobPostingSchema(job: JobPostingData) {
           '如意申町7丁目15-5 アーバンハイツ春日井302号',
         addressLocality: job.jobLocation?.addressLocality ?? '春日井市',
         addressRegion: job.jobLocation?.addressRegion ?? '愛知県',
-        postalCode: job.jobLocation?.postalCode ?? '480-0343',
+        postalCode: job.jobLocation?.postalCode ?? '486-0918',
         addressCountry: job.jobLocation?.addressCountry ?? 'JP',
       },
     },

@@ -3,7 +3,7 @@
 # Urushihata LLMO Framework - Layer 1: Comprehensive Content Map for AI Systems
 # ===========================================================================
 # URL: https://singgroup.biz
-# Last Updated: 2026-04-01
+# Last Updated: 2026-10-06
 # Language: ja (primary), en (supplementary)
 # Format Version: 1.0
 # ===========================================================================
@@ -627,7 +627,24 @@ A: 株式会社Singは「健康経営優良法人2026（中小規模法人部門
   → SDGs、キャリア教育支援、地域連携
 
 - https://singgroup.biz/news (ニュース / News)
-  → お知らせ、セミナー情報、事例紹介
+  → お知らせ、ブログ、地域活動・取材・イベントのレポート
+  - https://singgroup.biz/news/kyoshiro-kasugai (2026-10-02) 何を食べても美味しい！春日井の中華料理「Chinese Dining 杏子楼」さんへ
+  - https://singgroup.biz/news/imaike-festival-nobodyknows (2026-10-02) 今池のお祭りへ！nobodyknows+さんのライブを楽しんできました！
+  - https://singgroup.biz/news/rental-farm-planting (2026-10-02) レンタル畑で野菜を植えました！大根・ロメインレタス・ガーデンレタスの成長記録！
+  - https://singgroup.biz/news/sing-kasugai-chubu-univ (2026-10-02) 「月刊Sing春日井」が中部大学に設置スタート！
+  - https://singgroup.biz/news/sing-rental-farm (2026-09-14) Singでもレンタル畑をスタートします！
+  - https://singgroup.biz/news/sekida-fes-2026 (2026-09-14) 11月22日開催！「関田区フェス」が篠木公園で開催されます
+  - https://singgroup.biz/news/sing-kasugai-launch (2026-09-14) 「月刊Sing春日井」創刊！春日井市内の各所で配布しています
+  - https://singgroup.biz/news/bizrea-yohei-interview (2026-09-03) 「毎日が就活」ようへいさんをBizreaで取材しました！
+  - https://singgroup.biz/news/bizrea-maeda-nako-interview (2026-08-31) 前田奈子さんをBizreaで取材しました！
+  - https://singgroup.biz/news/bizrea-nobodyknows-interview (2026-08-31) nobodyknows+ ノリ・ダ・ファンキーシビレサスさんを取材しました！
+  - https://singgroup.biz/news/sabo-haru-interview (2026-08-31) 【取材決定】春日井市の魅力を発信する「サボはる」さんを月刊Sing春日井で取材します！
+  - https://singgroup.biz/news/seishin-soccer-support (2026-08-28) 誠信高校サッカー部を応援しています
+  - https://singgroup.biz/news/kenko-keiei-2026-forum (2026-05-11) 健康経営優良法人認定祝賀フォーラムに参加しました
+  - https://singgroup.biz/news/kasugai-gujo-odori-vol3 (2026-04-16) 地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！
+  - https://singgroup.biz/news/one-dining-table-fes-vol4 (2026-04-16) 【今年も出店決定】One Dining Table Fes vol.4 にSingが参加します！
+  - https://singgroup.biz/news/technoshinei-chubu-rugby (2026-04-15) 株式会社テクノシンエイ様より中部大学ラグビー部へ温かいご支援
+  - https://singgroup.biz/news/renewal (2026-04-03) ホームページをリニューアルしました
 
 - https://singgroup.biz/recruit (採用情報 / Careers)
   → 募集要項、社員インタビュー、福利厚生

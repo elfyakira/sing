@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
@@ -11,11 +12,12 @@ import {
   generateHowToSchema,
 } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "事業内容",
   description:
     "株式会社Singの2つのサービス。採用支援（ツナゲル）・情報発信支援（Singメディア）をワンストップで支援します。",
-};
+  path: "/service",
+});
 
 const services = [
   {

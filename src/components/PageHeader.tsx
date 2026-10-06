@@ -4,9 +4,11 @@ interface PageHeaderProps {
   label: string;
   title: string;
   backgroundImage?: string;
+  // 記事ページなど、本文側に h1 がある場合は "div" を指定する
+  headingAs?: "h1" | "div";
 }
 
-export default function PageHeader({ label, title, backgroundImage }: PageHeaderProps) {
+export default function PageHeader({ label, title, backgroundImage, headingAs: Heading = "h1" }: PageHeaderProps) {
   return (
     <>
       {/* Hero */}
@@ -55,7 +57,7 @@ export default function PageHeader({ label, title, backgroundImage }: PageHeader
         </div>
 
         <div className="relative z-10 pt-16">
-          <h1
+          <Heading
             className="text-white font-bold"
             style={{
               fontFamily: "'Anton', sans-serif",
@@ -65,7 +67,7 @@ export default function PageHeader({ label, title, backgroundImage }: PageHeader
             }}
           >
             {label}
-          </h1>
+          </Heading>
           <p className="text-white/80" style={{ fontSize: "14px" }}>
             {title}
           </p>

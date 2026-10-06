@@ -1,10 +1,15 @@
-'use client';
-
+import type { Metadata } from "next";
 import Link from "next/link";
 import Image from "next/image";
 import { company, contact, site } from "@/lib/site";
 import { FadeInUp, StaggerContainer, HeroBackground } from "@/components/animations";
 import FixedCTA from "@/components/FixedCTA";
+
+export const metadata: Metadata = {
+  alternates: {
+    canonical: "/",
+  },
+};
 
 const services = [
   {
@@ -83,7 +88,7 @@ export default function Home() {
 
         {/* Sing text - bottom center */}
         <div className="relative z-10 w-full text-center" style={{ lineHeight: 0.85 }}>
-          <span
+          <h1
             className="text-white block"
             style={{
               fontFamily: "'Dela Gothic One', sans-serif",
@@ -97,7 +102,8 @@ export default function Home() {
             }}
           >
             Sing
-          </span>
+            <span className="sr-only">株式会社Sing｜愛知県春日井市の採用支援・ブランディング</span>
+          </h1>
         </div>
       </HeroBackground>
 

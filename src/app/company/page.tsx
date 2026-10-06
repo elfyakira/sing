@@ -1,15 +1,17 @@
 import type { Metadata } from "next";
+import { buildPageMetadata } from "@/lib/metadata";
 import Image from "next/image";
 import PageHeader from "@/components/PageHeader";
 import StructuredData from "@/components/StructuredData";
 import { company, contact, locations } from "@/lib/site";
 import { generateBreadcrumbSchema } from "@/lib/structured-data";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = buildPageMetadata({
   title: "会社案内",
   description:
     "株式会社Singの会社概要とSingの歴史。採用支援・組織コンサルティング・ブランディングを通じて、人が輝く社会の実現を目指します。",
-};
+  path: "/company",
+});
 
 const companyInfo = [
   { label: "会社名", value: "株式会社Sing" },
