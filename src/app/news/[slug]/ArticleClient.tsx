@@ -9,6 +9,86 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "ball-park-land-2026": {
+    date: "2026-10-20",
+    category: "取り組み",
+    title: "【BALL PARK LAND 2026 ＆ 輝友杯 開催のお知らせ】12月19日・20日、愛知学院大学 日進キャンパスにて開催！",
+    thumbnail: "/images/news/ball-park-land-2026.jpg",
+    thumbnailPosition: "center 5%",
+    body: (
+      <>
+        <p>
+          12月19日（土）・20日（日）、愛知学院大学 日進キャンパスにて家族で1日楽しめる大型ファミリーイベント
+          <strong>「BALL PARK LAND 2026」</strong>を開催します！
+        </p>
+        <p>テーマ「冒険がいっぱい！遊びの王国が2日間だけ現れる！」</p>
+
+        <h3>■イベント概要</h3>
+        <p style={{ marginBottom: 8 }}>・開催日：2026年12月19日（土）・20日（日）</p>
+        <p style={{ marginBottom: 8 }}>・時間：10:30〜16:00</p>
+        <p style={{ marginBottom: 8 }}>・会場：愛知学院大学 日進キャンパス</p>
+        <p style={{ marginBottom: 8 }}>・入場：無料</p>
+        <p>・対象：ご家族・お子さま・お友達同士で楽しめます</p>
+
+        <p>会場では、こんなコンテンツが楽しめます。</p>
+        <ul>
+          <li>誰でも楽しめるスポーツアクティビティ</li>
+          <li>体験コンテンツに挑戦して冒険スタンプを集めよう！</li>
+          <li>キッチンカーで食べて楽しむ！</li>
+          <li>愛知県の有名駄菓子がいっぱいもらえるエリアも！</li>
+          <li>野外ステージでキッズダンス！</li>
+          <li>Nintendo Switch 2などが当たる豪華抽選会も開催！</li>
+        </ul>
+
+        <h3>■輝友杯 2026 NISSHIN NAGAKUTE DIVISION</h3>
+        <p>
+          さらに、同会場では<strong>「輝友杯 2026 NISSHIN NAGAKUTE DIVISION」</strong>も開催します。
+        </p>
+        <ul>
+          <li>12月19日（土）：バスケットボール</li>
+          <li>12月20日（日）：サッカー</li>
+          <li>対象：小学4〜6年生</li>
+          <li>勝敗だけではなく「スポーツって楽しい！」を大切にした大会</li>
+          <li>個人エントリー制</li>
+          <li>お友達同士など複数人でのエントリーも可能</li>
+        </ul>
+        <p>
+          参加をご希望の方は、下記チラシ内の各競技エントリーQRコードよりお申し込みください。
+          <br />
+          もしくは、URLよりアクセスをお願いします。
+        </p>
+        <p>
+          【サッカー版輝友杯に興味がある方はコチラ】
+          <br />
+          <a href="https://kiyuhai2026soccer.peatix.com" target="_blank" rel="noopener noreferrer">
+            https://kiyuhai2026soccer.peatix.com
+          </a>
+        </p>
+        <p>
+          【バスケ版輝友杯に興味がある方はコチラ】
+          <br />
+          <a href="https://kiyuhai2026basketball.peatix.com" target="_blank" rel="noopener noreferrer">
+            https://kiyuhai2026basketball.peatix.com
+          </a>
+        </p>
+
+        <p>ぜひご家族・ご友人と一緒に、12月19日・20日は“遊びの王国”へ！</p>
+
+        <div className="article-gallery">
+          <div className="article-image">
+            <Image
+              src="/images/news/ball-park-land-2026.jpg"
+              alt="BALL PARK LAND 2026 ＆ 輝友杯 2026 NISSHIN NAGAKUTE DIVISION チラシ"
+              width={1414}
+              height={2000}
+              sizes="(max-width: 780px) 100vw, 780px"
+              style={{ width: "100%", height: "auto" }}
+            />
+          </div>
+        </div>
+      </>
+    ),
+  },
   "kyoshiro-kasugai": {
     date: "2026-10-02",
     category: "ブログ",

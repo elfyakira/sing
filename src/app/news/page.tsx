@@ -7,6 +7,14 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
   {
+    date: "2026-10-20",
+    category: "取り組み",
+    title: "【BALL PARK LAND 2026 ＆ 輝友杯 開催のお知らせ】12月19日・20日、愛知学院大学 日進キャンパスにて開催！",
+    thumbnail: "/images/news/ball-park-land-2026.jpg",
+    thumbnailPosition: "center 5%",
+    slug: "ball-park-land-2026",
+  },
+  {
     date: "2026-10-02",
     category: "ブログ",
     title: "何を食べても美味しい！春日井の中華料理「Chinese Dining 杏子楼」さんへ",

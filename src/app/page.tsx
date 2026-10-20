@@ -757,6 +757,44 @@ export default function Home() {
 
           {/* Blog Card */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/news/ball-park-land-2026" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news/ball-park-land-2026.jpg"
+                  alt="【BALL PARK LAND 2026 ＆ 輝友杯 開催のお知らせ】12月19日・20日、愛知学院大学 日進キャンパスにて開催！"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                  style={{ objectPosition: "center 5%" }}
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-10-20
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    取り組み
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  【BALL PARK LAND 2026 ＆ 輝友杯 開催のお知らせ】12月19日・20日、愛知学院大学 日進キャンパスにて開催！
+                </p>
+              </div>
+            </Link>
             <Link href="/news/kyoshiro-kasugai" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
               <div
                 className="relative rounded-lg overflow-hidden"
