@@ -516,11 +516,29 @@ export default function Home() {
             人と地域の未来のために。
           </h2>
           <p
-            className="text-white/75 mb-14"
+            className="text-white/75 mb-10"
             style={{ fontSize: "15px", lineHeight: 2.0 }}
           >
             Singは、企業の成長支援だけでなく、地域社会や次世代の人財育成にも積極的に取り組んでいます。若者へのキャリア教育、障がい者就労支援、地域企業との連携など、人と企業、そして地域がつながる活動を通して、人が長く活躍できる社会づくりに貢献しています。
           </p>
+
+          {/* ゆめスタパートナーズ 応援バナー */}
+          <a
+            href="https://yumesuta-partners.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mb-14 inline-block"
+            aria-label="一般社団法人ゆめスタパートナーズを応援しています"
+          >
+            <img
+              src="/images/yumesuta-support-banner.webp"
+              alt="一般社団法人ゆめスタパートナーズを応援しています。"
+              width={1200}
+              height={373}
+              loading="lazy"
+              className="block h-auto w-[300px] max-w-full md:w-[500px] rounded-[10px] shadow-lg"
+            />
+          </a>
 
           {/* List items */}
           <div className="text-left">
