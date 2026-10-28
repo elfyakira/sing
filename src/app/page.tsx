@@ -113,6 +113,7 @@ const logoAlts: Record<string, string> = {
   "吉澤工業ロゴ.png": "吉澤工業",
   "ゆめスタパートナーロゴ（石川深雪）.png": "素敵コンシェルジュ 石川深雪",
   "ゆめスタパートナーロゴ（モヒカン先生）.png": "愛の知から",
+  "鰻処まえのロゴ.jpg": "鰻処 まえの",
 };
 
 export default function Home() {
@@ -380,6 +381,7 @@ export default function Home() {
               "吉澤工業ロゴ.png",
               "ゆめスタパートナーロゴ（石川深雪）.png",
               "ゆめスタパートナーロゴ（モヒカン先生）.png",
+              "鰻処まえのロゴ.jpg",
             ].map((file) => (
               <div
                 key={file}
