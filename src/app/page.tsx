@@ -821,11 +821,10 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/kyoshiro-kasugai.jpg"
+                  src="/images/news/thumb/kyoshiro-kasugai.jpg"
                   alt="何を食べても美味しい！春日井の中華料理「Chinese Dining 杏子楼」さんへ"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  style={{ objectPosition: "center 48%" }}
                 />
               </div>
               <div style={{ marginTop: 16 }}>
@@ -859,7 +858,7 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/imaike-festival-nobodyknows.jpg"
+                  src="/images/news/thumb/imaike-festival-nobodyknows.jpg"
                   alt="今池のお祭りへ！nobodyknows+さんのライブを楽しんできました！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -896,7 +895,7 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/rental-farm-planting-01.jpg"
+                  src="/images/news/thumb/rental-farm-planting.jpg"
                   alt="レンタル畑で野菜を植えました！大根・ロメインレタス・ガーデンレタスの成長記録！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -933,11 +932,10 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/sing-kasugai-chubu-univ-01.jpg"
+                  src="/images/news/thumb/sing-kasugai-chubu-univ.jpg"
                   alt="「月刊Sing春日井」が中部大学に設置スタート！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  style={{ objectPosition: "center 60%" }}
                 />
               </div>
               <div style={{ marginTop: 16 }}>
@@ -971,11 +969,10 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/rental-farm-noridagarden.jpg"
+                  src="/images/news/thumb/sing-rental-farm.jpg"
                   alt="Singでもレンタル畑をスタートします！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  style={{ objectPosition: "center 35%" }}
                 />
               </div>
               <div style={{ marginTop: 16 }}>
@@ -1009,7 +1006,7 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/sekida-fes-photo.jpg"
+                  src="/images/news/thumb/sekida-fes-2026.jpg"
                   alt="11月22日開催！「関田区フェス」が篠木公園で開催されます"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1046,11 +1043,10 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/sing-kasugai-sekida.jpg"
+                  src="/images/news/thumb/sing-kasugai-launch.jpg"
                   alt="「月刊Sing春日井」創刊！春日井市内の各所で配布しています"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  style={{ objectPosition: "center 42%" }}
                 />
               </div>
               <div style={{ marginTop: 16 }}>
@@ -1084,11 +1080,10 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/bizrea-yohei-cover.jpg"
+                  src="/images/news/thumb/bizrea-yohei-interview.jpg"
                   alt="「毎日が就活」ようへいさんをBizreaで取材しました！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  style={{ objectPosition: "center 30%" }}
                 />
               </div>
               <div style={{ marginTop: 16 }}>
@@ -1122,11 +1117,10 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/maeda-nako-cover.jpg"
+                  src="/images/news/thumb/bizrea-maeda-nako-interview.jpg"
                   alt="前田奈子さんをBizreaで取材しました！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  style={{ objectPosition: "center 30%" }}
                 />
               </div>
               <div style={{ marginTop: 16 }}>
@@ -1160,7 +1154,7 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/bizrea-nobodyknows-cover.jpg"
+                  src="/images/news/thumb/bizrea-nobodyknows-interview.jpg"
                   alt="nobodyknows+ ノリ・ダ・ファンキーシビレサスさんを取材しました！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1197,7 +1191,7 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/sabo-haru-cover.jpg"
+                  src="/images/news/thumb/sabo-haru-interview.jpg"
                   alt="【取材決定】春日井市の魅力を発信する「サボはる」さんを月刊Sing春日井で取材します！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1234,7 +1228,7 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/seishin-soccer-cover.jpg"
+                  src="/images/news/thumb/seishin-soccer-support.jpg"
                   alt="誠信高校サッカー部を応援しています"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1271,7 +1265,7 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/kenko-keiei-2026-cover.jpg"
+                  src="/images/news/thumb/kenko-keiei-2026-forum.jpg"
                   alt="健康経営優良法人認定祝賀フォーラムに参加しました"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1308,11 +1302,10 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/kasugai-gujo-odori-01.jpg"
+                  src="/images/news/thumb/kasugai-gujo-odori-vol3.jpg"
                   alt="地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  style={{ objectPosition: "center 20%" }}
                 />
               </div>
               <div style={{ marginTop: 16 }}>
@@ -1346,11 +1339,10 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/one-dining-table-fes-cover.jpg"
+                  src="/images/news/thumb/one-dining-table-fes-vol4.jpg"
                   alt="【今年も出店決定】One Dining Table Fes vol.4 にSingが参加します！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  style={{ objectPosition: "center 20%" }}
                 />
               </div>
               <div style={{ marginTop: 16 }}>
@@ -1384,7 +1376,7 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/technoshinei-cover.jpg"
+                  src="/images/news/thumb/technoshinei-chubu-rugby.jpg"
                   alt="株式会社テクノシンエイ様より中部大学ラグビー部へ温かいご支援"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
@@ -1421,7 +1413,7 @@ export default function Home() {
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news-renewal.webp"
+                  src="/images/news/thumb/renewal.jpg"
                   alt="ホームページをリニューアルしました"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"

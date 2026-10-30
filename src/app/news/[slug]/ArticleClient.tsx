@@ -93,8 +93,7 @@ const articles: Record<
     date: "2026-10-02",
     category: "ブログ",
     title: "何を食べても美味しい！春日井の中華料理「Chinese Dining 杏子楼」さんへ",
-    thumbnail: "/images/news/kyoshiro-kasugai.jpg",
-    thumbnailPosition: "center 48%",
+    thumbnail: "/images/news/thumb/kyoshiro-kasugai.jpg",
     body: (
       <>
         <p>
@@ -137,7 +136,7 @@ const articles: Record<
     date: "2026-10-02",
     category: "ブログ",
     title: "今池のお祭りへ！nobodyknows+さんのライブを楽しんできました！",
-    thumbnail: "/images/news/imaike-festival-nobodyknows.jpg",
+    thumbnail: "/images/news/thumb/imaike-festival-nobodyknows.jpg",
     body: (
       <>
         <p>9月21日、今池で開催されたお祭りに遊びに行ってきました！🏮✨</p>
@@ -167,7 +166,7 @@ const articles: Record<
     date: "2026-10-02",
     category: "取り組み",
     title: "レンタル畑で野菜を植えました！大根・ロメインレタス・ガーデンレタスの成長記録！",
-    thumbnail: "/images/news/rental-farm-planting-01.jpg",
+    thumbnail: "/images/news/thumb/rental-farm-planting.jpg",
     body: (
       <>
         <p>私たちが借りているレンタル畑。</p>
@@ -202,8 +201,7 @@ const articles: Record<
     date: "2026-10-02",
     category: "取り組み",
     title: "「月刊Sing春日井」が中部大学に設置スタート！",
-    thumbnail: "/images/news/sing-kasugai-chubu-univ-02.jpg",
-    thumbnailPosition: "center 48%",
+    thumbnail: "/images/news/thumb/sing-kasugai-chubu-univ.jpg",
     body: (
       <>
         <p>
@@ -225,8 +223,7 @@ const articles: Record<
     date: "2026-09-14",
     category: "取り組み",
     title: "Singでもレンタル畑をスタートします！",
-    thumbnail: "/images/news/rental-farm-noridagarden.jpg",
-    thumbnailPosition: "center 35%",
+    thumbnail: "/images/news/thumb/sing-rental-farm.jpg",
     body: (
       <>
         <p>
@@ -260,7 +257,7 @@ const articles: Record<
     date: "2026-09-14",
     category: "ブログ",
     title: "11月22日開催！「関田区フェス」が篠木公園で開催されます",
-    thumbnail: "/images/news/sekida-fes-photo.jpg",
+    thumbnail: "/images/news/thumb/sekida-fes-2026.jpg",
     body: (
       <>
         <p>
@@ -285,8 +282,7 @@ const articles: Record<
     date: "2026-09-14",
     category: "ブログ",
     title: "「月刊Sing春日井」創刊！春日井市内の各所で配布しています",
-    thumbnail: "/images/news/sing-kasugai-sekida.jpg",
-    thumbnailPosition: "center 42%",
+    thumbnail: "/images/news/thumb/sing-kasugai-launch.jpg",
     body: (
       <>
         <p>
@@ -314,8 +310,7 @@ const articles: Record<
     date: "2026-09-03",
     category: "ブログ",
     title: "「毎日が就活」ようへいさんをBizreaで取材しました！",
-    thumbnail: "/images/news/bizrea-yohei-cover.jpg",
-    thumbnailPosition: "center 30%",
+    thumbnail: "/images/news/thumb/bizrea-yohei-interview.jpg",
     body: (
       <>
         <p>
@@ -342,8 +337,7 @@ const articles: Record<
     date: "2026-08-31",
     category: "ブログ",
     title: "前田奈子さんをBizreaで取材しました！",
-    thumbnail: "/images/news/maeda-nako-cover.jpg",
-    thumbnailPosition: "center 30%",
+    thumbnail: "/images/news/thumb/bizrea-maeda-nako-interview.jpg",
     body: (
       <>
         <p>
@@ -369,7 +363,7 @@ const articles: Record<
     date: "2026-08-31",
     category: "ブログ",
     title: "nobodyknows+ ノリ・ダ・ファンキーシビレサスさんを取材しました！",
-    thumbnail: "/images/news/bizrea-nobodyknows-cover.jpg",
+    thumbnail: "/images/news/thumb/bizrea-nobodyknows-interview.jpg",
     body: (
       <>
         <p>
@@ -391,7 +385,7 @@ const articles: Record<
     date: "2026-08-31",
     category: "ブログ",
     title: "【取材決定】春日井市の魅力を発信する「サボはる」さんを月刊Sing春日井で取材します！",
-    thumbnail: "/images/news/sabo-haru-cover.jpg",
+    thumbnail: "/images/news/thumb/sabo-haru-interview.jpg",
     body: (
       <>
         <p>
@@ -418,7 +412,7 @@ const articles: Record<
     date: "2026-08-28",
     category: "取り組み",
     title: "誠信高校サッカー部を応援しています",
-    thumbnail: "/images/news/seishin-soccer-cover.jpg",
+    thumbnail: "/images/news/thumb/seishin-soccer-support.jpg",
     body: (
       <>
         <p>
@@ -466,7 +460,7 @@ const articles: Record<
     date: "2026-05-11",
     category: "ブログ",
     title: "健康経営優良法人認定祝賀フォーラムに参加しました",
-    thumbnail: "/images/news/kenko-keiei-2026-cover.jpg",
+    thumbnail: "/images/news/thumb/kenko-keiei-2026-forum.jpg",
     body: (
       <>
         <p>
@@ -494,8 +488,7 @@ const articles: Record<
     date: "2026-04-16",
     category: "取り組み",
     title: "地域と人をつなぐ挑戦。第3回かすがい郡上踊りにステージ参加します！",
-    thumbnail: "/images/news/kasugai-gujo-odori-01.jpg",
-    thumbnailPosition: "center 20%",
+    thumbnail: "/images/news/thumb/kasugai-gujo-odori-vol3.jpg",
     body: (
       <>
         <p>
@@ -574,8 +567,7 @@ const articles: Record<
     date: "2026-04-16",
     category: "ブログ",
     title: "【今年も出店決定】One Dining Table Fes vol.4 にSingが参加します！",
-    thumbnail: "/images/news/one-dining-table-fes-cover.jpg",
-    thumbnailPosition: "center 20%",
+    thumbnail: "/images/news/thumb/one-dining-table-fes-vol4.jpg",
     body: (
       <>
         <p>
@@ -644,7 +636,7 @@ const articles: Record<
     date: "2026-04-15",
     category: "取り組み",
     title: "株式会社テクノシンエイ様より中部大学ラグビー部へ温かいご支援",
-    thumbnail: "/images/news/technoshinei-cover.jpg",
+    thumbnail: "/images/news/thumb/technoshinei-chubu-rugby.jpg",
     body: (
       <>
         <p>
@@ -718,7 +710,7 @@ const articles: Record<
     date: "2026-04-03",
     category: "ブログ",
     title: "ホームページをリニューアルしました",
-    thumbnail: "/images/news-renewal.webp",
+    thumbnail: "/images/news/thumb/renewal.jpg",
     body: (
       <>
         <p>
