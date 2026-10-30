@@ -114,12 +114,36 @@
   "works": [],
   "news": [
     {
+      "date": "2026-10-30",
+      "category": "取り組み",
+      "title": "初めての野菜収穫！noridaGARDEN&co.さんのレンタル畑でたくさんの小松菜を収穫しました",
+      "slug": "rental-farm-first-harvest",
+      "description": "noridaGARDEN&co.さんのレンタル畑で、初めての野菜収穫。記念すべき初収穫は、たくさんの小松菜でした。",
+      "thumbnail": "/images/news/thumb/rental-farm-first-harvest.jpg"
+    },
+    {
+      "date": "2026-10-30",
+      "category": "ブログ",
+      "title": "サンマルシェ50周年で地域を盛り上げる！高蔵寺ニュータウンセンター開発株式会社 水谷有人様に感謝",
+      "slug": "sunmarche-kozoji-50th",
+      "description": "春日井市・高蔵寺の商業施設「サンマルシェ」を運営する高蔵寺ニュータウンセンター開発株式会社の水谷有人様に、サンマルシェ50周年イベントや雑誌の企画にご協力いただきました。",
+      "thumbnail": "/images/news/thumb/sunmarche-kozoji-50th.jpg"
+    },
+    {
+      "date": "2026-10-30",
+      "category": "ブログ",
+      "title": "「でらっくす・ボーイズ（BOYS AND MEN）」の皆さんをBizreaで取材しました！",
+      "slug": "bizrea-boysandmen-interview",
+      "description": "名古屋発のエンターテインメントグループ「でらっくす・ボーイズ（BOYS AND MEN）」の皆さんをBizreaで取材しました。メンバー全員へのインタビューに加え、雑誌の表紙も飾っていただきました。",
+      "thumbnail": "/images/news/thumb/bizrea-boysandmen-interview.jpg"
+    },
+    {
       "date": "2026-10-20",
       "category": "取り組み",
       "title": "【BALL PARK LAND 2026 ＆ 輝友杯 開催のお知らせ】12月19日・20日、愛知学院大学 日進キャンパスにて開催！",
       "slug": "ball-park-land-2026",
       "description": "12月19日（土）・20日（日）、愛知学院大学 日進キャンパスにて入場無料の大型ファミリーイベント「BALL PARK LAND 2026」と、小学4〜6年生対象のスポーツ大会「輝友杯 2026 NISSHIN NAGAKUTE DIVISION」を開催します。",
-      "thumbnail": "/images/news/ball-park-land-2026.jpg"
+      "thumbnail": "/images/news/thumb/ball-park-land-2026.jpg"
     },
     {
       "date": "2026-10-02",

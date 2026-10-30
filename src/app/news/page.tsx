@@ -7,11 +7,31 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
   {
+    date: "2026-10-30",
+    category: "取り組み",
+    title: "初めての野菜収穫！noridaGARDEN&co.さんのレンタル畑でたくさんの小松菜を収穫しました",
+    thumbnail: "/images/news/thumb/rental-farm-first-harvest.jpg",
+    slug: "rental-farm-first-harvest",
+  },
+  {
+    date: "2026-10-30",
+    category: "ブログ",
+    title: "サンマルシェ50周年で地域を盛り上げる！高蔵寺ニュータウンセンター開発株式会社 水谷有人様に感謝",
+    thumbnail: "/images/news/thumb/sunmarche-kozoji-50th.jpg",
+    slug: "sunmarche-kozoji-50th",
+  },
+  {
+    date: "2026-10-30",
+    category: "ブログ",
+    title: "「でらっくす・ボーイズ（BOYS AND MEN）」の皆さんをBizreaで取材しました！",
+    thumbnail: "/images/news/thumb/bizrea-boysandmen-interview.jpg",
+    slug: "bizrea-boysandmen-interview",
+  },
+  {
     date: "2026-10-20",
     category: "取り組み",
     title: "【BALL PARK LAND 2026 ＆ 輝友杯 開催のお知らせ】12月19日・20日、愛知学院大学 日進キャンパスにて開催！",
-    thumbnail: "/images/news/ball-park-land-2026.jpg",
-    thumbnailPosition: "center 5%",
+    thumbnail: "/images/news/thumb/ball-park-land-2026.jpg",
     slug: "ball-park-land-2026",
   },
   {

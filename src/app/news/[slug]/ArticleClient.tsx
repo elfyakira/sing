@@ -9,12 +9,130 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "rental-farm-first-harvest": {
+    date: "2026-10-30",
+    category: "取り組み",
+    title: "初めての野菜収穫！noridaGARDEN&co.さんのレンタル畑でたくさんの小松菜を収穫しました",
+    thumbnail: "/images/news/thumb/rental-farm-first-harvest.jpg",
+    body: (
+      <>
+        <p>
+          この度、noridaGARDEN&amp;co.さんのレンタル畑で、初めての野菜を収穫していただきました！
+        </p>
+        <p>記念すべき初収穫は、なんとこんなにたくさんの小松菜！</p>
+        <p>大切に育てていただいた野菜を実際に収穫できることは、とてもうれしいですね。</p>
+        <p>
+          土に触れ、育て、収穫する。
+          <br />
+          そんな一つひとつの経験を大切にしながら、これからも新しい挑戦を楽しんでいきたいと思います！
+        </p>
+        <p>noridaGARDEN&amp;co.さん、素敵な小松菜をありがとうございました！</p>
+        <p>これからの収穫も楽しみです。みんなでおいしくいただきます！</p>
+        <p>
+          noridaGARDEN&amp;co.さんのInstagramはこちら
+          <br />
+          <a href="https://www.instagram.com/noridagarden/" target="_blank" rel="noopener noreferrer">
+            https://www.instagram.com/noridagarden/
+          </a>
+        </p>
+      </>
+    ),
+  },
+  "sunmarche-kozoji-50th": {
+    date: "2026-10-30",
+    category: "ブログ",
+    title: "サンマルシェ50周年で地域を盛り上げる！高蔵寺ニュータウンセンター開発株式会社 水谷有人様に感謝",
+    thumbnail: "/images/news/thumb/sunmarche-kozoji-50th.jpg",
+    body: (
+      <>
+        <p>
+          いつもお世話になっている、サンマルシェを運営する高蔵寺ニュータウンセンター開発株式会社の水谷有人様に、サンマルシェ50周年イベントや雑誌の企画にご協力いただきました！
+        </p>
+        <p>
+          地域を盛り上げる素敵な取り組みにご一緒できることを、とてもうれしく思っています。
+        </p>
+        <p>水谷様、いつも本当にありがとうございます！</p>
+        <p>
+          サンマルシェ高蔵寺の最新情報は、公式Instagramからご覧いただけます。
+          <br />
+          <a href="https://www.instagram.com/sunmarche_kozoji/" target="_blank" rel="noopener noreferrer">
+            @sunmarche_kozoji
+          </a>
+        </p>
+        <p>
+          Singでは、これからも地域の皆さまとのご縁を大切にしながら、春日井のまちを盛り上げる取り組みを発信してまいります。
+        </p>
+      </>
+    ),
+  },
+  "bizrea-boysandmen-interview": {
+    date: "2026-10-30",
+    category: "ブログ",
+    title: "「でらっくす・ボーイズ（BOYS AND MEN）」の皆さんをBizreaで取材しました！",
+    thumbnail: "/images/news/thumb/bizrea-boysandmen-interview.jpg",
+    body: (
+      <>
+        <p>
+          この度、「でらっくす・ボーイズ（BOYS AND MEN）」の皆さんに、Bizreaの取材にご協力いただきました！
+        </p>
+        <p>
+          今回はメンバー全員へのインタビューに加え、Bizreaの雑誌の表紙も飾っていただきました。素敵な出会いに、心より感謝申し上げます。
+        </p>
+        <p>
+          皆さんの想いや魅力がたっぷり詰まった取材となりました。その内容を、Bizreaを通してお届けできることを大変うれしく思っています。
+        </p>
+        <p>取材内容の詳細は、今後Bizreaにて公開予定です。ぜひ公開を楽しみにお待ちください！</p>
+
+        <h3>■ご協力いただいたメンバー</h3>
+        <ul>
+          <li>
+            本田剛文さん（
+            <a href="https://www.instagram.com/boymen_honda/" target="_blank" rel="noopener noreferrer">
+              @boymen_honda
+            </a>
+            ）
+          </li>
+          <li>
+            吉原雅斗さん（
+            <a href="https://www.instagram.com/boymen_yoshi/" target="_blank" rel="noopener noreferrer">
+              @boymen_yoshi
+            </a>
+            ）
+          </li>
+          <li>
+            平松賢人さん（
+            <a href="https://www.instagram.com/boymen_kento/" target="_blank" rel="noopener noreferrer">
+              @boymen_kento
+            </a>
+            ）
+          </li>
+          <li>
+            田村侑久さん（
+            <a href="https://www.instagram.com/boymen_tamura/" target="_blank" rel="noopener noreferrer">
+              @boymen_tamura
+            </a>
+            ）
+          </li>
+          <li>
+            辻本達規さん（
+            <a href="https://www.instagram.com/tsujimoto.tatsunori.camp/" target="_blank" rel="noopener noreferrer">
+              @tsujimoto.tatsunori.camp
+            </a>
+            ）
+          </li>
+        </ul>
+
+        <p>
+          Singでは、これからもさまざまな分野で活躍する方々にスポットを当て、その人ならではの想いや魅力を発信してまいります。
+        </p>
+      </>
+    ),
+  },
   "ball-park-land-2026": {
     date: "2026-10-20",
     category: "取り組み",
     title: "【BALL PARK LAND 2026 ＆ 輝友杯 開催のお知らせ】12月19日・20日、愛知学院大学 日進キャンパスにて開催！",
-    thumbnail: "/images/news/ball-park-land-2026.jpg",
-    thumbnailPosition: "center 5%",
+    thumbnail: "/images/news/thumb/ball-park-land-2026.jpg",
     body: (
       <>
         <p>

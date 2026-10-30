@@ -777,17 +777,127 @@ export default function Home() {
 
           {/* Blog Card */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/news/rental-farm-first-harvest" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news/thumb/rental-farm-first-harvest.jpg"
+                  alt="初めての野菜収穫！noridaGARDEN&co.さんのレンタル畑でたくさんの小松菜を収穫しました"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-10-30
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    取り組み
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  初めての野菜収穫！noridaGARDEN&amp;co.さんのレンタル畑でたくさんの小松菜を収穫しました
+                </p>
+              </div>
+            </Link>
+            <Link href="/news/sunmarche-kozoji-50th" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news/thumb/sunmarche-kozoji-50th.jpg"
+                  alt="サンマルシェ50周年で地域を盛り上げる！高蔵寺ニュータウンセンター開発株式会社 水谷有人様に感謝"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-10-30
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    ブログ
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  サンマルシェ50周年で地域を盛り上げる！高蔵寺ニュータウンセンター開発株式会社 水谷有人様に感謝
+                </p>
+              </div>
+            </Link>
+            <Link href="/news/bizrea-boysandmen-interview" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news/thumb/bizrea-boysandmen-interview.jpg"
+                  alt="「でらっくす・ボーイズ（BOYS AND MEN）」の皆さんをBizreaで取材しました！"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-10-30
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    ブログ
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  「でらっくす・ボーイズ（BOYS AND MEN）」の皆さんをBizreaで取材しました！
+                </p>
+              </div>
+            </Link>
             <Link href="/news/ball-park-land-2026" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
               <div
                 className="relative rounded-lg overflow-hidden"
                 style={{ aspectRatio: "16/9" }}
               >
                 <Image
-                  src="/images/news/ball-park-land-2026.jpg"
+                  src="/images/news/thumb/ball-park-land-2026.jpg"
                   alt="【BALL PARK LAND 2026 ＆ 輝友杯 開催のお知らせ】12月19日・20日、愛知学院大学 日進キャンパスにて開催！"
                   fill
                   className="object-cover group-hover:scale-105 transition-transform duration-300"
-                  style={{ objectPosition: "center 5%" }}
                 />
               </div>
               <div style={{ marginTop: 16 }}>
