@@ -7,6 +7,13 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
   {
+    date: "2026-11-02",
+    category: "ブログ",
+    title: "【出会いに感謝】「月刊Sing春日井」アンバサダーのはるこま様と地域の魅力を発信！",
+    thumbnail: "/images/news/thumb/harukoma-ambassador.jpg",
+    slug: "harukoma-ambassador",
+  },
+  {
     date: "2026-10-30",
     category: "取り組み",
     title: "初めての野菜収穫！noridaGARDEN&co.さんのレンタル畑でたくさんの小松菜を収穫しました",

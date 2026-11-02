@@ -9,6 +9,33 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "harukoma-ambassador": {
+    date: "2026-11-02",
+    category: "ブログ",
+    title: "【出会いに感謝】「月刊Sing春日井」アンバサダーのはるこま様と地域の魅力を発信！",
+    thumbnail: "/images/news/thumb/harukoma-ambassador.jpg",
+    body: (
+      <>
+        <p>いつもお世話になっている、はるこま様！</p>
+        <p>
+          「月刊Sing春日井」のアンバサダーとして、いつも地域の魅力を一緒に発信していただき、本当にありがとうございます！
+        </p>
+        <p>
+          さらに、先日開催された「サンマルシェ高蔵寺50周年イベント」でもご一緒させていただき、素敵な時間を過ごすことができました！
+        </p>
+        <p>こうした出会いやつながりに、感謝の気持ちでいっぱいです！</p>
+        <p>これからも一緒に春日井・小牧の魅力を発信し、地域を盛り上げていけたら嬉しいです！</p>
+        <p>はるこま様、いつも本当にありがとうございます！</p>
+        <p>
+          はるこま様のInstagramはこちら
+          <br />
+          <a href="https://www.instagram.com/harukoma_kasugai.komaki/" target="_blank" rel="noopener noreferrer">
+            @harukoma_kasugai.komaki
+          </a>
+        </p>
+      </>
+    ),
+  },
   "rental-farm-first-harvest": {
     date: "2026-10-30",
     category: "取り組み",
