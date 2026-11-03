@@ -524,23 +524,41 @@ export default function Home() {
             Singは、企業の成長支援だけでなく、地域社会や次世代の人財育成にも積極的に取り組んでいます。若者へのキャリア教育、障がい者就労支援、地域企業との連携など、人と企業、そして地域がつながる活動を通して、人が長く活躍できる社会づくりに貢献しています。
           </p>
 
-          {/* ゆめスタパートナーズ 応援バナー */}
-          <a
-            href="https://yumesuta-partners.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="mb-14 inline-block"
-            aria-label="一般社団法人ゆめスタパートナーズを応援しています"
-          >
-            <img
-              src="/images/yumesuta-support-banner.webp"
-              alt="一般社団法人ゆめスタパートナーズを応援しています。"
-              width={1200}
-              height={373}
-              loading="lazy"
-              className="block h-auto w-[300px] max-w-full md:w-[500px] rounded-[10px] shadow-lg"
-            />
-          </a>
+          {/* 応援バナー（ゆめスタパートナーズ／P-Loco） */}
+          <div className="mb-14 flex flex-wrap gap-4">
+            <a
+              href="https://yumesuta-partners.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-[300px] max-w-full md:w-[min(400px,calc(50%_-_8px))]"
+              aria-label="一般社団法人ゆめスタパートナーズを応援しています"
+            >
+              <img
+                src="/images/yumesuta-support-banner.webp"
+                alt="一般社団法人ゆめスタパートナーズを応援しています。"
+                width={1200}
+                height={373}
+                loading="lazy"
+                className="block h-auto w-full rounded-[10px] shadow-lg"
+              />
+            </a>
+            <a
+              href="https://p-loco.jp/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-[300px] max-w-full md:w-[min(400px,calc(50%_-_8px))]"
+              aria-label="株式会社SingはP-Locoを応援しています"
+            >
+              <img
+                src="/images/ploco-support-banner.webp"
+                alt="株式会社SingはP-Locoを応援しています。"
+                width={1200}
+                height={373}
+                loading="lazy"
+                className="block h-auto w-full rounded-[10px] shadow-lg"
+              />
+            </a>
+          </div>
 
           {/* List items */}
           <div className="text-left">
