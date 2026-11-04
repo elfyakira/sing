@@ -9,6 +9,33 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "saboharu-ambassador": {
+    date: "2026-11-04",
+    category: "ブログ",
+    title: "【出会いに感謝】「月刊Sing春日井」アンバサダーのサボはる様（株式会社TERASU 木下雅博様）と地域の魅力を発信！",
+    thumbnail: "/images/news/thumb/saboharu-ambassador.jpg",
+    body: (
+      <>
+        <p>いつもお世話になっている、株式会社TERASU 代表取締役「サボはる」の木下雅博様！</p>
+        <p>
+          「月刊Sing春日井」のアンバサダーとして、いつも地域の魅力を一緒に発信していただき、本当にありがとうございます！
+        </p>
+        <p>
+          さらに、先日開催された「サンマルシェ高蔵寺50周年イベント」でもご一緒させていただき、素敵な時間を共有することができました！
+        </p>
+        <p>こうした素敵な出会いやつながりに、心から感謝しています！</p>
+        <p>これからも一緒に春日井の魅力を発信し、地域を盛り上げていけたら嬉しいです！</p>
+        <p>サボはるさん、いつも本当にありがとうございます！</p>
+        <p>
+          サボはるさんのInstagramはこちら
+          <br />
+          <a href="https://www.instagram.com/saboharu_kasugai/" target="_blank" rel="noopener noreferrer">
+            @saboharu_kasugai
+          </a>
+        </p>
+      </>
+    ),
+  },
   "harukoma-ambassador": {
     date: "2026-11-02",
     category: "ブログ",
