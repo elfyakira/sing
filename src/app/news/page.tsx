@@ -266,7 +266,7 @@ export default function NewsPage() {
                 {/* PC Layout */}
                 <div className="news-row-pc">
                   {item.thumbnail && (
-                    <div style={{ width: 160, height: 100, flexShrink: 0, marginRight: 20, position: "relative", borderRadius: 4, overflow: "hidden" }}>
+                    <div style={{ width: 160, aspectRatio: "16 / 9", flexShrink: 0, marginRight: 20, position: "relative", borderRadius: 4, overflow: "hidden" }}>
                       <Image src={item.thumbnail} alt={item.title} fill style={{ objectFit: "cover", objectPosition: item.thumbnailPosition ?? "center" }} />
                     </div>
                   )}
@@ -309,7 +309,7 @@ export default function NewsPage() {
                 {/* SP Layout */}
                 <div className="news-row-sp">
                   {item.thumbnail && (
-                    <div style={{ width: "100%", height: 180, position: "relative", borderRadius: 4, overflow: "hidden", marginBottom: 12 }}>
+                    <div style={{ width: "100%", aspectRatio: "16 / 9", position: "relative", borderRadius: 4, overflow: "hidden", marginBottom: 12 }}>
                       <Image src={item.thumbnail} alt={item.title} fill style={{ objectFit: "cover", objectPosition: item.thumbnailPosition ?? "center" }} />
                     </div>
                   )}
