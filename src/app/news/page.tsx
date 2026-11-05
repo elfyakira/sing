@@ -7,6 +7,13 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
   {
+    date: "2026-11-05",
+    category: "ブログ",
+    title: "【出会いに感謝】CCNet春日井局の皆様と地域の魅力を発信！",
+    thumbnail: "/images/news/thumb/ccnet-kasugai.jpg",
+    slug: "ccnet-kasugai",
+  },
+  {
     date: "2026-11-04",
     category: "ブログ",
     title: "【出会いに感謝】「月刊Sing春日井」アンバサダーのサボはる様（株式会社TERASU 木下雅博様）と地域の魅力を発信！",

@@ -9,6 +9,39 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "ccnet-kasugai": {
+    date: "2026-11-05",
+    category: "ブログ",
+    title: "【出会いに感謝】CCNet春日井局の皆様と地域の魅力を発信！",
+    thumbnail: "/images/news/thumb/ccnet-kasugai.jpg",
+    body: (
+      <>
+        <p>いつもお世話になっている、CCNet春日井局の皆様！</p>
+        <p>
+          稲吉智章様
+          <br />
+          小林 隆様
+          <br />
+          山田勝之様
+        </p>
+        <p>いつも本当にありがとうございます！</p>
+        <p>
+          番組の企画についてのお話や、春日井の街をもっと盛り上げていくためのアイデアなど、いつも素敵なお話をさせていただき、感謝の気持ちでいっぱいです！
+        </p>
+        <p>地域の魅力を発信し、人と人、企業と地域をつないでいく。</p>
+        <p>そんな想いを共有できる皆様とのご縁を、これからも大切にしていきたいと思います！</p>
+        <p>これからも一緒に春日井を盛り上げていけたら嬉しいです！</p>
+        <p>CCNet春日井局の皆様、いつも本当にありがとうございます！</p>
+        <p>
+          CCNetのInstagramはこちら
+          <br />
+          <a href="https://www.instagram.com/ccnet.official/" target="_blank" rel="noopener noreferrer">
+            @ccnet.official
+          </a>
+        </p>
+      </>
+    ),
+  },
   "saboharu-ambassador": {
     date: "2026-11-04",
     category: "ブログ",
