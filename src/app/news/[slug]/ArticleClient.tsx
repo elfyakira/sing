@@ -9,6 +9,35 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "nagoya-pipe": {
+    date: "2026-11-06",
+    category: "ブログ",
+    title: "【出会いに感謝】名古屋パイプ株式会社の尾之内様と企業の魅力を発信！",
+    thumbnail: "/images/news/thumb/nagoya-pipe.jpg",
+    body: (
+      <>
+        <p>いつもお世話になっている、名古屋パイプ株式会社の尾之内様！</p>
+        <p>いつも本当にありがとうございます！</p>
+        <p>
+          採用支援をはじめ、ホームページ制作やプロモーション動画制作など、さまざまな形でご一緒させていただき、心から感謝しております！
+        </p>
+        <p>企業が持つ魅力や強み、そこで働く人たちの想いを、もっと多くの方々に届けたい。</p>
+        <p>そんな想いを大切にしながら、これからも名古屋パイプ株式会社様の魅力を発信していきたいと思います！</p>
+        <p>現在は新しいホームページも制作中！完成が今から楽しみです！</p>
+        <p>尾之内様、いつも本当にありがとうございます！</p>
+        <p>これからもどうぞよろしくお願いいたします！</p>
+        <p>
+          名古屋パイプ株式会社のホームページはこちら
+          <br />
+          <a href="http://www.meipai.co.jp/company/" target="_blank" rel="noopener noreferrer">
+            http://www.meipai.co.jp/company/
+          </a>
+          <br />
+          ※現在、新しいホームページを制作中です。
+        </p>
+      </>
+    ),
+  },
   "ccnet-kasugai": {
     date: "2026-11-05",
     category: "ブログ",

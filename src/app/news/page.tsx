@@ -7,6 +7,13 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
   {
+    date: "2026-11-06",
+    category: "ブログ",
+    title: "【出会いに感謝】名古屋パイプ株式会社の尾之内様と企業の魅力を発信！",
+    thumbnail: "/images/news/thumb/nagoya-pipe.jpg",
+    slug: "nagoya-pipe",
+  },
+  {
     date: "2026-11-05",
     category: "ブログ",
     title: "【出会いに感謝】CCNet春日井局の皆様と地域の魅力を発信！",
