@@ -9,6 +9,34 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "kasugai-shodo-kitatani": {
+    date: "2026-11-09",
+    category: "ブログ",
+    title: "【出会いに感謝】春日井書道教室の北谷りさ様と地域の魅力を発信！",
+    thumbnail: "/images/news/thumb/kasugai-shodo-kitatani.jpg",
+    body: (
+      <>
+        <p>いつもお世話になっている、春日井書道教室の北谷りさ様！</p>
+        <p>いつも本当にありがとうございます！</p>
+        <p>
+          書道を通じた子どもたちへの活動や、春日井の地域に貢献する取り組みなど、さまざまな形で地域を盛り上げていらっしゃる北谷様！
+        </p>
+        <p>子どもたちの成長を大切にしながら、地域のために活動されている姿がとても素敵です！</p>
+        <p>私たちも、地域で頑張る方々の想いや活動をもっと多くの人に届け、春日井の魅力を広げていきたいと思います！</p>
+        <p>こうして素敵なご縁をいただけたことに、心から感謝しております！</p>
+        <p>北谷様、いつも本当にありがとうございます！</p>
+        <p>これからもどうぞよろしくお願いいたします！</p>
+        <p>感謝！感謝です！</p>
+        <p>
+          北谷様のInstagramはこちら
+          <br />
+          <a href="https://www.instagram.com/noutore_shodo_risa/" target="_blank" rel="noopener noreferrer">
+            @noutore_shodo_risa
+          </a>
+        </p>
+      </>
+    ),
+  },
   "nagoya-pipe": {
     date: "2026-11-06",
     category: "ブログ",
