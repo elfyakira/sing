@@ -7,6 +7,13 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
   {
+    date: "2026-11-13",
+    category: "ブログ",
+    title: "【出会いに感謝】株式会社中根工業の中根秀様と人を大切にする会社づくりを発信！",
+    thumbnail: "/images/news/thumb/nakane-foundry.jpg",
+    slug: "nakane-foundry",
+  },
+  {
     date: "2026-11-09",
     category: "ブログ",
     title: "【出会いに感謝】春日井書道教室の北谷りさ様と地域の魅力を発信！",

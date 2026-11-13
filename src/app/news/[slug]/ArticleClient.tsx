@@ -9,6 +9,35 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "nakane-foundry": {
+    date: "2026-11-13",
+    category: "ブログ",
+    title: "【出会いに感謝】株式会社中根工業の中根秀様と人を大切にする会社づくりを発信！",
+    thumbnail: "/images/news/thumb/nakane-foundry.jpg",
+    body: (
+      <>
+        <p>いつもお世話になっている、株式会社中根工業の中根秀様！</p>
+        <p>いつも本当にありがとうございます！</p>
+        <p>愛知県西尾市で鋳物づくりに取り組まれている中根工業様！</p>
+        <p>
+          人財育成や組織開発を通じてご一緒させていただき、人を大切にする会社づくりに関わらせていただけることを、とても嬉しく思っています！
+        </p>
+        <p>企業の成長を支えるのは、そこで働く一人ひとりの力。</p>
+        <p>これからも人が育ち、活躍できる組織づくりを一緒に目指していけたら嬉しいです！</p>
+        <p>こうした素敵なご縁に、心から感謝しています！</p>
+        <p>中根様、いつも本当にありがとうございます！</p>
+        <p>これからもどうぞよろしくお願いいたします！</p>
+        <p>感謝！感謝です！</p>
+        <p>
+          株式会社中根工業のホームページはこちら
+          <br />
+          <a href="https://nakane-foundry.co.jp/" target="_blank" rel="noopener noreferrer">
+            https://nakane-foundry.co.jp/
+          </a>
+        </p>
+      </>
+    ),
+  },
   "kasugai-shodo-kitatani": {
     date: "2026-11-09",
     category: "ブログ",

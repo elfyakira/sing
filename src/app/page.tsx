@@ -795,6 +795,43 @@ export default function Home() {
 
           {/* Blog Card */}
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Link href="/news/nakane-foundry" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
+              <div
+                className="relative rounded-lg overflow-hidden"
+                style={{ aspectRatio: "16/9" }}
+              >
+                <Image
+                  src="/images/news/thumb/nakane-foundry.jpg"
+                  alt="【出会いに感謝】株式会社中根工業の中根秀様と人を大切にする会社づくりを発信！"
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-300"
+                />
+              </div>
+              <div style={{ marginTop: 16 }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 8 }}>
+                  <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 13, color: "#5A5A5A" }}>
+                    2026-11-13
+                  </span>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "#C84B2F",
+                      border: "1px solid #C84B2F",
+                      padding: "2px 10px",
+                      borderRadius: 2,
+                    }}
+                  >
+                    ブログ
+                  </span>
+                </div>
+                <p
+                  className="font-bold group-hover:text-accent transition-colors"
+                  style={{ fontSize: 15, color: "#222", lineHeight: 1.6 }}
+                >
+                  【出会いに感謝】株式会社中根工業の中根秀様と人を大切にする会社づくりを発信！
+                </p>
+              </div>
+            </Link>
             <Link href="/news/kasugai-shodo-kitatani" className="group block" style={{ textDecoration: "none", color: "inherit" }}>
               <div
                 className="relative rounded-lg overflow-hidden"
