@@ -9,6 +9,62 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "p-loco-ambassador": {
+    date: "2026-11-13",
+    category: "ブログ",
+    title: "【出会いに感謝】「月刊Sing春日井」アンバサダーのP-Locoの皆様と春日井の魅力を発信！",
+    thumbnail: "/images/news/thumb/p-loco-ambassador.jpg",
+    body: (
+      <>
+        <p>いつもお世話になっている、名古屋を中心に活動するアイドルグループ「P-Loco」の皆様！</p>
+        <p>
+          小林あい様
+          <br />
+          藤堂月ヨ様
+          <br />
+          佐々木明音様
+        </p>
+        <p>いつも本当にありがとうございます！</p>
+        <p>
+          「月刊Sing春日井」のアンバサダーとしてご協力いただき、さらにSNS撮影でもご一緒させていただけることを、とても嬉しく思っています！
+        </p>
+        <p>いつも明るい笑顔と元気で撮影を盛り上げてくださる皆様！</p>
+        <p>こうした素敵な出会いやつながりに、心から感謝しています！</p>
+        <p>これからも一緒に春日井の魅力を発信し、地域を盛り上げていけたら嬉しいです！</p>
+        <p>P-Locoの皆様、いつも本当にありがとうございます！</p>
+        <p>これからもどうぞよろしくお願いいたします！</p>
+        <p>感謝！感謝です！</p>
+        <p>
+          P-Loco OfficeのInstagramはこちら
+          <br />
+          <a href="https://www.instagram.com/ploco8826/" target="_blank" rel="noopener noreferrer">
+            @ploco8826
+          </a>
+        </p>
+        <p>
+          小林あい様
+          <br />
+          <a href="https://www.instagram.com/p_loco_ai/" target="_blank" rel="noopener noreferrer">
+            @p_loco_ai
+          </a>
+        </p>
+        <p>
+          藤堂月ヨ様
+          <br />
+          <a href="https://www.instagram.com/p_locotsukiyo/" target="_blank" rel="noopener noreferrer">
+            @p_locotsukiyo
+          </a>
+        </p>
+        <p>
+          佐々木明音様
+          <br />
+          <a href="https://www.instagram.com/akn_ssk1115/" target="_blank" rel="noopener noreferrer">
+            @akn_ssk1115
+          </a>
+        </p>
+      </>
+    ),
+  },
   "nakane-foundry": {
     date: "2026-11-13",
     category: "ブログ",

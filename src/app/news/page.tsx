@@ -9,6 +9,13 @@ const allNews: { date: string; category: string; title: string; thumbnail?: stri
   {
     date: "2026-11-13",
     category: "ブログ",
+    title: "【出会いに感謝】「月刊Sing春日井」アンバサダーのP-Locoの皆様と春日井の魅力を発信！",
+    thumbnail: "/images/news/thumb/p-loco-ambassador.jpg",
+    slug: "p-loco-ambassador",
+  },
+  {
+    date: "2026-11-13",
+    category: "ブログ",
     title: "【出会いに感謝】株式会社中根工業の中根秀様と人を大切にする会社づくりを発信！",
     thumbnail: "/images/news/thumb/nakane-foundry.jpg",
     slug: "nakane-foundry",
