@@ -275,6 +275,13 @@ export default function Footer() {
 
         {/* Copyright */}
         <div className="border-t border-white/10 py-6 text-center">
+          <Link
+            href="/privacy"
+            className="inline-block text-white/40 hover:text-white/70 transition-colors mb-3"
+            style={{ fontSize: "12px" }}
+          >
+            プライバシーポリシー
+          </Link>
           <p className="text-[11px] text-white/25" style={{ fontFamily: "Inter, sans-serif" }}>
             &copy; {company.established ? company.established.replace("年", "") : "2024"} {company.nameEn || "Sing Co., Ltd."}. All Rights Reserved.
           </p>
