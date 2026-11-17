@@ -9,6 +9,40 @@ const articles: Record<
   string,
   { date: string; category: string; title: string; thumbnail: string; thumbnailPosition?: string; body: React.ReactNode }
 > = {
+  "will-heart": {
+    date: "2026-11-17",
+    category: "ブログ",
+    title: "【出会いに感謝】株式会社Will Heartの田中涼子様と春日井のつながりを発信！",
+    thumbnail: "/images/news/thumb/will-heart.jpg",
+    body: (
+      <>
+        <p>いつもお世話になっている、株式会社Will Heart 代表取締役 田中涼子様！</p>
+        <p>いつも本当にありがとうございます！</p>
+        <p>春日井YEGでの活動を通じて、さまざまなご縁や交流の機会をいただき、心から感謝しております！</p>
+        <p>地域の未来を考え、春日井をもっと盛り上げていこうとする活動の中で、こうしてご一緒できることをとても嬉しく思っています！</p>
+        <p>また、介護を通じて「その人らしい暮らし」を支える株式会社Will Heart様。</p>
+        <p>人とのつながりや、一人ひとりを大切にする想いがとても素敵です！</p>
+        <p>私たちも、人と人、企業と地域をつなぎながら、春日井の魅力をもっと多くの方々に届けていきたいと思います！</p>
+        <p>田中様、いつも本当にありがとうございます！</p>
+        <p>これからもどうぞよろしくお願いいたします！</p>
+        <p>感謝！感謝です！</p>
+        <p>
+          株式会社Will Heartのホームページはこちら
+          <br />
+          <a href="https://willheart-inc.com/" target="_blank" rel="noopener noreferrer">
+            https://willheart-inc.com/
+          </a>
+        </p>
+        <p>
+          株式会社Will HeartのInstagramはこちら
+          <br />
+          <a href="https://www.instagram.com/will_heart_co.ltd_/" target="_blank" rel="noopener noreferrer">
+            @will_heart_co.ltd_
+          </a>
+        </p>
+      </>
+    ),
+  },
   "p-loco-ambassador": {
     date: "2026-11-13",
     category: "ブログ",

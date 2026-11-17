@@ -7,6 +7,13 @@ import PageHeader from "@/components/PageHeader";
 
 const allNews: { date: string; category: string; title: string; thumbnail?: string; thumbnailPosition?: string; slug: string }[] = [
   {
+    date: "2026-11-17",
+    category: "ブログ",
+    title: "【出会いに感謝】株式会社Will Heartの田中涼子様と春日井のつながりを発信！",
+    thumbnail: "/images/news/thumb/will-heart.jpg",
+    slug: "will-heart",
+  },
+  {
     date: "2026-11-13",
     category: "ブログ",
     title: "【出会いに感謝】「月刊Sing春日井」アンバサダーのP-Locoの皆様と春日井の魅力を発信！",
