@@ -172,6 +172,20 @@ const works: WorkItem[] = [
   },
   // PV制作
   {
+    id: "pv-sing",
+    category: "pv",
+    title: "株式会社Sing 採用PV",
+    description: "",
+    video: "/videos/sing_pv.mp4",
+  },
+  {
+    id: "pv-nakane",
+    category: "pv",
+    title: "株式会社中根工業 様",
+    description: "採用PV",
+    video: "/videos/nakane_pv.mp4",
+  },
+  {
     id: "pv-01",
     category: "pv",
     title: "株式会社竹内金型製作所 様",

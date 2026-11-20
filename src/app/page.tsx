@@ -4,6 +4,7 @@ import Image from "next/image";
 import { company, contact, site } from "@/lib/site";
 import { FadeInUp, StaggerContainer, HeroBackground } from "@/components/animations";
 import FixedCTA from "@/components/FixedCTA";
+import PvPlayer from "@/components/PvPlayer";
 
 export const metadata: Metadata = {
   alternates: {
@@ -221,6 +222,27 @@ export default function Home() {
       {/* Section 2.4: Origin / 社名の由来 */}
       <section className="relative z-10" style={{ backgroundColor: "#F5F1EB", padding: "120px 0" }}>
         <div className="mx-auto px-5" style={{ maxWidth: "1000px" }}>
+          <FadeInUp>
+            <div style={{ marginBottom: "72px" }}>
+              <p
+                className="text-accent"
+                style={{
+                  fontSize: "clamp(18px, 2.4vw, 24px)",
+                  fontFamily: "'Anton', sans-serif",
+                  letterSpacing: "0.12em",
+                  lineHeight: 1,
+                  marginBottom: "18px",
+                }}
+              >
+                Sing PROMOTION VIDEO
+              </p>
+              <PvPlayer
+                src="/videos/sing_pv.mp4"
+                poster="/images/pv_sing_poster.webp"
+                title="株式会社Sing 採用PV"
+              />
+            </div>
+          </FadeInUp>
           <p
             className="text-accent mb-4"
             style={{
